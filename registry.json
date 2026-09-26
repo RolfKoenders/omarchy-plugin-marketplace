@@ -227129,8 +227129,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-26",
       "listedAt": "2026-09-26T08:31:07.168Z",
-      "listingValidatedCommit": "c1d7b79ddbea48a3e93497a4c0ed57703ffe5490",
-      "listingValidatedAt": "2026-09-26T08:31:07.168Z",
+      "listingValidatedCommit": "55bc781641d709bd666b07e984ba32ea171f8ef1",
+      "listingValidatedAt": "2026-09-26T23:24:15.797Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -227139,35 +227139,14 @@
         "pluginIds": [
           "gian.hr-broadcast"
         ],
-        "commit": "c1d7b79ddbea48a3e93497a4c0ed57703ffe5490",
-        "checkedAt": "2026-09-26T08:31:07.061Z",
+        "commit": "55bc781641d709bd666b07e984ba32ea171f8ef1",
+        "checkedAt": "2026-09-26T23:24:15.797Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
         "capabilities": [
           "installer"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "gianmegantara/omarchy-hr-broadcast",
-        "pluginIds": [
-          "gian.hr-broadcast"
-        ],
-        "commit": "c1d7b79ddbea48a3e93497a4c0ed57703ffe5490",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-26T08:31:07.061Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "installer"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-26T08:15:56.154Z",
-        "requestEventId": 31884507550,
-        "requestedAt": "2026-09-26T08:29:13Z",
-        "reviewedAt": "2026-09-26T08:31:07.061Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "gian.hr-broadcast": {
@@ -227183,7 +227162,73 @@
             "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
           }
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "gianmegantara/omarchy-hr-broadcast",
+        "pluginIds": [
+          "gian.hr-broadcast"
+        ],
+        "commit": "55bc781641d709bd666b07e984ba32ea171f8ef1",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-26T23:24:15.797Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-26T12:03:44.492Z",
+        "requestEventId": 31910553358,
+        "requestedAt": "2026-09-26T23:21:51Z",
+        "reviewedAt": "2026-09-26T23:24:15.797Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "c1d7b79ddbea48a3e93497a4c0ed57703ffe5490",
+          "validatedAt": "2026-09-26T08:31:07.168Z",
+          "branch": "main",
+          "supersededAt": "2026-09-26T23:24:15.797Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "gianmegantara/omarchy-hr-broadcast",
+            "pluginIds": [
+              "gian.hr-broadcast"
+            ],
+            "commit": "c1d7b79ddbea48a3e93497a4c0ed57703ffe5490",
+            "checkedAt": "2026-09-26T08:31:07.061Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "installer"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "gianmegantara/omarchy-hr-broadcast",
+            "pluginIds": [
+              "gian.hr-broadcast"
+            ],
+            "commit": "c1d7b79ddbea48a3e93497a4c0ed57703ffe5490",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-26T08:31:07.061Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "installer"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-26T08:15:56.154Z",
+            "requestEventId": 31884507550,
+            "requestedAt": "2026-09-26T08:29:13Z",
+            "reviewedAt": "2026-09-26T08:31:07.061Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/lisboaphe/omachi-pet",
