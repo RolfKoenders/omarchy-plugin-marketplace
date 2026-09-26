@@ -228387,6 +228387,40 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/pwn27sbx/omarchy-better-notifications",
+      "type": "plugin-source",
+      "addedAt": "2026-09-26",
+      "listedAt": "2026-09-26T23:58:12.816Z",
+      "listingValidatedCommit": "7bc702bac79e5e6d29ccd47888d22141ef4ddbc0",
+      "listingValidatedAt": "2026-09-26T23:58:12.816Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "pwn27sbx/omarchy-better-notifications",
+        "pluginIds": [
+          "hero-notifications"
+        ],
+        "commit": "7bc702bac79e5e6d29ccd47888d22141ef4ddbc0",
+        "checkedAt": "2026-09-26T23:58:12.711Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "hero-notifications": {
+          "category": "Widgets",
+          "tags": [
+            "bar",
+            "system",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
