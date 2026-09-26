@@ -198219,8 +198219,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-20",
       "listedAt": "2026-09-20T00:17:25.243Z",
-      "listingValidatedCommit": "37a4c11e70b131aec14e2000f4399ab8b273e411",
-      "listingValidatedAt": "2026-09-23T07:03:12.673Z",
+      "listingValidatedCommit": "055a895a56f0ac35aac869c8603966208907931b",
+      "listingValidatedAt": "2026-09-26T23:12:44.182Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -198229,8 +198229,8 @@
         "pluginIds": [
           "ray.nflscores"
         ],
-        "commit": "37a4c11e70b131aec14e2000f4399ab8b273e411",
-        "checkedAt": "2026-09-23T07:03:12.673Z",
+        "commit": "055a895a56f0ac35aac869c8603966208907931b",
+        "checkedAt": "2026-09-26T23:12:44.182Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -198260,6 +198260,26 @@
             ],
             "commit": "586e2002ea027bec23ef2c853d480dfed797db02",
             "checkedAt": "2026-09-20T00:17:25.148Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        },
+        {
+          "commit": "37a4c11e70b131aec14e2000f4399ab8b273e411",
+          "validatedAt": "2026-09-23T07:03:12.673Z",
+          "branch": "main",
+          "supersededAt": "2026-09-26T23:12:44.182Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "carried-away/omarchy-nfl-scores",
+            "pluginIds": [
+              "ray.nflscores"
+            ],
+            "commit": "37a4c11e70b131aec14e2000f4399ab8b273e411",
+            "checkedAt": "2026-09-23T07:03:12.673Z",
             "outcome": "passed",
             "enforcementMode": "selective",
             "findings": [],
