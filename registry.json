@@ -228274,6 +228274,63 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/umbraxc/omarchy-agent-launcher",
+      "type": "plugin-source",
+      "addedAt": "2026-09-26",
+      "listedAt": "2026-09-26T23:45:34.327Z",
+      "listingValidatedCommit": "9160f5b5b231046450e1df67321abf7bacbc5a75",
+      "listingValidatedAt": "2026-09-26T23:45:34.327Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "umbraxc/omarchy-agent-launcher",
+        "pluginIds": [
+          "io.github.umbraxc.agent-launcher"
+        ],
+        "commit": "9160f5b5b231046450e1df67321abf7bacbc5a75",
+        "checkedAt": "2026-09-26T23:45:34.220Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "privilege"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "umbraxc/omarchy-agent-launcher",
+        "pluginIds": [
+          "io.github.umbraxc.agent-launcher"
+        ],
+        "commit": "9160f5b5b231046450e1df67321abf7bacbc5a75",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-26T23:45:34.220Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-26T16:06:20.539Z",
+        "requestEventId": 31911068807,
+        "requestedAt": "2026-09-26T23:41:12Z",
+        "reviewedAt": "2026-09-26T23:45:34.220Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "io.github.umbraxc.agent-launcher": {
+          "category": "Widgets",
+          "tags": [
+            "ai",
+            "bar",
+            "launcher"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
