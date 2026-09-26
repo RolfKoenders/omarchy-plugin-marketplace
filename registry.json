@@ -228213,6 +228213,67 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/zeeshan-origin/omarchy-all-outputs",
+      "type": "plugin-source",
+      "addedAt": "2026-09-26",
+      "listedAt": "2026-09-26T23:41:48.328Z",
+      "listingValidatedCommit": "58d87e507a4410954a92e98ebf428105c4aa6bf8",
+      "listingValidatedAt": "2026-09-26T23:41:48.328Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "zeeshan-origin/omarchy-all-outputs",
+        "pluginIds": [
+          "io.github.zeeshan-origin.all-outputs"
+        ],
+        "commit": "58d87e507a4410954a92e98ebf428105c4aa6bf8",
+        "checkedAt": "2026-09-26T23:41:48.226Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "zeeshan-origin/omarchy-all-outputs",
+        "pluginIds": [
+          "io.github.zeeshan-origin.all-outputs"
+        ],
+        "commit": "58d87e507a4410954a92e98ebf428105c4aa6bf8",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-26T23:41:48.226Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-26T15:23:44.896Z",
+        "requestEventId": 31911029715,
+        "requestedAt": "2026-09-26T23:39:46Z",
+        "reviewedAt": "2026-09-26T23:41:48.226Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "io.github.zeeshan-origin.all-outputs": {
+          "category": "Hardware",
+          "tags": [
+            "bar",
+            "media",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
