@@ -215933,8 +215933,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-22",
       "listedAt": "2026-09-22T19:12:19.919Z",
-      "listingValidatedCommit": "530df8e7d7498b49f860efa06aded08163970459",
-      "listingValidatedAt": "2026-09-22T19:12:19.919Z",
+      "listingValidatedCommit": "52874472522d305f5f6c646ee69770430d8c8b70",
+      "listingValidatedAt": "2026-09-27T13:00:07.257Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -215943,8 +215943,8 @@
         "pluginIds": [
           "payton.forecast"
         ],
-        "commit": "530df8e7d7498b49f860efa06aded08163970459",
-        "checkedAt": "2026-09-22T19:12:19.841Z",
+        "commit": "52874472522d305f5f6c646ee69770430d8c8b70",
+        "checkedAt": "2026-09-27T13:00:07.257Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -215959,7 +215959,29 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "530df8e7d7498b49f860efa06aded08163970459",
+          "validatedAt": "2026-09-22T19:12:19.919Z",
+          "branch": "main",
+          "supersededAt": "2026-09-27T13:00:07.257Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "paytbidd/omarchy-weather",
+            "pluginIds": [
+              "payton.forecast"
+            ],
+            "commit": "530df8e7d7498b49f860efa06aded08163970459",
+            "checkedAt": "2026-09-22T19:12:19.841Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/igor-alexandrov/omarchy-tailscale",
