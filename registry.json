@@ -233009,6 +233009,69 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/typememetics/trolley",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T16:30:10.967Z",
+      "listingValidatedCommit": "a753dd9184dd4998b61c1ac2b3ac7cd95b61a5b6",
+      "listingValidatedAt": "2026-09-27T16:30:10.967Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "typememetics/trolley",
+        "pluginIds": [
+          "trolley.game"
+        ],
+        "commit": "a753dd9184dd4998b61c1ac2b3ac7cd95b61a5b6",
+        "checkedAt": "2026-09-27T16:30:10.865Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "typememetics/trolley",
+        "pluginIds": [
+          "trolley.game"
+        ],
+        "commit": "a753dd9184dd4998b61c1ac2b3ac7cd95b61a5b6",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T16:30:10.865Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-27T15:40:00.403Z",
+        "requestEventId": 31936974626,
+        "requestedAt": "2026-09-27T15:46:38Z",
+        "reviewedAt": "2026-09-27T16:30:10.865Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "trolley.game": {
+          "category": "Widgets",
+          "tags": [
+            "games",
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
