@@ -233552,6 +233552,69 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/minhajshafin/ytdl",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T17:36:01.124Z",
+      "listingValidatedCommit": "1139806bbb9e8b4e1b207e9148295bf172a2007f",
+      "listingValidatedAt": "2026-09-27T17:36:01.124Z",
+      "listingValidatedBranch": "master",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "minhajshafin/ytdl",
+        "pluginIds": [
+          "billy.ytdl"
+        ],
+        "commit": "1139806bbb9e8b4e1b207e9148295bf172a2007f",
+        "checkedAt": "2026-09-27T17:36:01.009Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "package-manager"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "minhajshafin/ytdl",
+        "pluginIds": [
+          "billy.ytdl"
+        ],
+        "commit": "1139806bbb9e8b4e1b207e9148295bf172a2007f",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T17:36:01.009Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "package-manager"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-27T17:30:13.109Z",
+        "requestEventId": 31940425281,
+        "requestedAt": "2026-09-27T17:31:57Z",
+        "reviewedAt": "2026-09-27T17:36:01.009Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "billy.ytdl": {
+          "category": "Widgets",
+          "tags": [
+            "media",
+            "quickshell",
+            "bar"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
