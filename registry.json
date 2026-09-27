@@ -234541,6 +234541,40 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/RohiRIK/omarchy-agent-monitor",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T20:58:44.523Z",
+      "listingValidatedCommit": "91066f18201d0c1780dcd4a0738a928f6e512f39",
+      "listingValidatedAt": "2026-09-27T20:58:44.523Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "rohirik/omarchy-agent-monitor",
+        "pluginIds": [
+          "rohirik.agent-monitor"
+        ],
+        "commit": "91066f18201d0c1780dcd4a0738a928f6e512f39",
+        "checkedAt": "2026-09-27T20:58:44.399Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "rohirik.agent-monitor": {
+          "category": "Developer Tools",
+          "tags": [
+            "ai",
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
