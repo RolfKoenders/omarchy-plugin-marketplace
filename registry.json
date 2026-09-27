@@ -235752,6 +235752,65 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/edddine4-source/jev-challenge-lab",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T23:46:07.198Z",
+      "listingValidatedCommit": "49be0de762b222ecc187a49302e763e0bae37b6b",
+      "listingValidatedAt": "2026-09-27T23:46:07.198Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "edddine4-source/jev-challenge-lab",
+        "pluginIds": [
+          "io.github.edddine4-source.jev-challenge-lab"
+        ],
+        "commit": "49be0de762b222ecc187a49302e763e0bae37b6b",
+        "checkedAt": "2026-09-27T23:46:07.081Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "remote-build"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "edddine4-source/jev-challenge-lab",
+        "pluginIds": [
+          "io.github.edddine4-source.jev-challenge-lab"
+        ],
+        "commit": "49be0de762b222ecc187a49302e763e0bae37b6b",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T23:46:07.081Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "remote-build"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-27T20:00:20.471Z",
+        "requestEventId": 31952225411,
+        "requestedAt": "2026-09-27T23:28:24Z",
+        "reviewedAt": "2026-09-27T23:46:07.081Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "io.github.edddine4-source.jev-challenge-lab": {
+          "category": "Developer Tools",
+          "tags": [
+            "ai",
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
