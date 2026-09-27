@@ -232543,6 +232543,69 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/Dankestrick/OmaPandora",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T15:51:50.853Z",
+      "listingValidatedCommit": "6535852945c9b1099f4a1af18067b4b0b65520bd",
+      "listingValidatedAt": "2026-09-27T15:51:50.853Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "dankestrick/omapandora",
+        "pluginIds": [
+          "io.github.dankestrick.omapandora"
+        ],
+        "commit": "6535852945c9b1099f4a1af18067b4b0b65520bd",
+        "checkedAt": "2026-09-27T15:51:50.747Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "remote-build",
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "dankestrick/omapandora",
+        "pluginIds": [
+          "io.github.dankestrick.omapandora"
+        ],
+        "commit": "6535852945c9b1099f4a1af18067b4b0b65520bd",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T15:51:50.747Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "remote-build",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-27T14:37:51.259Z",
+        "requestEventId": 31935889865,
+        "requestedAt": "2026-09-27T15:15:45Z",
+        "reviewedAt": "2026-09-27T15:51:50.747Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "io.github.dankestrick.omapandora": {
+          "category": "Widgets",
+          "tags": [
+            "media"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
