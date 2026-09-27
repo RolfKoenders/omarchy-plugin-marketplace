@@ -235811,6 +235811,38 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/mrosati84/github-notifications",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T23:50:23.608Z",
+      "listingValidatedCommit": "959c8f30badb90c30b709d59f87cf87209b86705",
+      "listingValidatedAt": "2026-09-27T23:50:23.608Z",
+      "listingValidatedBranch": "master",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "mrosati84/github-notifications",
+        "pluginIds": [
+          "io.github.mrosati84.github-notifications"
+        ],
+        "commit": "959c8f30badb90c30b709d59f87cf87209b86705",
+        "checkedAt": "2026-09-27T23:50:23.506Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "io.github.mrosati84.github-notifications": {
+          "category": "Productivity",
+          "tags": [
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
