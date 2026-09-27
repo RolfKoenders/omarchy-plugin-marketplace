@@ -229238,6 +229238,38 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/usutani/omarchy-eye-care",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T09:10:56.856Z",
+      "listingValidatedCommit": "210f45cdd83942323f65e460291d0f2be570fdbf",
+      "listingValidatedAt": "2026-09-27T09:10:56.856Z",
+      "listingValidatedBranch": "master",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "usutani/omarchy-eye-care",
+        "pluginIds": [
+          "usutani.eye-care"
+        ],
+        "commit": "210f45cdd83942323f65e460291d0f2be570fdbf",
+        "checkedAt": "2026-09-27T09:10:56.752Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "usutani.eye-care": {
+          "category": "Productivity",
+          "tags": [
+            "bar"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
