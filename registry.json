@@ -234507,6 +234507,40 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/callmeATHUL/omarchy-brand-effects",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T20:54:27.533Z",
+      "listingValidatedCommit": "85ba3d29524bf87f2207af991d2118e0aafce8aa",
+      "listingValidatedAt": "2026-09-27T20:54:27.533Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "callmeathul/omarchy-brand-effects",
+        "pluginIds": [
+          "io.github.callmeathul.brand-effects"
+        ],
+        "commit": "85ba3d29524bf87f2207af991d2118e0aafce8aa",
+        "checkedAt": "2026-09-27T20:54:27.425Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "io.github.callmeathul.brand-effects": {
+          "category": "Appearance",
+          "tags": [
+            "bar",
+            "quickshell",
+            "hyprland"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
