@@ -232287,6 +232287,69 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/TierTek/omarchy-tekvoice",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T15:32:08.185Z",
+      "listingValidatedCommit": "d67aacf1e57c4770d81d7d8905b0272271cb132b",
+      "listingValidatedAt": "2026-09-27T15:32:08.185Z",
+      "listingValidatedBranch": "master",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "tiertek/omarchy-tekvoice",
+        "pluginIds": [
+          "tiertek.tekvoice"
+        ],
+        "commit": "d67aacf1e57c4770d81d7d8905b0272271cb132b",
+        "checkedAt": "2026-09-27T15:32:08.075Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "package-manager",
+          "remote-build",
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "tiertek/omarchy-tekvoice",
+        "pluginIds": [
+          "tiertek.tekvoice"
+        ],
+        "commit": "d67aacf1e57c4770d81d7d8905b0272271cb132b",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T15:32:08.075Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "package-manager",
+          "remote-build",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-27T13:50:00.150Z",
+        "requestEventId": 31935399653,
+        "requestedAt": "2026-09-27T15:01:34Z",
+        "reviewedAt": "2026-09-27T15:32:08.075Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "tiertek.tekvoice": {
+          "category": "Widgets",
+          "tags": [
+            "media",
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
