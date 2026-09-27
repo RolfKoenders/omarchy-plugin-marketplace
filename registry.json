@@ -229303,6 +229303,40 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/scmartin1995/omarchy-stoic-scroll",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T09:18:25.212Z",
+      "listingValidatedCommit": "891d1fc1e2ce5784b0df3d73112ed94c2d6630e4",
+      "listingValidatedAt": "2026-09-27T09:18:25.212Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "scmartin1995/omarchy-stoic-scroll",
+        "pluginIds": [
+          "io.github.scmartin1995.stoic-scroll"
+        ],
+        "commit": "891d1fc1e2ce5784b0df3d73112ed94c2d6630e4",
+        "checkedAt": "2026-09-27T09:18:25.127Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "io.github.scmartin1995.stoic-scroll": {
+          "category": "Widgets",
+          "tags": [
+            "bar",
+            "quickshell",
+            "education"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
