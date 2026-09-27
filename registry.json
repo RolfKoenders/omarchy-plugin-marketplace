@@ -234035,6 +234035,39 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/rolandjo/oma-breathwork",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T18:38:49.701Z",
+      "listingValidatedCommit": "dfca89a8fe62ca1042b784a9a58421f5af1a93d7",
+      "listingValidatedAt": "2026-09-27T18:38:49.701Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "rolandjo/oma-breathwork",
+        "pluginIds": [
+          "oma.breathwork"
+        ],
+        "commit": "dfca89a8fe62ca1042b784a9a58421f5af1a93d7",
+        "checkedAt": "2026-09-27T18:38:49.581Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "oma.breathwork": {
+          "category": "Productivity",
+          "tags": [
+            "security",
+            "education"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
