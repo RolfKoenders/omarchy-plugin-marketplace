@@ -235010,6 +235010,44 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/gran-software-solutions/jumpy-omarchy-plugin",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T22:11:41.097Z",
+      "listingValidatedCommit": "aed1c2eac7a99c152a9c5389a2f82d0a753c33cb",
+      "listingValidatedAt": "2026-09-27T22:11:41.097Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "gran-software-solutions/jumpy-omarchy-plugin",
+        "pluginIds": [
+          "de.gransoftware.jumpy"
+        ],
+        "commit": "aed1c2eac7a99c152a9c5389a2f82d0a753c33cb",
+        "checkedAt": "2026-09-27T22:11:40.987Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "de.gransoftware.jumpy": {
+          "category": "Desktop",
+          "tags": [
+            "hyprland",
+            "quickshell",
+            "workspaces"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
