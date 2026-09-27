@@ -233260,6 +233260,39 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/brightwalker25/omarchy-net-speed",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T17:04:08.808Z",
+      "listingValidatedCommit": "060151069daa1954616ed58004144fb4955bba97",
+      "listingValidatedAt": "2026-09-27T17:04:08.808Z",
+      "listingValidatedBranch": "master",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "brightwalker25/omarchy-net-speed",
+        "pluginIds": [
+          "brightwalker25.net-speed"
+        ],
+        "commit": "060151069daa1954616ed58004144fb4955bba97",
+        "checkedAt": "2026-09-27T17:04:08.702Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "brightwalker25.net-speed": {
+          "category": "Widgets",
+          "tags": [
+            "bar",
+            "vpn"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
