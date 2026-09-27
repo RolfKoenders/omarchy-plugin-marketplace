@@ -234440,6 +234440,39 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/vip32/omarchy-procyclingstats",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T20:18:10.219Z",
+      "listingValidatedCommit": "e83a646d3cff2933aa99b011b41c7cd46a5eeefc",
+      "listingValidatedAt": "2026-09-27T20:18:10.219Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "vip32/omarchy-procyclingstats",
+        "pluginIds": [
+          "io.github.vip32.procyclingstats"
+        ],
+        "commit": "e83a646d3cff2933aa99b011b41c7cd46a5eeefc",
+        "checkedAt": "2026-09-27T20:18:10.108Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "io.github.vip32.procyclingstats": {
+          "category": "Widgets",
+          "tags": [
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
