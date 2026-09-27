@@ -225586,8 +225586,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-25",
       "listedAt": "2026-09-25T17:08:27.701Z",
-      "listingValidatedCommit": "1ea283983c76d1409b35e746786481f187ca8ebe",
-      "listingValidatedAt": "2026-09-25T17:08:27.701Z",
+      "listingValidatedCommit": "a625b950c9936285f30ead10e612a3cfe2dada4f",
+      "listingValidatedAt": "2026-09-27T23:16:54.250Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -225596,8 +225596,8 @@
         "pluginIds": [
           "kaykym.workspace-switcher"
         ],
-        "commit": "1ea283983c76d1409b35e746786481f187ca8ebe",
-        "checkedAt": "2026-09-25T17:08:27.596Z",
+        "commit": "a625b950c9936285f30ead10e612a3cfe2dada4f",
+        "checkedAt": "2026-09-27T23:16:54.250Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -225613,7 +225613,29 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "1ea283983c76d1409b35e746786481f187ca8ebe",
+          "validatedAt": "2026-09-25T17:08:27.701Z",
+          "branch": "main",
+          "supersededAt": "2026-09-27T23:16:54.250Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "kaykym2411/omarchy-workspace-switcher",
+            "pluginIds": [
+              "kaykym.workspace-switcher"
+            ],
+            "commit": "1ea283983c76d1409b35e746786481f187ca8ebe",
+            "checkedAt": "2026-09-25T17:08:27.596Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/oriolescserr/omarchy-audio-visualizer",
