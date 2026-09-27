@@ -232383,6 +232383,69 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/foamrider/foamy-syncthing",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T15:40:46.052Z",
+      "listingValidatedCommit": "f7918966b45c59bae426f1ba4853d0a7eab57939",
+      "listingValidatedAt": "2026-09-27T15:40:46.052Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "foamrider/foamy-syncthing",
+        "pluginIds": [
+          "foamy.syncthing"
+        ],
+        "commit": "f7918966b45c59bae426f1ba4853d0a7eab57939",
+        "checkedAt": "2026-09-27T15:40:45.948Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "bundled-executable-binary",
+          "package-manager",
+          "service-management",
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "foamrider/foamy-syncthing",
+        "pluginIds": [
+          "foamy.syncthing"
+        ],
+        "commit": "f7918966b45c59bae426f1ba4853d0a7eab57939",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T15:40:45.948Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "bundled-executable-binary",
+          "package-manager",
+          "service-management",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-27T14:26:30.678Z",
+        "requestEventId": 31935593515,
+        "requestedAt": "2026-09-27T15:07:06Z",
+        "reviewedAt": "2026-09-27T15:40:45.948Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "foamy.syncthing": {
+          "category": "System",
+          "tags": [
+            "bar",
+            "system",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
