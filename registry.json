@@ -228978,6 +228978,68 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/thenitai/omabuffer",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T08:30:20.386Z",
+      "listingValidatedCommit": "e48f53fbdd8d96ba2c839afa862a91ff06d4bcce",
+      "listingValidatedAt": "2026-09-27T08:30:20.386Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "thenitai/omabuffer",
+        "pluginIds": [
+          "thenitai.omabuffer"
+        ],
+        "commit": "e48f53fbdd8d96ba2c839afa862a91ff06d4bcce",
+        "checkedAt": "2026-09-27T08:30:20.279Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "thenitai/omabuffer",
+        "pluginIds": [
+          "thenitai.omabuffer"
+        ],
+        "commit": "e48f53fbdd8d96ba2c839afa862a91ff06d4bcce",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T08:30:20.279Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-27T03:11:27.358Z",
+        "requestEventId": 31923643239,
+        "requestedAt": "2026-09-27T08:21:01Z",
+        "reviewedAt": "2026-09-27T08:30:20.279Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "thenitai.omabuffer": {
+          "category": "Productivity",
+          "tags": [
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
