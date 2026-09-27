@@ -229381,6 +229381,39 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/MkultraUSA/omarchy-the-prisoner-seaside",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T09:30:46.348Z",
+      "listingValidatedCommit": "83a0e506131289582524474464b1426a216baa4d",
+      "listingValidatedAt": "2026-09-27T09:30:46.348Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "mkultrausa/omarchy-the-prisoner-seaside",
+        "pluginIds": [
+          "uk.co.mkultrausa.the-prisoner-seaside"
+        ],
+        "commit": "83a0e506131289582524474464b1426a216baa4d",
+        "checkedAt": "2026-09-27T09:30:46.243Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "uk.co.mkultrausa.the-prisoner-seaside": {
+          "category": "Appearance",
+          "tags": [
+            "quickshell",
+            "hyprland"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
