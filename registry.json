@@ -231724,6 +231724,74 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/AlxWolfenstein97/omacursor",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T14:34:59.054Z",
+      "listingValidatedCommit": "166e91469eb6f21fd3df755d4850b15886446d6c",
+      "listingValidatedAt": "2026-09-27T14:34:59.054Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "alxwolfenstein97/omacursor",
+        "pluginIds": [
+          "io.github.alxwolfenstein97.omacursor"
+        ],
+        "commit": "166e91469eb6f21fd3df755d4850b15886446d6c",
+        "checkedAt": "2026-09-27T14:34:58.949Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "package-manager",
+          "sudoers-modification",
+          "installer",
+          "service-management"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "alxwolfenstein97/omacursor",
+        "pluginIds": [
+          "io.github.alxwolfenstein97.omacursor"
+        ],
+        "commit": "166e91469eb6f21fd3df755d4850b15886446d6c",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T14:34:58.949Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "package-manager",
+          "sudoers-modification",
+          "installer",
+          "service-management"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-27T12:55:11.033Z",
+        "requestEventId": 31932433726,
+        "requestedAt": "2026-09-27T13:32:07Z",
+        "reviewedAt": "2026-09-27T14:34:58.949Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "io.github.alxwolfenstein97.omacursor": {
+          "category": "Appearance",
+          "tags": [
+            "quickshell",
+            "hyprland"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
