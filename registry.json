@@ -231599,6 +231599,63 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/foamrider/foamy-monitor",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T14:25:15.434Z",
+      "listingValidatedCommit": "8fd78360785d623e2c94be3862365060194676de",
+      "listingValidatedAt": "2026-09-27T14:25:15.434Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "foamrider/foamy-monitor",
+        "pluginIds": [
+          "foamy.monitor"
+        ],
+        "commit": "8fd78360785d623e2c94be3862365060194676de",
+        "checkedAt": "2026-09-27T14:25:15.335Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "service-management"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "foamrider/foamy-monitor",
+        "pluginIds": [
+          "foamy.monitor"
+        ],
+        "commit": "8fd78360785d623e2c94be3862365060194676de",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T14:25:15.335Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "service-management"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-27T12:50:10.522Z",
+        "requestEventId": 31932199542,
+        "requestedAt": "2026-09-27T13:24:18Z",
+        "reviewedAt": "2026-09-27T14:25:15.335Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "foamy.monitor": {
+          "category": "Hardware",
+          "tags": [
+            "bar",
+            "hyprland",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
