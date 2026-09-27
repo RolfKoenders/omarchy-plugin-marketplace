@@ -186267,8 +186267,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-16",
       "listedAt": "2026-09-16T17:55:52.507Z",
-      "listingValidatedCommit": "81f7748b283faa28403ac1ecea8bbcfb32c5fa24",
-      "listingValidatedAt": "2026-09-16T17:55:52.507Z",
+      "listingValidatedCommit": "f7ec80de8464bae3c67f9fd769806ca51cc37140",
+      "listingValidatedAt": "2026-09-27T12:33:30.077Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -186277,8 +186277,8 @@
         "pluginIds": [
           "lonefox.omaspaces"
         ],
-        "commit": "81f7748b283faa28403ac1ecea8bbcfb32c5fa24",
-        "checkedAt": "2026-09-16T17:55:52.415Z",
+        "commit": "f7ec80de8464bae3c67f9fd769806ca51cc37140",
+        "checkedAt": "2026-09-27T12:33:30.077Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -186294,7 +186294,29 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "81f7748b283faa28403ac1ecea8bbcfb32c5fa24",
+          "validatedAt": "2026-09-16T17:55:52.507Z",
+          "branch": "main",
+          "supersededAt": "2026-09-27T12:33:30.077Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "l0ne-f0x/omarchy-omaspaces",
+            "pluginIds": [
+              "lonefox.omaspaces"
+            ],
+            "commit": "81f7748b283faa28403ac1ecea8bbcfb32c5fa24",
+            "checkedAt": "2026-09-16T17:55:52.415Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/taiku666/omarchy-gateway-switcher",
