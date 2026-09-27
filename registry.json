@@ -231849,6 +231849,73 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/liberuum/unicast",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T14:43:35.781Z",
+      "listingValidatedCommit": "6e40303744a7d397a074882f945182a1bd281032",
+      "listingValidatedAt": "2026-09-27T14:43:35.781Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "liberuum/unicast",
+        "pluginIds": [
+          "universal-cast"
+        ],
+        "commit": "6e40303744a7d397a074882f945182a1bd281032",
+        "checkedAt": "2026-09-27T14:43:35.658Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "service-management",
+          "privilege",
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "liberuum/unicast",
+        "pluginIds": [
+          "universal-cast"
+        ],
+        "commit": "6e40303744a7d397a074882f945182a1bd281032",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T14:43:35.658Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "service-management",
+          "privilege",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-27T13:08:38.348Z",
+        "requestEventId": 31932600753,
+        "requestedAt": "2026-09-27T13:37:46Z",
+        "reviewedAt": "2026-09-27T14:43:35.658Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "universal-cast": {
+          "category": "Widgets",
+          "tags": [
+            "bar",
+            "quickshell",
+            "media"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
