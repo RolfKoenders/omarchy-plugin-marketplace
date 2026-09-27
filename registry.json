@@ -175442,8 +175442,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-14",
       "listedAt": "2026-09-14T21:44:38.841Z",
-      "listingValidatedCommit": "a3cb7d1a2bacdaba34c1c0ddb1f489eb21615b1e",
-      "listingValidatedAt": "2026-09-23T05:39:53.987Z",
+      "listingValidatedCommit": "cc3bb1d4d3b40f7f313d3d81dfebc6616fea9c61",
+      "listingValidatedAt": "2026-09-27T08:35:03.405Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -175452,8 +175452,8 @@
         "pluginIds": [
           "io.github.solkkku.audio-switcher"
         ],
-        "commit": "a3cb7d1a2bacdaba34c1c0ddb1f489eb21615b1e",
-        "checkedAt": "2026-09-23T05:39:53.987Z",
+        "commit": "cc3bb1d4d3b40f7f313d3d81dfebc6616fea9c61",
+        "checkedAt": "2026-09-27T08:35:03.405Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -175483,6 +175483,26 @@
             ],
             "commit": "81a3d35e0d8c5484d291700e342532df02556ced",
             "checkedAt": "2026-09-14T21:44:38.756Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        },
+        {
+          "commit": "a3cb7d1a2bacdaba34c1c0ddb1f489eb21615b1e",
+          "validatedAt": "2026-09-23T05:39:53.987Z",
+          "branch": "main",
+          "supersededAt": "2026-09-27T08:35:03.405Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "solkkku/omarchy-audio-switcher",
+            "pluginIds": [
+              "io.github.solkkku.audio-switcher"
+            ],
+            "commit": "a3cb7d1a2bacdaba34c1c0ddb1f489eb21615b1e",
+            "checkedAt": "2026-09-23T05:39:53.987Z",
             "outcome": "passed",
             "enforcementMode": "selective",
             "findings": [],
