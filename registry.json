@@ -228944,6 +228944,40 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/NobleDoodle/omission",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T08:25:50.591Z",
+      "listingValidatedCommit": "593fb8ba009a0c0dc39fe742c78b0b99ec0a88c1",
+      "listingValidatedAt": "2026-09-27T08:25:50.591Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "nobledoodle/omission",
+        "pluginIds": [
+          "io.github.nobledoodle.omission"
+        ],
+        "commit": "593fb8ba009a0c0dc39fe742c78b0b99ec0a88c1",
+        "checkedAt": "2026-09-27T08:25:50.483Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "io.github.nobledoodle.omission": {
+          "category": "Desktop",
+          "tags": [
+            "workspaces",
+            "hyprland",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
