@@ -214934,8 +214934,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-22",
       "listedAt": "2026-09-22T18:26:11.933Z",
-      "listingValidatedCommit": "de6a06881672b02f2617f84515b3bb178177d25e",
-      "listingValidatedAt": "2026-09-22T18:26:11.933Z",
+      "listingValidatedCommit": "0510920cebaff53bcf95a056873491b2985e43f6",
+      "listingValidatedAt": "2026-09-27T09:22:37.675Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -214944,8 +214944,8 @@
         "pluginIds": [
           "predator-rgb"
         ],
-        "commit": "de6a06881672b02f2617f84515b3bb178177d25e",
-        "checkedAt": "2026-09-22T18:26:11.826Z",
+        "commit": "0510920cebaff53bcf95a056873491b2985e43f6",
+        "checkedAt": "2026-09-27T09:22:37.675Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -214961,7 +214961,29 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "de6a06881672b02f2617f84515b3bb178177d25e",
+          "validatedAt": "2026-09-22T18:26:11.933Z",
+          "branch": "main",
+          "supersededAt": "2026-09-27T09:22:37.675Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "aniket1995/omarchy-predator-rgb",
+            "pluginIds": [
+              "predator-rgb"
+            ],
+            "commit": "de6a06881672b02f2617f84515b3bb178177d25e",
+            "checkedAt": "2026-09-22T18:26:11.826Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/afruth/omarchy-xr",
