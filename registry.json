@@ -232874,6 +232874,75 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/Vladkarok/oskar",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T16:16:22.122Z",
+      "listingValidatedCommit": "62ab7bec2a224971ce13e764b1c5173613a97786",
+      "listingValidatedAt": "2026-09-27T16:16:22.122Z",
+      "listingValidatedBranch": "master",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "vladkarok/oskar",
+        "pluginIds": [
+          "io.github.vladkarok.oskar"
+        ],
+        "commit": "62ab7bec2a224971ce13e764b1c5173613a97786",
+        "checkedAt": "2026-09-27T16:16:22.019Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "service-management",
+          "package-manager",
+          "remote-build",
+          "installer",
+          "privilege"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "vladkarok/oskar",
+        "pluginIds": [
+          "io.github.vladkarok.oskar"
+        ],
+        "commit": "62ab7bec2a224971ce13e764b1c5173613a97786",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T16:16:22.019Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "service-management",
+          "package-manager",
+          "remote-build",
+          "installer",
+          "privilege"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-27T13:49:16.027Z",
+        "requestEventId": 31936412978,
+        "requestedAt": "2026-09-27T15:29:22Z",
+        "reviewedAt": "2026-09-27T16:16:22.019Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "io.github.vladkarok.oskar": {
+          "category": "Desktop",
+          "tags": [
+            "quickshell",
+            "hyprland",
+            "bar"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
