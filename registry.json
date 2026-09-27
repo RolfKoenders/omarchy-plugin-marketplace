@@ -234406,6 +234406,40 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/woodenplastic/omarchy-information-wallpaper-overlay",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T20:13:47.042Z",
+      "listingValidatedCommit": "3cdbdd95af8168126fbc13d313b4e7a339632dcd",
+      "listingValidatedAt": "2026-09-27T20:13:47.042Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "woodenplastic/omarchy-information-wallpaper-overlay",
+        "pluginIds": [
+          "woodenplastic.information-wallpaper-overlay"
+        ],
+        "commit": "3cdbdd95af8168126fbc13d313b4e7a339632dcd",
+        "checkedAt": "2026-09-27T20:13:46.934Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "woodenplastic.information-wallpaper-overlay": {
+          "category": "Desktop",
+          "tags": [
+            "quickshell",
+            "hyprland",
+            "ai"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
