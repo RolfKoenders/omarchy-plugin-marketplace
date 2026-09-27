@@ -198309,8 +198309,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-19",
       "listedAt": "2026-09-19T23:51:46.560Z",
-      "listingValidatedCommit": "04037743631c752a517054e64d483cc196233155",
-      "listingValidatedAt": "2026-09-19T23:51:46.560Z",
+      "listingValidatedCommit": "97e001c3885e95086bf7b32b03831da8ea6ae9e7",
+      "listingValidatedAt": "2026-09-27T11:50:19.125Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -198319,35 +198319,14 @@
         "pluginIds": [
           "io.github.smoothpixels.cursor-accent"
         ],
-        "commit": "04037743631c752a517054e64d483cc196233155",
-        "checkedAt": "2026-09-19T23:51:46.475Z",
+        "commit": "97e001c3885e95086bf7b32b03831da8ea6ae9e7",
+        "checkedAt": "2026-09-27T11:50:19.125Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
         "capabilities": [
           "installer"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "smoothpixels/cursor-accent",
-        "pluginIds": [
-          "io.github.smoothpixels.cursor-accent"
-        ],
-        "commit": "04037743631c752a517054e64d483cc196233155",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-19T23:51:46.475Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "installer"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-19T18:42:34.992Z",
-        "requestEventId": 31464202321,
-        "requestedAt": "2026-09-19T23:41:55Z",
-        "reviewedAt": "2026-09-19T23:51:46.475Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "io.github.smoothpixels.cursor-accent": {
@@ -198358,7 +198337,73 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "smoothpixels/cursor-accent",
+        "pluginIds": [
+          "io.github.smoothpixels.cursor-accent"
+        ],
+        "commit": "97e001c3885e95086bf7b32b03831da8ea6ae9e7",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T11:50:19.125Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-23T05:59:18.427Z",
+        "requestEventId": 31928187317,
+        "requestedAt": "2026-09-27T11:11:07Z",
+        "reviewedAt": "2026-09-27T11:50:19.125Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "04037743631c752a517054e64d483cc196233155",
+          "validatedAt": "2026-09-19T23:51:46.560Z",
+          "branch": "main",
+          "supersededAt": "2026-09-27T11:50:19.125Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "smoothpixels/cursor-accent",
+            "pluginIds": [
+              "io.github.smoothpixels.cursor-accent"
+            ],
+            "commit": "04037743631c752a517054e64d483cc196233155",
+            "checkedAt": "2026-09-19T23:51:46.475Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "installer"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "smoothpixels/cursor-accent",
+            "pluginIds": [
+              "io.github.smoothpixels.cursor-accent"
+            ],
+            "commit": "04037743631c752a517054e64d483cc196233155",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-19T23:51:46.475Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "installer"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-19T18:42:34.992Z",
+            "requestEventId": 31464202321,
+            "requestedAt": "2026-09-19T23:41:55Z",
+            "reviewedAt": "2026-09-19T23:51:46.475Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/gran-software-solutions/sesame-omarchy-plugin",
