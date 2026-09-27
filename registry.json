@@ -233902,6 +233902,73 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/wouldja/omarchy-fans",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T18:23:17.860Z",
+      "listingValidatedCommit": "c4206b859da0dad213c71076e23e5bf21830c3f2",
+      "listingValidatedAt": "2026-09-27T18:23:17.860Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "wouldja/omarchy-fans",
+        "pluginIds": [
+          "io.github.wouldja.fans"
+        ],
+        "commit": "c4206b859da0dad213c71076e23e5bf21830c3f2",
+        "checkedAt": "2026-09-27T18:23:17.750Z",
+        "outcome": "needs-fixes",
+        "enforcementMode": "selective",
+        "findings": [
+          "remote-git-execution-unpinned"
+        ],
+        "capabilities": [
+          "privilege",
+          "remote-build"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "wouldja/omarchy-fans",
+        "pluginIds": [
+          "io.github.wouldja.fans"
+        ],
+        "commit": "c4206b859da0dad213c71076e23e5bf21830c3f2",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T18:23:17.750Z",
+        "baselineOutcome": "needs-fixes",
+        "findings": [
+          "remote-git-execution-unpinned"
+        ],
+        "capabilities": [
+          "privilege",
+          "remote-build"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-27T16:29:57.124Z",
+        "requestEventId": 31941203755,
+        "requestedAt": "2026-09-27T17:56:10Z",
+        "reviewedAt": "2026-09-27T18:23:17.750Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "io.github.wouldja.fans": {
+          "category": "Hardware",
+          "tags": [
+            "bar",
+            "quickshell",
+            "system"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
