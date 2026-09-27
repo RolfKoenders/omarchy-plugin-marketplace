@@ -230381,6 +230381,62 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/jonspinks/omarchy-winvm",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T12:07:23.666Z",
+      "listingValidatedCommit": "7d62aabf19694a20df7492dd12b573d7c0f9318e",
+      "listingValidatedAt": "2026-09-27T12:07:23.666Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "jonspinks/omarchy-winvm",
+        "pluginIds": [
+          "blacksheep.winvm"
+        ],
+        "commit": "7d62aabf19694a20df7492dd12b573d7c0f9318e",
+        "checkedAt": "2026-09-27T12:07:23.557Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "privilege"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "jonspinks/omarchy-winvm",
+        "pluginIds": [
+          "blacksheep.winvm"
+        ],
+        "commit": "7d62aabf19694a20df7492dd12b573d7c0f9318e",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T12:07:23.557Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-27T11:03:06.165Z",
+        "requestEventId": 31929181442,
+        "requestedAt": "2026-09-27T11:46:38Z",
+        "reviewedAt": "2026-09-27T12:07:23.558Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "blacksheep.winvm": {
+          "category": "System",
+          "tags": [
+            "bar",
+            "system"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
