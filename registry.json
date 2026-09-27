@@ -234575,6 +234575,67 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/iluxav/omarchy-omanote",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T21:42:31.298Z",
+      "listingValidatedCommit": "3e1bbab1283156c952d97f8e22ca22d33ab13f1b",
+      "listingValidatedAt": "2026-09-27T21:42:31.298Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "iluxav/omarchy-omanote",
+        "pluginIds": [
+          "iluxav.omanote"
+        ],
+        "commit": "3e1bbab1283156c952d97f8e22ca22d33ab13f1b",
+        "checkedAt": "2026-09-27T21:42:31.187Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "iluxav/omarchy-omanote",
+        "pluginIds": [
+          "iluxav.omanote"
+        ],
+        "commit": "3e1bbab1283156c952d97f8e22ca22d33ab13f1b",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T21:42:31.187Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-27T20:11:16.936Z",
+        "requestEventId": 31948597226,
+        "requestedAt": "2026-09-27T21:40:25Z",
+        "reviewedAt": "2026-09-27T21:42:31.187Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "iluxav.omanote": {
+          "category": "Productivity",
+          "tags": [
+            "bar",
+            "launcher",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
