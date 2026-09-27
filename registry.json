@@ -230213,6 +230213,38 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/voyagen/oma-gradient-topbar",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T11:54:35.852Z",
+      "listingValidatedCommit": "4b314f3e5547abbd3a6b3cbac4b5d32662012f5a",
+      "listingValidatedAt": "2026-09-27T11:54:35.852Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "voyagen/oma-gradient-topbar",
+        "pluginIds": [
+          "voyagen.oma-gradient-topbar"
+        ],
+        "commit": "4b314f3e5547abbd3a6b3cbac4b5d32662012f5a",
+        "checkedAt": "2026-09-27T11:54:35.748Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "voyagen.oma-gradient-topbar": {
+          "category": "Appearance",
+          "tags": [
+            "bar"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
