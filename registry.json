@@ -233449,6 +233449,42 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/jeffsauer/mod3-bar-widget",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T17:28:14.792Z",
+      "listingValidatedCommit": "02f9b21cbdb6b16081d0b3235b34b8ef638a789e",
+      "listingValidatedAt": "2026-09-27T17:28:14.792Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "jeffsauer/mod3-bar-widget",
+        "pluginIds": [
+          "com.darkhorse-studios.mod3-bar-widget"
+        ],
+        "commit": "02f9b21cbdb6b16081d0b3235b34b8ef638a789e",
+        "checkedAt": "2026-09-27T17:28:14.676Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "com.darkhorse-studios.mod3-bar-widget": {
+          "category": "Widgets",
+          "tags": [
+            "games"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
