@@ -213217,8 +213217,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-22",
       "listedAt": "2026-09-22T13:07:03.310Z",
-      "listingValidatedCommit": "866bed58a949b448a00f575e371b53fea139fa78",
-      "listingValidatedAt": "2026-09-22T13:07:03.310Z",
+      "listingValidatedCommit": "27aa412ac8f485673b2318110fe778ea270cd880",
+      "listingValidatedAt": "2026-09-27T12:41:56.331Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -213227,8 +213227,8 @@
         "pluginIds": [
           "rubar.kinetics"
         ],
-        "commit": "866bed58a949b448a00f575e371b53fea139fa78",
-        "checkedAt": "2026-09-22T13:07:03.203Z",
+        "commit": "27aa412ac8f485673b2318110fe778ea270cd880",
+        "checkedAt": "2026-09-27T12:41:56.330Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -213242,7 +213242,29 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "866bed58a949b448a00f575e371b53fea139fa78",
+          "validatedAt": "2026-09-22T13:07:03.310Z",
+          "branch": "main",
+          "supersededAt": "2026-09-27T12:41:56.331Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "rubarmo/omarchy-kinetics",
+            "pluginIds": [
+              "rubar.kinetics"
+            ],
+            "commit": "866bed58a949b448a00f575e371b53fea139fa78",
+            "checkedAt": "2026-09-22T13:07:03.203Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/gmaxxxie/omarchy-tablet-experience",
