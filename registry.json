@@ -232976,6 +232976,39 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/vcanuel/omarchy-unifi",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T16:25:12.305Z",
+      "listingValidatedCommit": "cee049fa234c474b1f2769aeec5edfb483fa1242",
+      "listingValidatedAt": "2026-09-27T16:25:12.305Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "vcanuel/omarchy-unifi",
+        "pluginIds": [
+          "vcanuel.unifi"
+        ],
+        "commit": "cee049fa234c474b1f2769aeec5edfb483fa1242",
+        "checkedAt": "2026-09-27T16:25:12.196Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "vcanuel.unifi": {
+          "category": "Widgets",
+          "tags": [
+            "bar",
+            "system"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
