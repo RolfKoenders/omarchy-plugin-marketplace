@@ -233737,6 +233737,40 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/tahayvr/postcard",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T18:04:16.022Z",
+      "listingValidatedCommit": "833679a21e754c93acd26db4a14ff4c1ce835cc6",
+      "listingValidatedAt": "2026-09-27T18:04:16.022Z",
+      "listingValidatedBranch": "master",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "tahayvr/postcard",
+        "pluginIds": [
+          "tahayvr.postcard"
+        ],
+        "commit": "833679a21e754c93acd26db4a14ff4c1ce835cc6",
+        "checkedAt": "2026-09-27T18:04:15.929Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "tahayvr.postcard": {
+          "category": "Productivity",
+          "tags": [
+            "bar",
+            "media",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
