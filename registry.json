@@ -175254,8 +175254,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-14",
       "listedAt": "2026-09-14T07:14:04.040Z",
-      "listingValidatedCommit": "af866c1fac3ff773d7836485f212bd503eff67e9",
-      "listingValidatedAt": "2026-09-14T07:14:04.040Z",
+      "listingValidatedCommit": "bd661ec18e05f516c5bea4eeeeae9e08d3e235f8",
+      "listingValidatedAt": "2026-09-27T22:54:25.301Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -175264,35 +175264,14 @@
         "pluginIds": [
           "io.github.joaodrp.auto-brightness"
         ],
-        "commit": "af866c1fac3ff773d7836485f212bd503eff67e9",
-        "checkedAt": "2026-09-14T07:14:03.953Z",
+        "commit": "bd661ec18e05f516c5bea4eeeeae9e08d3e235f8",
+        "checkedAt": "2026-09-27T22:54:25.301Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
         "capabilities": [
           "privilege"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "joaodrp/omarchy-auto-brightness",
-        "pluginIds": [
-          "io.github.joaodrp.auto-brightness"
-        ],
-        "commit": "af866c1fac3ff773d7836485f212bd503eff67e9",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-14T07:14:03.953Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "privilege"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-13T18:21:33.435Z",
-        "requestEventId": 31082051215,
-        "requestedAt": "2026-09-14T06:49:53Z",
-        "reviewedAt": "2026-09-14T07:14:03.953Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "io.github.joaodrp.auto-brightness": {
@@ -175304,7 +175283,73 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "joaodrp/omarchy-auto-brightness",
+        "pluginIds": [
+          "io.github.joaodrp.auto-brightness"
+        ],
+        "commit": "bd661ec18e05f516c5bea4eeeeae9e08d3e235f8",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T22:54:25.301Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-20T16:43:23.219Z",
+        "requestEventId": 31950829123,
+        "requestedAt": "2026-09-27T22:46:22Z",
+        "reviewedAt": "2026-09-27T22:54:25.301Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "af866c1fac3ff773d7836485f212bd503eff67e9",
+          "validatedAt": "2026-09-14T07:14:04.040Z",
+          "branch": "main",
+          "supersededAt": "2026-09-27T22:54:25.301Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "joaodrp/omarchy-auto-brightness",
+            "pluginIds": [
+              "io.github.joaodrp.auto-brightness"
+            ],
+            "commit": "af866c1fac3ff773d7836485f212bd503eff67e9",
+            "checkedAt": "2026-09-14T07:14:03.953Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "privilege"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "joaodrp/omarchy-auto-brightness",
+            "pluginIds": [
+              "io.github.joaodrp.auto-brightness"
+            ],
+            "commit": "af866c1fac3ff773d7836485f212bd503eff67e9",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-14T07:14:03.953Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "privilege"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-13T18:21:33.435Z",
+            "requestEventId": 31082051215,
+            "requestedAt": "2026-09-14T06:49:53Z",
+            "reviewedAt": "2026-09-14T07:14:03.953Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/carlossf12/lock-screen",
