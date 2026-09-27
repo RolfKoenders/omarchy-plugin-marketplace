@@ -160772,8 +160772,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-09",
       "listedAt": "2026-09-09T02:04:23.857Z",
-      "listingValidatedCommit": "1668cc6e93867414dbf1285636d2f940b1cfde9f",
-      "listingValidatedAt": "2026-09-25T18:53:49.716Z",
+      "listingValidatedCommit": "f69cb530e6bbe1233b7f8d168003eee394a4d74c",
+      "listingValidatedAt": "2026-09-27T22:45:31.077Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -160782,8 +160782,8 @@
         "pluginIds": [
           "io.github.enobale.kneadra"
         ],
-        "commit": "1668cc6e93867414dbf1285636d2f940b1cfde9f",
-        "checkedAt": "2026-09-25T18:53:49.716Z",
+        "commit": "f69cb530e6bbe1233b7f8d168003eee394a4d74c",
+        "checkedAt": "2026-09-27T22:45:31.077Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
@@ -160886,6 +160886,49 @@
             "reviewedAt": "2026-09-11T14:24:54.653Z",
             "reviewer": "HANCORE-linux"
           }
+        },
+        {
+          "commit": "1668cc6e93867414dbf1285636d2f940b1cfde9f",
+          "validatedAt": "2026-09-25T18:53:49.716Z",
+          "branch": "main",
+          "supersededAt": "2026-09-27T22:45:31.077Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "enobale/omarchy-kneadra",
+            "pluginIds": [
+              "io.github.enobale.kneadra"
+            ],
+            "commit": "1668cc6e93867414dbf1285636d2f940b1cfde9f",
+            "checkedAt": "2026-09-25T18:53:49.716Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "remote-build"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "enobale/omarchy-kneadra",
+            "pluginIds": [
+              "io.github.enobale.kneadra"
+            ],
+            "commit": "1668cc6e93867414dbf1285636d2f940b1cfde9f",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-25T18:53:49.716Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "remote-build"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-20T13:10:40.227Z",
+            "requestEventId": 31858176980,
+            "requestedAt": "2026-09-25T18:51:45Z",
+            "reviewedAt": "2026-09-25T18:53:49.716Z",
+            "reviewer": "HANCORE-linux"
+          }
         }
       ],
       "maintainerVerificationReview": {
@@ -160894,19 +160937,19 @@
         "pluginIds": [
           "io.github.enobale.kneadra"
         ],
-        "commit": "1668cc6e93867414dbf1285636d2f940b1cfde9f",
+        "commit": "f69cb530e6bbe1233b7f8d168003eee394a4d74c",
         "baselineVersion": "3",
         "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-25T18:53:49.716Z",
+        "baselineCheckedAt": "2026-09-27T22:45:31.077Z",
         "baselineOutcome": "review-required",
         "findings": [],
         "capabilities": [
           "remote-build"
         ],
-        "reviewedBaselineCheckedAt": "2026-09-20T13:10:40.227Z",
-        "requestEventId": 31858176980,
-        "requestedAt": "2026-09-25T18:51:45Z",
-        "reviewedAt": "2026-09-25T18:53:49.716Z",
+        "reviewedBaselineCheckedAt": "2026-09-27T14:13:57.136Z",
+        "requestEventId": 31950655681,
+        "requestedAt": "2026-09-27T22:41:17Z",
+        "reviewedAt": "2026-09-27T22:45:31.077Z",
         "reviewer": "HANCORE-linux"
       }
     },
