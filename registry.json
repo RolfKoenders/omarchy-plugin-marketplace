@@ -233969,6 +233969,40 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/jtcarrasco/freshrss-reader",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T18:27:48.305Z",
+      "listingValidatedCommit": "62a06bac1a305bd627930e5dc752c7c5c6ded0dc",
+      "listingValidatedAt": "2026-09-27T18:27:48.305Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "jtcarrasco/freshrss-reader",
+        "pluginIds": [
+          "freshrss-reader"
+        ],
+        "commit": "62a06bac1a305bd627930e5dc752c7c5c6ded0dc",
+        "checkedAt": "2026-09-27T18:27:48.184Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "freshrss-reader": {
+          "category": "Widgets",
+          "tags": [
+            "bar",
+            "media",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
