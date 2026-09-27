@@ -234068,6 +234068,40 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/leonavas/omarchy-dock",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T18:42:47.562Z",
+      "listingValidatedCommit": "f66d715abb914fd5a90c251a9be73aed3d1cb44c",
+      "listingValidatedAt": "2026-09-27T18:42:47.562Z",
+      "listingValidatedBranch": "master",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "leonavas/omarchy-dock",
+        "pluginIds": [
+          "leonavas.dock"
+        ],
+        "commit": "f66d715abb914fd5a90c251a9be73aed3d1cb44c",
+        "checkedAt": "2026-09-27T18:42:47.450Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "leonavas.dock": {
+          "category": "Desktop",
+          "tags": [
+            "bar",
+            "hyprland",
+            "workspaces"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
