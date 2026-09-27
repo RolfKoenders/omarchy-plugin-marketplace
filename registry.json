@@ -228556,6 +228556,40 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/drakahari/omarchy-dlms",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T00:13:27.577Z",
+      "listingValidatedCommit": "bd0e80d2707605fab07577ae6b3d17e0a2314e9a",
+      "listingValidatedAt": "2026-09-27T00:13:27.577Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "drakahari/omarchy-dlms",
+        "pluginIds": [
+          "drakahari.dlms"
+        ],
+        "commit": "bd0e80d2707605fab07577ae6b3d17e0a2314e9a",
+        "checkedAt": "2026-09-27T00:13:27.489Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "drakahari.dlms": {
+          "category": "Productivity",
+          "tags": [
+            "bar",
+            "education",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
