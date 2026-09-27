@@ -234349,6 +234349,63 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/Jeffe747/omarchy-cisco-vpn",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T19:41:47.858Z",
+      "listingValidatedCommit": "407c624cf575d8829bc491c9448971f5926b96d7",
+      "listingValidatedAt": "2026-09-27T19:41:47.858Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "jeffe747/omarchy-cisco-vpn",
+        "pluginIds": [
+          "jeffe747.cisco-vpn"
+        ],
+        "commit": "407c624cf575d8829bc491c9448971f5926b96d7",
+        "checkedAt": "2026-09-27T19:41:47.766Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "privilege"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "jeffe747/omarchy-cisco-vpn",
+        "pluginIds": [
+          "jeffe747.cisco-vpn"
+        ],
+        "commit": "407c624cf575d8829bc491c9448971f5926b96d7",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T19:41:47.766Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "privilege"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-27T19:38:00.395Z",
+        "requestEventId": 31944580518,
+        "requestedAt": "2026-09-27T19:40:00Z",
+        "reviewedAt": "2026-09-27T19:41:47.766Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "jeffe747.cisco-vpn": {
+          "category": "Widgets",
+          "tags": [
+            "vpn"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
