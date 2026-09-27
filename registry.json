@@ -233293,6 +233293,40 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/wouldja/omarchy-screensaver",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T17:08:23.302Z",
+      "listingValidatedCommit": "cbd77866306338d67f4aa4c3a8905e52d34c6333",
+      "listingValidatedAt": "2026-09-27T17:08:23.302Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "wouldja/omarchy-screensaver",
+        "pluginIds": [
+          "io.github.wouldja.screensaver"
+        ],
+        "commit": "cbd77866306338d67f4aa4c3a8905e52d34c6333",
+        "checkedAt": "2026-09-27T17:08:23.190Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "io.github.wouldja.screensaver": {
+          "category": "Widgets",
+          "tags": [
+            "bar",
+            "media",
+            "power-management"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
