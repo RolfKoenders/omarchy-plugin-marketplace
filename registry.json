@@ -234166,6 +234166,63 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/fabandrade88/OmaWidgets",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T19:00:25.344Z",
+      "listingValidatedCommit": "b4bd3289d1bb74b9db66234cd1a2731d2e515a77",
+      "listingValidatedAt": "2026-09-27T19:00:25.344Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "fabandrade88/omawidgets",
+        "pluginIds": [
+          "io.github.fabandrade88.omawidgets"
+        ],
+        "commit": "b4bd3289d1bb74b9db66234cd1a2731d2e515a77",
+        "checkedAt": "2026-09-27T19:00:25.234Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "fabandrade88/omawidgets",
+        "pluginIds": [
+          "io.github.fabandrade88.omawidgets"
+        ],
+        "commit": "b4bd3289d1bb74b9db66234cd1a2731d2e515a77",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T19:00:25.234Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-27T18:19:55.671Z",
+        "requestEventId": 31942012909,
+        "requestedAt": "2026-09-27T18:21:28Z",
+        "reviewedAt": "2026-09-27T19:00:25.235Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "io.github.fabandrade88.omawidgets": {
+          "category": "Widgets",
+          "tags": [
+            "system",
+            "media",
+            "power-management"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
