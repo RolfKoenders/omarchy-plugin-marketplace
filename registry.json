@@ -229535,6 +229535,62 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/binoymanoj/pomodoro-omarchy",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T09:51:03.750Z",
+      "listingValidatedCommit": "e1fe2947571db7bed81928b2e83e6c6e75991aa8",
+      "listingValidatedAt": "2026-09-27T09:51:03.750Z",
+      "listingValidatedBranch": "master",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "binoymanoj/pomodoro-omarchy",
+        "pluginIds": [
+          "pomodoro-omarchy"
+        ],
+        "commit": "e1fe2947571db7bed81928b2e83e6c6e75991aa8",
+        "checkedAt": "2026-09-27T09:51:03.633Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "remote-build"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "binoymanoj/pomodoro-omarchy",
+        "pluginIds": [
+          "pomodoro-omarchy"
+        ],
+        "commit": "e1fe2947571db7bed81928b2e83e6c6e75991aa8",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T09:51:03.633Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "remote-build"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-27T09:03:15.203Z",
+        "requestEventId": 31924760267,
+        "requestedAt": "2026-09-27T09:04:42Z",
+        "reviewedAt": "2026-09-27T09:51:03.633Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "pomodoro-omarchy": {
+          "category": "Productivity",
+          "tags": [
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
