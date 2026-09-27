@@ -232811,6 +232811,69 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/Guilhermerisu/island",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T16:11:56.246Z",
+      "listingValidatedCommit": "5b0215dd67ff1d93f3a96333438760f05aae12a3",
+      "listingValidatedAt": "2026-09-27T16:11:56.246Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "guilhermerisu/island",
+        "pluginIds": [
+          "guilhermerisu.island"
+        ],
+        "commit": "5b0215dd67ff1d93f3a96333438760f05aae12a3",
+        "checkedAt": "2026-09-27T16:11:56.142Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "installer",
+          "service-management"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "guilhermerisu/island",
+        "pluginIds": [
+          "guilhermerisu.island"
+        ],
+        "commit": "5b0215dd67ff1d93f3a96333438760f05aae12a3",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T16:11:56.142Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "installer",
+          "service-management"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-27T13:49:28.906Z",
+        "requestEventId": 31936221365,
+        "requestedAt": "2026-09-27T15:24:04Z",
+        "reviewedAt": "2026-09-27T16:11:56.142Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "guilhermerisu.island": {
+          "category": "Desktop",
+          "tags": [
+            "quickshell",
+            "bar",
+            "launcher"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
