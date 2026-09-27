@@ -228867,6 +228867,63 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/devsanbid/omarchy-battery-fresh",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T08:18:34.681Z",
+      "listingValidatedCommit": "7df018281e48bc9ea45a22842d105ae4a4aab80a",
+      "listingValidatedAt": "2026-09-27T08:18:34.681Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "devsanbid/omarchy-battery-fresh",
+        "pluginIds": [
+          "sanbid.battery-fresh"
+        ],
+        "commit": "7df018281e48bc9ea45a22842d105ae4a4aab80a",
+        "checkedAt": "2026-09-27T08:18:34.595Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "service-management"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "devsanbid/omarchy-battery-fresh",
+        "pluginIds": [
+          "sanbid.battery-fresh"
+        ],
+        "commit": "7df018281e48bc9ea45a22842d105ae4a4aab80a",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T08:18:34.595Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "service-management"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-26T17:14:14.128Z",
+        "requestEventId": 31923442285,
+        "requestedAt": "2026-09-27T08:13:17Z",
+        "reviewedAt": "2026-09-27T08:18:34.595Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "sanbid.battery-fresh": {
+          "category": "System",
+          "tags": [
+            "bar",
+            "power-management",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
