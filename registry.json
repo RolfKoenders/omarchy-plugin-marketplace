@@ -175021,8 +175021,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-14",
       "listedAt": "2026-09-14T07:05:11.482Z",
-      "listingValidatedCommit": "60959597c103791f00e266a01e8e61a443d9470a",
-      "listingValidatedAt": "2026-09-14T07:05:11.482Z",
+      "listingValidatedCommit": "c7a8845e36720948ff048fc77326054d29ea7240",
+      "listingValidatedAt": "2026-09-27T22:28:06.218Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -175031,8 +175031,8 @@
         "pluginIds": [
           "wdg.autofull"
         ],
-        "commit": "60959597c103791f00e266a01e8e61a443d9470a",
-        "checkedAt": "2026-09-14T07:05:11.397Z",
+        "commit": "c7a8845e36720948ff048fc77326054d29ea7240",
+        "checkedAt": "2026-09-27T22:28:06.218Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -175048,7 +175048,29 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "60959597c103791f00e266a01e8e61a443d9470a",
+          "validatedAt": "2026-09-14T07:05:11.482Z",
+          "branch": "main",
+          "supersededAt": "2026-09-27T22:28:06.218Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "wisangdg/omarchy-autofull-allworkspace",
+            "pluginIds": [
+              "wdg.autofull"
+            ],
+            "commit": "60959597c103791f00e266a01e8e61a443d9470a",
+            "checkedAt": "2026-09-14T07:05:11.397Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/Warexpor/omarchy-43pr-adaptive-bar-plugin",
