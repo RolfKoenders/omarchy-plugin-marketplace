@@ -233771,6 +233771,40 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/clartek/omanewsNC",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T18:08:28.416Z",
+      "listingValidatedCommit": "ab1d21b612d6a76ac11766c12bd0a6374e322a59",
+      "listingValidatedAt": "2026-09-27T18:08:28.416Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "clartek/omanewsnc",
+        "pluginIds": [
+          "clartek.omanewsnc"
+        ],
+        "commit": "ab1d21b612d6a76ac11766c12bd0a6374e322a59",
+        "checkedAt": "2026-09-27T18:08:28.311Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "clartek.omanewsnc": {
+          "category": "Widgets",
+          "tags": [
+            "bar",
+            "quickshell",
+            "media"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
