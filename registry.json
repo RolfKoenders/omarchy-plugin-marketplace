@@ -230437,6 +230437,72 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/AlxWolfenstein97/omatty",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T12:11:55.465Z",
+      "listingValidatedCommit": "64835097cfa9cde568bcc9a09dd20fcd2d6f968c",
+      "listingValidatedAt": "2026-09-27T12:11:55.465Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "alxwolfenstein97/omatty",
+        "pluginIds": [
+          "io.github.alxwolfenstein97.omatty"
+        ],
+        "commit": "64835097cfa9cde568bcc9a09dd20fcd2d6f968c",
+        "checkedAt": "2026-09-27T12:11:55.360Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "package-manager",
+          "installer",
+          "service-management"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "alxwolfenstein97/omatty",
+        "pluginIds": [
+          "io.github.alxwolfenstein97.omatty"
+        ],
+        "commit": "64835097cfa9cde568bcc9a09dd20fcd2d6f968c",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T12:11:55.360Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "package-manager",
+          "installer",
+          "service-management"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-27T10:57:08.348Z",
+        "requestEventId": 31929222920,
+        "requestedAt": "2026-09-27T11:48:02Z",
+        "reviewedAt": "2026-09-27T12:11:55.361Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "io.github.alxwolfenstein97.omatty": {
+          "category": "Appearance",
+          "tags": [
+            "quickshell",
+            "system"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
