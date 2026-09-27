@@ -173995,8 +173995,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-13",
       "listedAt": "2026-09-13T17:56:26.907Z",
-      "listingValidatedCommit": "46d475329f7626cfc332269fca14bd0aa9a1c6d5",
-      "listingValidatedAt": "2026-09-13T17:56:26.907Z",
+      "listingValidatedCommit": "431064bcacc6d23ea526cc01201d42fdd10c6eac",
+      "listingValidatedAt": "2026-09-27T09:34:48.620Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -174005,8 +174005,8 @@
         "pluginIds": [
           "jeffrey.icons"
         ],
-        "commit": "46d475329f7626cfc332269fca14bd0aa9a1c6d5",
-        "checkedAt": "2026-09-13T17:56:26.825Z",
+        "commit": "431064bcacc6d23ea526cc01201d42fdd10c6eac",
+        "checkedAt": "2026-09-27T09:34:48.620Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -174021,7 +174021,29 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "46d475329f7626cfc332269fca14bd0aa9a1c6d5",
+          "validatedAt": "2026-09-13T17:56:26.907Z",
+          "branch": "main",
+          "supersededAt": "2026-09-27T09:34:48.620Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "cornilliej/omarchy-icon-picker",
+            "pluginIds": [
+              "jeffrey.icons"
+            ],
+            "commit": "46d475329f7626cfc332269fca14bd0aa9a1c6d5",
+            "checkedAt": "2026-09-13T17:56:26.825Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/airenare/omarchy-workspaces-by-monitor",
