@@ -228864,8 +228864,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-27",
       "listedAt": "2026-09-27T00:09:42.963Z",
-      "listingValidatedCommit": "ea8b5be15ee253b2cc0b4041b83eb8c3e40efc09",
-      "listingValidatedAt": "2026-09-27T00:09:42.963Z",
+      "listingValidatedCommit": "bcf4b0a67afc96691d1e6808274eb1309bb985e7",
+      "listingValidatedAt": "2026-09-27T10:33:38.713Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -228874,8 +228874,8 @@
         "pluginIds": [
           "woodenplastic.workspace-icons"
         ],
-        "commit": "ea8b5be15ee253b2cc0b4041b83eb8c3e40efc09",
-        "checkedAt": "2026-09-27T00:09:42.856Z",
+        "commit": "bcf4b0a67afc96691d1e6808274eb1309bb985e7",
+        "checkedAt": "2026-09-27T10:33:38.713Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -228891,7 +228891,29 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "ea8b5be15ee253b2cc0b4041b83eb8c3e40efc09",
+          "validatedAt": "2026-09-27T00:09:42.963Z",
+          "branch": "main",
+          "supersededAt": "2026-09-27T10:33:38.713Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "woodenplastic/omarchy-workspace-icons",
+            "pluginIds": [
+              "woodenplastic.workspace-icons"
+            ],
+            "commit": "ea8b5be15ee253b2cc0b4041b83eb8c3e40efc09",
+            "checkedAt": "2026-09-27T00:09:42.856Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/drakahari/omarchy-dlms",
