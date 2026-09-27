@@ -235718,6 +235718,40 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/uBruckhaus/omarchy-simple-launcher-for-fools",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T23:38:49.371Z",
+      "listingValidatedCommit": "47a7c9a900ed6bb722da994539a88c4ee7d6acf0",
+      "listingValidatedAt": "2026-09-27T23:38:49.371Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "ubruckhaus/omarchy-simple-launcher-for-fools",
+        "pluginIds": [
+          "ubruckhaus.simple-launcher-for-fools"
+        ],
+        "commit": "47a7c9a900ed6bb722da994539a88c4ee7d6acf0",
+        "checkedAt": "2026-09-27T23:38:49.255Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "ubruckhaus.simple-launcher-for-fools": {
+          "category": "Desktop",
+          "tags": [
+            "launcher",
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
