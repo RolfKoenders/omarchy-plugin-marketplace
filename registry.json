@@ -228692,6 +228692,61 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/Madmasx/russian-phrases-omarchy",
+      "type": "plugin-source",
+      "addedAt": "2026-09-27",
+      "listedAt": "2026-09-27T00:29:20.131Z",
+      "listingValidatedCommit": "3838141f74bd149f4665ceb0c273f863b04bbe9b",
+      "listingValidatedAt": "2026-09-27T00:29:20.131Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "madmasx/russian-phrases-omarchy",
+        "pluginIds": [
+          "madmasx.russian-phrases"
+        ],
+        "commit": "3838141f74bd149f4665ceb0c273f863b04bbe9b",
+        "checkedAt": "2026-09-27T00:29:20.024Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "remote-build"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "madmasx/russian-phrases-omarchy",
+        "pluginIds": [
+          "madmasx.russian-phrases"
+        ],
+        "commit": "3838141f74bd149f4665ceb0c273f863b04bbe9b",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-27T00:29:20.024Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "remote-build"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-26T23:09:51.979Z",
+        "requestEventId": 31911954073,
+        "requestedAt": "2026-09-27T00:13:43Z",
+        "reviewedAt": "2026-09-27T00:29:20.024Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "madmasx.russian-phrases": {
+          "category": "Widgets",
+          "tags": [
+            "education"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
