@@ -228173,8 +228173,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-26",
       "listedAt": "2026-09-26T16:08:57.946Z",
-      "listingValidatedCommit": "72983e27fa02606b40dd448a339121a5ebdb2bf3",
-      "listingValidatedAt": "2026-09-26T16:08:57.946Z",
+      "listingValidatedCommit": "1e6cc6bfc47a41a2bd3f0bf23d9a9fa38cf72747",
+      "listingValidatedAt": "2026-09-27T09:42:31.361Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -228183,8 +228183,8 @@
         "pluginIds": [
           "andreiyurik.tablet-mode"
         ],
-        "commit": "72983e27fa02606b40dd448a339121a5ebdb2bf3",
-        "checkedAt": "2026-09-26T16:08:57.841Z",
+        "commit": "1e6cc6bfc47a41a2bd3f0bf23d9a9fa38cf72747",
+        "checkedAt": "2026-09-27T09:42:31.361Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -228200,7 +228200,29 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "72983e27fa02606b40dd448a339121a5ebdb2bf3",
+          "validatedAt": "2026-09-26T16:08:57.946Z",
+          "branch": "main",
+          "supersededAt": "2026-09-27T09:42:31.361Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "andreiyurik/omarchy-tablet-mode",
+            "pluginIds": [
+              "andreiyurik.tablet-mode"
+            ],
+            "commit": "72983e27fa02606b40dd448a339121a5ebdb2bf3",
+            "checkedAt": "2026-09-26T16:08:57.841Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/marcelinux303/epoche",
