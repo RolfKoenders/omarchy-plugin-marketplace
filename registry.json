@@ -239559,6 +239559,70 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/ozdogar-ai/razer-mouse-for-omarchy",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T14:30:50.354Z",
+      "listingValidatedCommit": "4d2c81921a95e8f20771acfd47b0361710ca6e31",
+      "listingValidatedAt": "2026-09-28T14:30:50.354Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "ozdogar-ai/razer-mouse-for-omarchy",
+        "pluginIds": [
+          "ozdogar.razer-mouse"
+        ],
+        "commit": "4d2c81921a95e8f20771acfd47b0361710ca6e31",
+        "checkedAt": "2026-09-28T14:30:50.230Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "service-management",
+          "privilege",
+          "package-manager"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "ozdogar-ai/razer-mouse-for-omarchy",
+        "pluginIds": [
+          "ozdogar.razer-mouse"
+        ],
+        "commit": "4d2c81921a95e8f20771acfd47b0361710ca6e31",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T14:30:50.230Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "service-management",
+          "privilege",
+          "package-manager"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T14:26:05.696Z",
+        "requestEventId": 32000620322,
+        "requestedAt": "2026-09-28T14:28:29Z",
+        "reviewedAt": "2026-09-28T14:30:50.230Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "ozdogar.razer-mouse": {
+          "category": "Hardware",
+          "tags": [
+            "bar",
+            "system"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
