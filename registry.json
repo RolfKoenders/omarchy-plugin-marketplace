@@ -240505,6 +240505,44 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/Aayush9029/omarchy-plugin-omaai",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T18:21:48.479Z",
+      "listingValidatedCommit": "ec5c3d59e695788e9b0fb804f4b8848a652e31d0",
+      "listingValidatedAt": "2026-09-28T18:21:48.479Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "aayush9029/omarchy-plugin-omaai",
+        "pluginIds": [
+          "io.github.aayush9029.omaai"
+        ],
+        "commit": "ec5c3d59e695788e9b0fb804f4b8848a652e31d0",
+        "checkedAt": "2026-09-28T18:21:48.370Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "io.github.aayush9029.omaai": {
+          "category": "Developer Tools",
+          "tags": [
+            "ai",
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
