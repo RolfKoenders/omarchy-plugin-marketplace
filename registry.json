@@ -236878,6 +236878,63 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/julianbruno/jezzatelier",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T03:21:54.828Z",
+      "listingValidatedCommit": "ff73b798f210f7495eba7bfd13e62d190b2a6f07",
+      "listingValidatedAt": "2026-09-28T03:21:54.828Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "julianbruno/jezzatelier",
+        "pluginIds": [
+          "io.github.julianbruno.jezz-atelier"
+        ],
+        "commit": "ff73b798f210f7495eba7bfd13e62d190b2a6f07",
+        "checkedAt": "2026-09-28T03:21:54.719Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "julianbruno/jezzatelier",
+        "pluginIds": [
+          "io.github.julianbruno.jezz-atelier"
+        ],
+        "commit": "ff73b798f210f7495eba7bfd13e62d190b2a6f07",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T03:21:54.719Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T02:56:33.195Z",
+        "requestEventId": 31959885335,
+        "requestedAt": "2026-09-28T03:07:53Z",
+        "reviewedAt": "2026-09-28T03:21:54.719Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "io.github.julianbruno.jezz-atelier": {
+          "category": "Other",
+          "tags": [
+            "games",
+            "media",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
