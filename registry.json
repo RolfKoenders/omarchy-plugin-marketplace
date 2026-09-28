@@ -239877,6 +239877,71 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/sud0n1m/omarchy-wave-xlr-mk2",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T16:21:35.553Z",
+      "listingValidatedCommit": "1d1c721b67403b8f2bfa00d000d5cbb3fefd3916",
+      "listingValidatedAt": "2026-09-28T16:21:35.553Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "sud0n1m/omarchy-wave-xlr-mk2",
+        "pluginIds": [
+          "sudonim.wave-xlr"
+        ],
+        "commit": "1d1c721b67403b8f2bfa00d000d5cbb3fefd3916",
+        "checkedAt": "2026-09-28T16:21:35.436Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "privilege",
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "sud0n1m/omarchy-wave-xlr-mk2",
+        "pluginIds": [
+          "sudonim.wave-xlr"
+        ],
+        "commit": "1d1c721b67403b8f2bfa00d000d5cbb3fefd3916",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T16:21:35.436Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "privilege",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T16:16:27.845Z",
+        "requestEventId": 32009500335,
+        "requestedAt": "2026-09-28T16:19:09Z",
+        "reviewedAt": "2026-09-28T16:21:35.436Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "sudonim.wave-xlr": {
+          "category": "Hardware",
+          "tags": [
+            "bar",
+            "media",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
