@@ -170392,8 +170392,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-12",
       "listedAt": "2026-09-12T11:45:43.074Z",
-      "listingValidatedCommit": "8cc7df637c3490053032c1ba736dfbb5500d99f8",
-      "listingValidatedAt": "2026-09-12T11:45:43.074Z",
+      "listingValidatedCommit": "8136f1c0e93ac53bcde0351170cb16866ba8834a",
+      "listingValidatedAt": "2026-09-28T06:18:34.038Z",
       "listingValidatedBranch": "master",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -170402,8 +170402,8 @@
         "pluginIds": [
           "vivobook.s14-copilot"
         ],
-        "commit": "8cc7df637c3490053032c1ba736dfbb5500d99f8",
-        "checkedAt": "2026-09-12T11:45:42.990Z",
+        "commit": "8136f1c0e93ac53bcde0351170cb16866ba8834a",
+        "checkedAt": "2026-09-28T06:18:34.038Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
@@ -170412,29 +170412,6 @@
           "package-manager",
           "service-management"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "paulogeyer/omarchy-vivobook-s14-copilot",
-        "pluginIds": [
-          "vivobook.s14-copilot"
-        ],
-        "commit": "8cc7df637c3490053032c1ba736dfbb5500d99f8",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-12T11:45:42.990Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "privilege",
-          "package-manager",
-          "service-management"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-12T11:41:16.926Z",
-        "requestEventId": 31019639755,
-        "requestedAt": "2026-09-12T11:44:41Z",
-        "reviewedAt": "2026-09-12T11:45:42.990Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "vivobook.s14-copilot": {
@@ -170446,7 +170423,79 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "paulogeyer/omarchy-vivobook-s14-copilot",
+        "pluginIds": [
+          "vivobook.s14-copilot"
+        ],
+        "commit": "8136f1c0e93ac53bcde0351170cb16866ba8834a",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T06:18:34.038Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "package-manager",
+          "service-management"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-14T15:42:19.521Z",
+        "requestEventId": 31967763549,
+        "requestedAt": "2026-09-28T06:14:09Z",
+        "reviewedAt": "2026-09-28T06:18:34.038Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "8cc7df637c3490053032c1ba736dfbb5500d99f8",
+          "validatedAt": "2026-09-12T11:45:43.074Z",
+          "branch": "master",
+          "supersededAt": "2026-09-28T06:18:34.038Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "paulogeyer/omarchy-vivobook-s14-copilot",
+            "pluginIds": [
+              "vivobook.s14-copilot"
+            ],
+            "commit": "8cc7df637c3490053032c1ba736dfbb5500d99f8",
+            "checkedAt": "2026-09-12T11:45:42.990Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "privilege",
+              "package-manager",
+              "service-management"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "paulogeyer/omarchy-vivobook-s14-copilot",
+            "pluginIds": [
+              "vivobook.s14-copilot"
+            ],
+            "commit": "8cc7df637c3490053032c1ba736dfbb5500d99f8",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-12T11:45:42.990Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "privilege",
+              "package-manager",
+              "service-management"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-12T11:41:16.926Z",
+            "requestEventId": 31019639755,
+            "requestedAt": "2026-09-12T11:44:41Z",
+            "reviewedAt": "2026-09-12T11:45:42.990Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/dreed47/omarchy-my-plugins",
