@@ -240238,6 +240238,39 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/crmne/omacal",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T17:54:12.549Z",
+      "listingValidatedCommit": "6284c09b5ddca4212918c7708aa8f49698eb022b",
+      "listingValidatedAt": "2026-09-28T17:54:12.549Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "crmne/omacal",
+        "pluginIds": [
+          "crmne.omacal"
+        ],
+        "commit": "6284c09b5ddca4212918c7708aa8f49698eb022b",
+        "checkedAt": "2026-09-28T17:54:12.445Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "crmne.omacal": {
+          "category": "Productivity",
+          "tags": [
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
