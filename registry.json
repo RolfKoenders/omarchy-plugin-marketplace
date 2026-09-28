@@ -239091,6 +239091,67 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/nichovski/omarchy-spotify",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T12:12:10.792Z",
+      "listingValidatedCommit": "7d781b7c16b65cb45cfa45f75804cfab7dcb97eb",
+      "listingValidatedAt": "2026-09-28T12:12:10.792Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "nichovski/omarchy-spotify",
+        "pluginIds": [
+          "nichovski.spotify"
+        ],
+        "commit": "7d781b7c16b65cb45cfa45f75804cfab7dcb97eb",
+        "checkedAt": "2026-09-28T12:12:10.682Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "nichovski/omarchy-spotify",
+        "pluginIds": [
+          "nichovski.spotify"
+        ],
+        "commit": "7d781b7c16b65cb45cfa45f75804cfab7dcb97eb",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T12:12:10.682Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T11:59:33.622Z",
+        "requestEventId": 31989671454,
+        "requestedAt": "2026-09-28T12:06:39Z",
+        "reviewedAt": "2026-09-28T12:12:10.682Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "nichovski.spotify": {
+          "category": "Widgets",
+          "tags": [
+            "bar",
+            "media",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
