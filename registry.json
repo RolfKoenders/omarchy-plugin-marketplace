@@ -240077,6 +240077,67 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/mapski/omarchy.proton.auth.git-plugin",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T17:00:04.128Z",
+      "listingValidatedCommit": "723ac9d874c13ea86c4369394f405bbb61edcab0",
+      "listingValidatedAt": "2026-09-28T17:00:04.128Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "mapski/omarchy.proton.auth.git-plugin",
+        "pluginIds": [
+          "io.github.mapski.proton-authenticator"
+        ],
+        "commit": "723ac9d874c13ea86c4369394f405bbb61edcab0",
+        "checkedAt": "2026-09-28T17:00:04.024Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "mapski/omarchy.proton.auth.git-plugin",
+        "pluginIds": [
+          "io.github.mapski.proton-authenticator"
+        ],
+        "commit": "723ac9d874c13ea86c4369394f405bbb61edcab0",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T17:00:04.024Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T16:55:10.456Z",
+        "requestEventId": 32012118374,
+        "requestedAt": "2026-09-28T16:57:20Z",
+        "reviewedAt": "2026-09-28T17:00:04.024Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "io.github.mapski.proton-authenticator": {
+          "category": "Productivity",
+          "tags": [
+            "security"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
