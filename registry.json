@@ -236226,6 +236226,75 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/iamteedoh/omarchy-signal",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T02:13:25.235Z",
+      "listingValidatedCommit": "79bb3d599559334abcd36ba5f4fe995b5c0ec408",
+      "listingValidatedAt": "2026-09-28T02:13:25.235Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "iamteedoh/omarchy-signal",
+        "pluginIds": [
+          "iamteedoh.signal"
+        ],
+        "commit": "79bb3d599559334abcd36ba5f4fe995b5c0ec408",
+        "checkedAt": "2026-09-28T02:13:25.111Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "remote-build",
+          "privilege",
+          "service-management",
+          "installer",
+          "package-manager"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "iamteedoh/omarchy-signal",
+        "pluginIds": [
+          "iamteedoh.signal"
+        ],
+        "commit": "79bb3d599559334abcd36ba5f4fe995b5c0ec408",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T02:13:25.111Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "remote-build",
+          "privilege",
+          "service-management",
+          "installer",
+          "package-manager"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T02:03:11.889Z",
+        "requestEventId": 31957557984,
+        "requestedAt": "2026-09-28T02:07:15Z",
+        "reviewedAt": "2026-09-28T02:13:25.111Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "iamteedoh.signal": {
+          "category": "Productivity",
+          "tags": [
+            "quickshell",
+            "bar",
+            "security"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
