@@ -236841,6 +236841,43 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/pwn27sbx/omarchy-mini-cider",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T03:17:14.608Z",
+      "listingValidatedCommit": "0870e1e8386758fdfdcdd9dd3cb3527f9d47915f",
+      "listingValidatedAt": "2026-09-28T03:17:14.608Z",
+      "listingValidatedBranch": "master",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "pwn27sbx/omarchy-mini-cider",
+        "pluginIds": [
+          "pwnsxb.apple-music"
+        ],
+        "commit": "0870e1e8386758fdfdcdd9dd3cb3527f9d47915f",
+        "checkedAt": "2026-09-28T03:17:14.490Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "pwnsxb.apple-music": {
+          "category": "Widgets",
+          "tags": [
+            "media",
+            "bar"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
