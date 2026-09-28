@@ -238870,6 +238870,62 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/MariposaJon/omarchy_ukrail",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T11:38:10.993Z",
+      "listingValidatedCommit": "3dbcc9e40c1983b3b3cdfb587ee58c5769249c23",
+      "listingValidatedAt": "2026-09-28T11:38:10.993Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "mariposajon/omarchy_ukrail",
+        "pluginIds": [
+          "jon.rail"
+        ],
+        "commit": "3dbcc9e40c1983b3b3cdfb587ee58c5769249c23",
+        "checkedAt": "2026-09-28T11:38:10.883Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "mariposajon/omarchy_ukrail",
+        "pluginIds": [
+          "jon.rail"
+        ],
+        "commit": "3dbcc9e40c1983b3b3cdfb587ee58c5769249c23",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T11:38:10.883Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T11:32:12.764Z",
+        "requestEventId": 31987716437,
+        "requestedAt": "2026-09-28T11:36:02Z",
+        "reviewedAt": "2026-09-28T11:38:10.883Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "jon.rail": {
+          "category": "Widgets",
+          "tags": [
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
