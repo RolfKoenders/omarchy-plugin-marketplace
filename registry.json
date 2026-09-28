@@ -239745,6 +239745,71 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/sud0n1m/omarchy-foot-pedal",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T15:42:18.202Z",
+      "listingValidatedCommit": "d1afcb6cdf823b17554426d90ef067018f56feed",
+      "listingValidatedAt": "2026-09-28T15:42:18.202Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "sud0n1m/omarchy-foot-pedal",
+        "pluginIds": [
+          "sudonim.foot-pedal"
+        ],
+        "commit": "d1afcb6cdf823b17554426d90ef067018f56feed",
+        "checkedAt": "2026-09-28T15:42:18.084Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "installer",
+          "service-management"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "sud0n1m/omarchy-foot-pedal",
+        "pluginIds": [
+          "sudonim.foot-pedal"
+        ],
+        "commit": "d1afcb6cdf823b17554426d90ef067018f56feed",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T15:42:18.084Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "installer",
+          "service-management"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T15:38:31.753Z",
+        "requestEventId": 32006528738,
+        "requestedAt": "2026-09-28T15:40:01Z",
+        "reviewedAt": "2026-09-28T15:42:18.084Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "sudonim.foot-pedal": {
+          "category": "Hardware",
+          "tags": [
+            "bar",
+            "quickshell",
+            "workspaces"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
