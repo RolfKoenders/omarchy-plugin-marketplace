@@ -237002,6 +237002,39 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/ACooperDev/Timer",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T03:35:53.822Z",
+      "listingValidatedCommit": "e11a0410fb67c2e6ab32cec3e70496892e1462fa",
+      "listingValidatedAt": "2026-09-28T03:35:53.822Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "acooperdev/timer",
+        "pluginIds": [
+          "acooper.clock-timer"
+        ],
+        "commit": "e11a0410fb67c2e6ab32cec3e70496892e1462fa",
+        "checkedAt": "2026-09-28T03:35:53.721Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "acooper.clock-timer": {
+          "category": "Widgets",
+          "tags": [
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
