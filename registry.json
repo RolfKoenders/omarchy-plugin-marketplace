@@ -238589,6 +238589,63 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/winston/omarchy-radio-sg",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T10:17:55.039Z",
+      "listingValidatedCommit": "9de49bb848cf8ca647304bc5d31dbd3e9f03e10e",
+      "listingValidatedAt": "2026-09-28T10:17:55.039Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "winston/omarchy-radio-sg",
+        "pluginIds": [
+          "winston.radio-sg"
+        ],
+        "commit": "9de49bb848cf8ca647304bc5d31dbd3e9f03e10e",
+        "checkedAt": "2026-09-28T10:17:54.925Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "winston/omarchy-radio-sg",
+        "pluginIds": [
+          "winston.radio-sg"
+        ],
+        "commit": "9de49bb848cf8ca647304bc5d31dbd3e9f03e10e",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T10:17:54.925Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T10:07:13.448Z",
+        "requestEventId": 31982162806,
+        "requestedAt": "2026-09-28T10:09:42Z",
+        "reviewedAt": "2026-09-28T10:17:54.925Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "winston.radio-sg": {
+          "category": "Widgets",
+          "tags": [
+            "bar",
+            "media",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
