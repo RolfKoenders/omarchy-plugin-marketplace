@@ -240701,6 +240701,44 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/scoop/omarchy-plugin-shepherd",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T18:41:32.645Z",
+      "listingValidatedCommit": "105b97b94e39c31dc4c2eb6ed1d84912b0144a74",
+      "listingValidatedAt": "2026-09-28T18:41:32.645Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "scoop/omarchy-plugin-shepherd",
+        "pluginIds": [
+          "scoop.shepherd"
+        ],
+        "commit": "105b97b94e39c31dc4c2eb6ed1d84912b0144a74",
+        "checkedAt": "2026-09-28T18:41:32.544Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "scoop.shepherd": {
+          "category": "Developer Tools",
+          "tags": [
+            "ai",
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
