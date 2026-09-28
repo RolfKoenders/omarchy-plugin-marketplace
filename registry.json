@@ -239053,6 +239053,44 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/abeltsew/super-app-switcher",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T12:07:31.964Z",
+      "listingValidatedCommit": "263e8752e15197205f6f7fe2d864ce1e63a0a439",
+      "listingValidatedAt": "2026-09-28T12:07:31.964Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "abeltsew/super-app-switcher",
+        "pluginIds": [
+          "abeltsew.super-app-switch"
+        ],
+        "commit": "263e8752e15197205f6f7fe2d864ce1e63a0a439",
+        "checkedAt": "2026-09-28T12:07:31.846Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "abeltsew.super-app-switch": {
+          "category": "Desktop",
+          "tags": [
+            "hyprland",
+            "quickshell",
+            "workspaces"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
