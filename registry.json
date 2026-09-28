@@ -238528,6 +238528,67 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/diogo7dias/omaclack",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T10:13:03.263Z",
+      "listingValidatedCommit": "1dc5b07c585a4932a2ac1b9a19e3762325fbbb96",
+      "listingValidatedAt": "2026-09-28T10:13:03.263Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "diogo7dias/omaclack",
+        "pluginIds": [
+          "io.github.diogo7dias.omaclack"
+        ],
+        "commit": "1dc5b07c585a4932a2ac1b9a19e3762325fbbb96",
+        "checkedAt": "2026-09-28T10:13:03.157Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "privilege"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "diogo7dias/omaclack",
+        "pluginIds": [
+          "io.github.diogo7dias.omaclack"
+        ],
+        "commit": "1dc5b07c585a4932a2ac1b9a19e3762325fbbb96",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T10:13:03.157Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T10:05:01.127Z",
+        "requestEventId": 31982130702,
+        "requestedAt": "2026-09-28T10:09:11Z",
+        "reviewedAt": "2026-09-28T10:13:03.157Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "io.github.diogo7dias.omaclack": {
+          "category": "Desktop",
+          "tags": [
+            "bar",
+            "media",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
