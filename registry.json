@@ -240974,6 +240974,44 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/ofelcan164/muster-omarchy",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T19:25:26.540Z",
+      "listingValidatedCommit": "d9c6a2e75987e6957118fc93dfa911de84c5363d",
+      "listingValidatedAt": "2026-09-28T19:25:26.540Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "ofelcan164/muster-omarchy",
+        "pluginIds": [
+          "io.github.ofelcan164.muster"
+        ],
+        "commit": "d9c6a2e75987e6957118fc93dfa911de84c5363d",
+        "checkedAt": "2026-09-28T19:25:26.448Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "io.github.ofelcan164.muster": {
+          "category": "Developer Tools",
+          "tags": [
+            "ai",
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
