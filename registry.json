@@ -239464,6 +239464,40 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/cdelcollado/btomarchy",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T13:39:49.809Z",
+      "listingValidatedCommit": "a50a8d9300a4797fc3d8d1606042cf88cbd9939f",
+      "listingValidatedAt": "2026-09-28T13:39:49.809Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "cdelcollado/btomarchy",
+        "pluginIds": [
+          "cdelcollado.bluetooth"
+        ],
+        "commit": "a50a8d9300a4797fc3d8d1606042cf88cbd9939f",
+        "checkedAt": "2026-09-28T13:39:49.689Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "cdelcollado.bluetooth": {
+          "category": "Hardware",
+          "tags": [
+            "bar",
+            "quickshell",
+            "system"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
