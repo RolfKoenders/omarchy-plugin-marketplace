@@ -241292,6 +241292,40 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/stevederico/omarchy-displays",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T22:12:33.772Z",
+      "listingValidatedCommit": "44aefb50fecedcea73373691b2ec01365ebb9e47",
+      "listingValidatedAt": "2026-09-28T22:12:33.772Z",
+      "listingValidatedBranch": "master",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "stevederico/omarchy-displays",
+        "pluginIds": [
+          "io.github.stevederico.omarchy-displays"
+        ],
+        "commit": "44aefb50fecedcea73373691b2ec01365ebb9e47",
+        "checkedAt": "2026-09-28T22:12:33.672Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "io.github.stevederico.omarchy-displays": {
+          "category": "Hardware",
+          "tags": [
+            "hyprland",
+            "quickshell",
+            "system"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
