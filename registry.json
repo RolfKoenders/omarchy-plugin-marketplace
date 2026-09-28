@@ -236327,6 +236327,67 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/martin76ec/omarchy-vpn-gp",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T02:30:05.995Z",
+      "listingValidatedCommit": "dce3017f78021e1980d06dc3cc956fea49cc6822",
+      "listingValidatedAt": "2026-09-28T02:30:05.995Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "martin76ec/omarchy-vpn-gp",
+        "pluginIds": [
+          "dev.martin.global-connect"
+        ],
+        "commit": "dce3017f78021e1980d06dc3cc956fea49cc6822",
+        "checkedAt": "2026-09-28T02:30:05.874Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "package-manager"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "martin76ec/omarchy-vpn-gp",
+        "pluginIds": [
+          "dev.martin.global-connect"
+        ],
+        "commit": "dce3017f78021e1980d06dc3cc956fea49cc6822",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T02:30:05.874Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "package-manager"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T02:25:03.263Z",
+        "requestEventId": 31958380338,
+        "requestedAt": "2026-09-28T02:27:54Z",
+        "reviewedAt": "2026-09-28T02:30:05.874Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "dev.martin.global-connect": {
+          "category": "Developer Tools",
+          "tags": [
+            "vpn"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
