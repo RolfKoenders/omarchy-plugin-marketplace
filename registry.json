@@ -240331,6 +240331,40 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/xmsadik/YourOmaLauncher",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T18:04:13.244Z",
+      "listingValidatedCommit": "b56479744890c7196701b202adac67615021a937",
+      "listingValidatedAt": "2026-09-28T18:04:13.244Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "xmsadik/youromalauncher",
+        "pluginIds": [
+          "io.github.xmsadik.youromalauncher"
+        ],
+        "commit": "b56479744890c7196701b202adac67615021a937",
+        "checkedAt": "2026-09-28T18:04:13.144Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "io.github.xmsadik.youromalauncher": {
+          "category": "Productivity",
+          "tags": [
+            "launcher",
+            "quickshell",
+            "hyprland"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
