@@ -239942,6 +239942,40 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/bresleveloper-ai-agents/omarchy-ollama-cloud-usage-bar-widget",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T16:26:40.183Z",
+      "listingValidatedCommit": "f9cbcfdb151ad62793fe61532695ccc546ab7c23",
+      "listingValidatedAt": "2026-09-28T16:26:40.183Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "bresleveloper-ai-agents/omarchy-ollama-cloud-usage-bar-widget",
+        "pluginIds": [
+          "io.github.bresleveloper.ollama-cloud-usage-bar-widget"
+        ],
+        "commit": "f9cbcfdb151ad62793fe61532695ccc546ab7c23",
+        "checkedAt": "2026-09-28T16:26:40.081Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "io.github.bresleveloper.ollama-cloud-usage-bar-widget": {
+          "category": "Widgets",
+          "tags": [
+            "ai",
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
