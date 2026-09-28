@@ -238280,6 +238280,69 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/zdehasek/records-desktop",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T09:01:09.484Z",
+      "listingValidatedCommit": "7ac59707099a8f5d38f7c60162db61fd7f491090",
+      "listingValidatedAt": "2026-09-28T09:01:09.484Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "zdehasek/records-desktop",
+        "pluginIds": [
+          "io.github.zdehasek.records"
+        ],
+        "commit": "7ac59707099a8f5d38f7c60162db61fd7f491090",
+        "checkedAt": "2026-09-28T09:01:09.413Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "privilege"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "zdehasek/records-desktop",
+        "pluginIds": [
+          "io.github.zdehasek.records"
+        ],
+        "commit": "7ac59707099a8f5d38f7c60162db61fd7f491090",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T09:01:09.413Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "privilege"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T08:54:15.423Z",
+        "requestEventId": 31977446356,
+        "requestedAt": "2026-09-28T08:59:17Z",
+        "reviewedAt": "2026-09-28T09:01:09.413Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "io.github.zdehasek.records": {
+          "category": "Productivity",
+          "tags": [
+            "media",
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
