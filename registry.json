@@ -238709,6 +238709,43 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/nzkritik/omarchy-matrix-lock",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T10:28:25.626Z",
+      "listingValidatedCommit": "ef15a2d93f53ec78ac528dbc6da799f052aec54e",
+      "listingValidatedAt": "2026-09-28T10:28:25.626Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "nzkritik/omarchy-matrix-lock",
+        "pluginIds": [
+          "nzkritik.matrix-lock"
+        ],
+        "commit": "ef15a2d93f53ec78ac528dbc6da799f052aec54e",
+        "checkedAt": "2026-09-28T10:28:25.508Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "nzkritik.matrix-lock": {
+          "category": "Appearance",
+          "tags": [
+            "quickshell",
+            "system"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
