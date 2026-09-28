@@ -236388,6 +236388,70 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/codenamekt/omadroidctrl",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T02:34:54.730Z",
+      "listingValidatedCommit": "c627e1b03cc8f5abe8c6507f463a1cea0d80881f",
+      "listingValidatedAt": "2026-09-28T02:34:54.730Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "codenamekt/omadroidctrl",
+        "pluginIds": [
+          "io.github.codenamekt.omadroidctrl"
+        ],
+        "commit": "c627e1b03cc8f5abe8c6507f463a1cea0d80881f",
+        "checkedAt": "2026-09-28T02:34:54.617Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "service-management",
+          "package-manager"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "codenamekt/omadroidctrl",
+        "pluginIds": [
+          "io.github.codenamekt.omadroidctrl"
+        ],
+        "commit": "c627e1b03cc8f5abe8c6507f463a1cea0d80881f",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T02:34:54.617Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "service-management",
+          "package-manager"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T02:26:58.548Z",
+        "requestEventId": 31958421108,
+        "requestedAt": "2026-09-28T02:29:04Z",
+        "reviewedAt": "2026-09-28T02:34:54.617Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "io.github.codenamekt.omadroidctrl": {
+          "category": "Developer Tools",
+          "tags": [
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
