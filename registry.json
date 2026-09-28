@@ -239311,6 +239311,65 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/manateelazycat/omarchy-display-reset",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T13:12:33.882Z",
+      "listingValidatedCommit": "f98d891ef6978d5df49974f03cd6ff9cbe93d071",
+      "listingValidatedAt": "2026-09-28T13:12:33.882Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "manateelazycat/omarchy-display-reset",
+        "pluginIds": [
+          "andy.display-reset"
+        ],
+        "commit": "f98d891ef6978d5df49974f03cd6ff9cbe93d071",
+        "checkedAt": "2026-09-28T13:12:33.792Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "service-management",
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "manateelazycat/omarchy-display-reset",
+        "pluginIds": [
+          "andy.display-reset"
+        ],
+        "commit": "f98d891ef6978d5df49974f03cd6ff9cbe93d071",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T13:12:33.792Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "service-management",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T13:05:51.281Z",
+        "requestEventId": 31994337743,
+        "requestedAt": "2026-09-28T13:10:32Z",
+        "reviewedAt": "2026-09-28T13:12:33.792Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "andy.display-reset": {
+          "category": "System",
+          "tags": [
+            "bar",
+            "hyprland",
+            "system"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
