@@ -238096,6 +238096,40 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/cdelcollado/wifiomarchy",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T07:53:16.483Z",
+      "listingValidatedCommit": "a51a7cf68c6d43a0792d85573c43981fca08b30f",
+      "listingValidatedAt": "2026-09-28T07:53:16.483Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "cdelcollado/wifiomarchy",
+        "pluginIds": [
+          "cdelcollado.network"
+        ],
+        "commit": "a51a7cf68c6d43a0792d85573c43981fca08b30f",
+        "checkedAt": "2026-09-28T07:53:16.372Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "cdelcollado.network": {
+          "category": "Widgets",
+          "tags": [
+            "bar",
+            "quickshell",
+            "system"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
