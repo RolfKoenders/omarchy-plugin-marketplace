@@ -241542,6 +241542,40 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/hjanuschka/omalock",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T23:43:03.825Z",
+      "listingValidatedCommit": "1b10385ce1d54fcc34fbe343e5b971be7138e471",
+      "listingValidatedAt": "2026-09-28T23:43:03.825Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "hjanuschka/omalock",
+        "pluginIds": [
+          "omalock"
+        ],
+        "commit": "1b10385ce1d54fcc34fbe343e5b971be7138e471",
+        "checkedAt": "2026-09-28T23:43:03.717Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "omalock": {
+          "category": "Desktop",
+          "tags": [
+            "bar",
+            "hyprland",
+            "workspaces"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
