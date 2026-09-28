@@ -239623,6 +239623,65 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/EatEmAll/omarchy-toggl",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T14:37:59.890Z",
+      "listingValidatedCommit": "c73f5ba142342b284c977e69ccd428f25194001f",
+      "listingValidatedAt": "2026-09-28T14:37:59.890Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "eatemall/omarchy-toggl",
+        "pluginIds": [
+          "io.github.eatemall.toggl"
+        ],
+        "commit": "c73f5ba142342b284c977e69ccd428f25194001f",
+        "checkedAt": "2026-09-28T14:37:59.784Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "remote-build",
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "eatemall/omarchy-toggl",
+        "pluginIds": [
+          "io.github.eatemall.toggl"
+        ],
+        "commit": "c73f5ba142342b284c977e69ccd428f25194001f",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T14:37:59.784Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "remote-build",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T14:33:22.245Z",
+        "requestEventId": 32001222280,
+        "requestedAt": "2026-09-28T14:35:42Z",
+        "reviewedAt": "2026-09-28T14:37:59.784Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "io.github.eatemall.toggl": {
+          "category": "Productivity",
+          "tags": [
+            "bar",
+            "quickshell",
+            "hyprland"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
