@@ -239152,6 +239152,73 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/simonezpx3/omarchy-qwenimage",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T12:16:24.270Z",
+      "listingValidatedCommit": "360f9088edcd81927d18caa3ba95d13374224713",
+      "listingValidatedAt": "2026-09-28T12:16:24.270Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "simonezpx3/omarchy-qwenimage",
+        "pluginIds": [
+          "simonez.qwenimage"
+        ],
+        "commit": "360f9088edcd81927d18caa3ba95d13374224713",
+        "checkedAt": "2026-09-28T12:16:24.156Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "remote-build",
+          "installer",
+          "privilege",
+          "package-manager"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "simonezpx3/omarchy-qwenimage",
+        "pluginIds": [
+          "simonez.qwenimage"
+        ],
+        "commit": "360f9088edcd81927d18caa3ba95d13374224713",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T12:16:24.156Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "remote-build",
+          "installer",
+          "privilege",
+          "package-manager"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T12:07:16.057Z",
+        "requestEventId": 31989809703,
+        "requestedAt": "2026-09-28T12:08:39Z",
+        "reviewedAt": "2026-09-28T12:16:24.156Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "simonez.qwenimage": {
+          "category": "Productivity",
+          "tags": [
+            "ai",
+            "bar",
+            "hyprland"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
