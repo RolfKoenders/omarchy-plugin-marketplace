@@ -241359,6 +241359,40 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/stevederico/omarchy-gym",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T22:41:24.272Z",
+      "listingValidatedCommit": "f06e3547a009b2ec6a94cfa1499045dc7c5787ce",
+      "listingValidatedAt": "2026-09-28T22:41:24.272Z",
+      "listingValidatedBranch": "master",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "stevederico/omarchy-gym",
+        "pluginIds": [
+          "io.github.stevederico.omarchy-gym"
+        ],
+        "commit": "f06e3547a009b2ec6a94cfa1499045dc7c5787ce",
+        "checkedAt": "2026-09-28T22:41:24.205Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "io.github.stevederico.omarchy-gym": {
+          "category": "Productivity",
+          "tags": [
+            "games",
+            "education",
+            "hyprland"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
