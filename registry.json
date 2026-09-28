@@ -186800,8 +186800,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-16",
       "listedAt": "2026-09-16T18:47:02.103Z",
-      "listingValidatedCommit": "29dde97582b4500474e38ed5794f7ab49deb09a3",
-      "listingValidatedAt": "2026-09-16T18:47:02.103Z",
+      "listingValidatedCommit": "4698f5448e3b00b4d7e8543592748f28f79d3634",
+      "listingValidatedAt": "2026-09-28T06:23:09.144Z",
       "listingValidatedBranch": "master",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -186810,8 +186810,8 @@
         "pluginIds": [
           "oma.razer"
         ],
-        "commit": "29dde97582b4500474e38ed5794f7ab49deb09a3",
-        "checkedAt": "2026-09-16T18:47:02.013Z",
+        "commit": "4698f5448e3b00b4d7e8543592748f28f79d3634",
+        "checkedAt": "2026-09-28T06:23:09.144Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
@@ -186820,29 +186820,6 @@
           "privilege",
           "installer"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "gregorylara/omarchyrazercontrol",
-        "pluginIds": [
-          "oma.razer"
-        ],
-        "commit": "29dde97582b4500474e38ed5794f7ab49deb09a3",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-16T18:47:02.013Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "remote-build",
-          "privilege",
-          "installer"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-16T09:38:10.224Z",
-        "requestEventId": 31268017477,
-        "requestedAt": "2026-09-16T18:38:51Z",
-        "reviewedAt": "2026-09-16T18:47:02.013Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "oma.razer": {
@@ -186854,7 +186831,79 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "gregorylara/omarchyrazercontrol",
+        "pluginIds": [
+          "oma.razer"
+        ],
+        "commit": "4698f5448e3b00b4d7e8543592748f28f79d3634",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T06:23:09.144Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "remote-build",
+          "privilege",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-17T14:23:05.558Z",
+        "requestEventId": 31967972900,
+        "requestedAt": "2026-09-28T06:18:28Z",
+        "reviewedAt": "2026-09-28T06:23:09.144Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "29dde97582b4500474e38ed5794f7ab49deb09a3",
+          "validatedAt": "2026-09-16T18:47:02.103Z",
+          "branch": "master",
+          "supersededAt": "2026-09-28T06:23:09.144Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "gregorylara/omarchyrazercontrol",
+            "pluginIds": [
+              "oma.razer"
+            ],
+            "commit": "29dde97582b4500474e38ed5794f7ab49deb09a3",
+            "checkedAt": "2026-09-16T18:47:02.013Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "remote-build",
+              "privilege",
+              "installer"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "gregorylara/omarchyrazercontrol",
+            "pluginIds": [
+              "oma.razer"
+            ],
+            "commit": "29dde97582b4500474e38ed5794f7ab49deb09a3",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-16T18:47:02.013Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "remote-build",
+              "privilege",
+              "installer"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-16T09:38:10.224Z",
+            "requestEventId": 31268017477,
+            "requestedAt": "2026-09-16T18:38:51Z",
+            "reviewedAt": "2026-09-16T18:47:02.013Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/TheBoxer71/OmniTiler",
