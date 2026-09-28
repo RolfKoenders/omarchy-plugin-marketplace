@@ -238187,6 +238187,40 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/akafrmn/omarchy-galaxy-buds-pro",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T08:13:56.623Z",
+      "listingValidatedCommit": "340e4f23c90c4f77a8dad05113ef89d8437129d2",
+      "listingValidatedAt": "2026-09-28T08:13:56.623Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "akafrmn/omarchy-galaxy-buds-pro",
+        "pluginIds": [
+          "io.github.akafrmn.galaxy-buds-pro"
+        ],
+        "commit": "340e4f23c90c4f77a8dad05113ef89d8437129d2",
+        "checkedAt": "2026-09-28T08:13:56.518Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "io.github.akafrmn.galaxy-buds-pro": {
+          "category": "Hardware",
+          "tags": [
+            "bar",
+            "quickshell",
+            "media"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
