@@ -241012,6 +241012,67 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/RohiRIK/omarchy-nanoclaw",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T19:29:52.778Z",
+      "listingValidatedCommit": "285c593fb2139398b17e33abca1a2224954b1862",
+      "listingValidatedAt": "2026-09-28T19:29:52.778Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "rohirik/omarchy-nanoclaw",
+        "pluginIds": [
+          "rohirik.nanoclaw"
+        ],
+        "commit": "285c593fb2139398b17e33abca1a2224954b1862",
+        "checkedAt": "2026-09-28T19:29:52.676Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "service-management"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "rohirik/omarchy-nanoclaw",
+        "pluginIds": [
+          "rohirik.nanoclaw"
+        ],
+        "commit": "285c593fb2139398b17e33abca1a2224954b1862",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T19:29:52.676Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "service-management"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T19:22:01.792Z",
+        "requestEventId": 32021765208,
+        "requestedAt": "2026-09-28T19:25:05Z",
+        "reviewedAt": "2026-09-28T19:29:52.676Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "rohirik.nanoclaw": {
+          "category": "Productivity",
+          "tags": [
+            "ai",
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
