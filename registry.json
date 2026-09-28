@@ -236193,6 +236193,39 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/betizzel/omarchy-ascii-wallpaper",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T02:07:58.155Z",
+      "listingValidatedCommit": "4af55633c28739419eb535ffa3785d8cf25f9257",
+      "listingValidatedAt": "2026-09-28T02:07:58.155Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "betizzel/omarchy-ascii-wallpaper",
+        "pluginIds": [
+          "betim.ascii-wallpaper"
+        ],
+        "commit": "4af55633c28739419eb535ffa3785d8cf25f9257",
+        "checkedAt": "2026-09-28T02:07:58.048Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "betim.ascii-wallpaper": {
+          "category": "Appearance",
+          "tags": [
+            "media",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
