@@ -241576,6 +241576,40 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/dabit/wherethefoo",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T23:55:07.753Z",
+      "listingValidatedCommit": "29b9626b10feb61297d0b52567698e7eb7424299",
+      "listingValidatedAt": "2026-09-28T23:55:07.753Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "dabit/wherethefoo",
+        "pluginIds": [
+          "io.github.dabit.wherethefoo"
+        ],
+        "commit": "29b9626b10feb61297d0b52567698e7eb7424299",
+        "checkedAt": "2026-09-28T23:55:07.636Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "io.github.dabit.wherethefoo": {
+          "category": "Desktop",
+          "tags": [
+            "workspaces",
+            "hyprland",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
