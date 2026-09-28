@@ -239844,6 +239844,39 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/justwiebe/omarchy-screen-breaker",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T16:10:17.568Z",
+      "listingValidatedCommit": "f151ba5d1b1758e1e93d28efe13c13c353d15baa",
+      "listingValidatedAt": "2026-09-28T16:10:17.568Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "justwiebe/omarchy-screen-breaker",
+        "pluginIds": [
+          "io.github.justwiebe.screen-breaker"
+        ],
+        "commit": "f151ba5d1b1758e1e93d28efe13c13c353d15baa",
+        "checkedAt": "2026-09-28T16:10:17.456Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "io.github.justwiebe.screen-breaker": {
+          "category": "Other",
+          "tags": [
+            "games",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
