@@ -238461,6 +238461,73 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/TMuckler/wax-player",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T10:09:03.577Z",
+      "listingValidatedCommit": "19b53e6ba573820a0fc25fb8af2a75eaea1eced9",
+      "listingValidatedAt": "2026-09-28T10:09:03.577Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "tmuckler/wax-player",
+        "pluginIds": [
+          "local.wax.player"
+        ],
+        "commit": "19b53e6ba573820a0fc25fb8af2a75eaea1eced9",
+        "checkedAt": "2026-09-28T10:09:03.516Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "remote-build",
+          "service-management",
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "tmuckler/wax-player",
+        "pluginIds": [
+          "local.wax.player"
+        ],
+        "commit": "19b53e6ba573820a0fc25fb8af2a75eaea1eced9",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T10:09:03.516Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "remote-build",
+          "service-management",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T10:06:24.783Z",
+        "requestEventId": 31982030692,
+        "requestedAt": "2026-09-28T10:07:34Z",
+        "reviewedAt": "2026-09-28T10:09:03.516Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "local.wax.player": {
+          "category": "Widgets",
+          "tags": [
+            "bar",
+            "media",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
