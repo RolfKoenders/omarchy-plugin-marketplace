@@ -236680,6 +236680,62 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/fivefold3/omarchy-ip-config",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T03:03:11.740Z",
+      "listingValidatedCommit": "59cea9602b4f4a2f0424f324910c8ad8db6f6e7c",
+      "listingValidatedAt": "2026-09-28T03:03:11.740Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "fivefold3/omarchy-ip-config",
+        "pluginIds": [
+          "io.github.fivefold3.ip-config"
+        ],
+        "commit": "59cea9602b4f4a2f0424f324910c8ad8db6f6e7c",
+        "checkedAt": "2026-09-28T03:03:11.617Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "privilege"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "fivefold3/omarchy-ip-config",
+        "pluginIds": [
+          "io.github.fivefold3.ip-config"
+        ],
+        "commit": "59cea9602b4f4a2f0424f324910c8ad8db6f6e7c",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T03:03:11.617Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T02:50:54.814Z",
+        "requestEventId": 31959355041,
+        "requestedAt": "2026-09-28T02:54:00Z",
+        "reviewedAt": "2026-09-28T03:03:11.617Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "io.github.fivefold3.ip-config": {
+          "category": "System",
+          "tags": [
+            "system",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
