@@ -236042,6 +236042,39 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/thevideinfra/omaudiopanel",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T00:53:29.342Z",
+      "listingValidatedCommit": "08f7d12561e6d8218d13426f41db5efb3b101ef0",
+      "listingValidatedAt": "2026-09-28T00:53:29.342Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "thevideinfra/omaudiopanel",
+        "pluginIds": [
+          "videinfra.omaudiopanel"
+        ],
+        "commit": "08f7d12561e6d8218d13426f41db5efb3b101ef0",
+        "checkedAt": "2026-09-28T00:53:29.239Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "videinfra.omaudiopanel": {
+          "category": "Widgets",
+          "tags": [
+            "media",
+            "bar"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
