@@ -241326,6 +241326,39 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/phil-bowens/omarchy-symbols",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T22:17:11.355Z",
+      "listingValidatedCommit": "64c7eba318bce553ec79c4543b17f4e7b39ec435",
+      "listingValidatedAt": "2026-09-28T22:17:11.355Z",
+      "listingValidatedBranch": "master",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "phil-bowens/omarchy-symbols",
+        "pluginIds": [
+          "io.github.phil-bowens.symbols"
+        ],
+        "commit": "64c7eba318bce553ec79c4543b17f4e7b39ec435",
+        "checkedAt": "2026-09-28T22:17:11.243Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "io.github.phil-bowens.symbols": {
+          "category": "Productivity",
+          "tags": [
+            "quickshell",
+            "education"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
