@@ -238746,6 +238746,65 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/nichovski/omarchy-loudness-boost",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T10:51:38.548Z",
+      "listingValidatedCommit": "fb35016395164127a67ea7298ebb88c2dc0f5e74",
+      "listingValidatedAt": "2026-09-28T10:51:38.548Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "nichovski/omarchy-loudness-boost",
+        "pluginIds": [
+          "nichovski.loudness-boost"
+        ],
+        "commit": "fb35016395164127a67ea7298ebb88c2dc0f5e74",
+        "checkedAt": "2026-09-28T10:51:38.436Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "service-management"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "nichovski/omarchy-loudness-boost",
+        "pluginIds": [
+          "nichovski.loudness-boost"
+        ],
+        "commit": "fb35016395164127a67ea7298ebb88c2dc0f5e74",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-28T10:51:38.436Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "service-management"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T10:47:47.360Z",
+        "requestEventId": 31984675476,
+        "requestedAt": "2026-09-28T10:49:34Z",
+        "reviewedAt": "2026-09-28T10:51:38.436Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "nichovski.loudness-boost": {
+          "category": "Hardware",
+          "tags": [
+            "bar",
+            "quickshell",
+            "system"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
