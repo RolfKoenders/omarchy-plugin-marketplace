@@ -237416,6 +237416,40 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/mindows/mib-nprofiles",
+      "type": "plugin-source",
+      "addedAt": "2026-09-28",
+      "listedAt": "2026-09-28T06:05:46.079Z",
+      "listingValidatedCommit": "774255d0a17bc69e3f1b465c12ed00727fae1814",
+      "listingValidatedAt": "2026-09-28T06:05:46.079Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "mindows/mib-nprofiles",
+        "pluginIds": [
+          "io.github.mindows.mib-nprofiles"
+        ],
+        "commit": "774255d0a17bc69e3f1b465c12ed00727fae1814",
+        "checkedAt": "2026-09-28T06:05:45.965Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "io.github.mindows.mib-nprofiles": {
+          "category": "System",
+          "tags": [
+            "bar",
+            "system",
+            "vpn"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
