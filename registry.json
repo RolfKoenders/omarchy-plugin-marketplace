@@ -241893,6 +241893,65 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/signaldirective/radial-menu",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T04:17:44.681Z",
+      "listingValidatedCommit": "34dbfcbaf18795dc0f330fef574ad67c3fa3dcac",
+      "listingValidatedAt": "2026-09-29T04:17:44.681Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "signaldirective/radial-menu",
+        "pluginIds": [
+          "io.github.signaldirective.radial-menu"
+        ],
+        "commit": "34dbfcbaf18795dc0f330fef574ad67c3fa3dcac",
+        "checkedAt": "2026-09-29T04:17:44.588Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "service-management",
+          "privilege",
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "signaldirective/radial-menu",
+        "pluginIds": [
+          "io.github.signaldirective.radial-menu"
+        ],
+        "commit": "34dbfcbaf18795dc0f330fef574ad67c3fa3dcac",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T04:17:44.588Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "service-management",
+          "privilege",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-29T04:05:38.268Z",
+        "requestEventId": 32049037232,
+        "requestedAt": "2026-09-29T04:15:53Z",
+        "reviewedAt": "2026-09-29T04:17:44.588Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "io.github.signaldirective.radial-menu": {
+          "category": "Desktop",
+          "tags": [
+            "hyprland"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
