@@ -166718,8 +166718,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-10",
       "listedAt": "2026-09-10T23:12:44.473Z",
-      "listingValidatedCommit": "3ee5f14a5e919a93d470deee004a20071516fa54",
-      "listingValidatedAt": "2026-09-10T23:12:44.473Z",
+      "listingValidatedCommit": "51e08d4135d3dbacd37cafa446388d5a4e334b1b",
+      "listingValidatedAt": "2026-09-29T20:24:10.085Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -166728,8 +166728,8 @@
         "pluginIds": [
           "kb2uka.babyface"
         ],
-        "commit": "3ee5f14a5e919a93d470deee004a20071516fa54",
-        "checkedAt": "2026-09-10T23:12:44.390Z",
+        "commit": "51e08d4135d3dbacd37cafa446388d5a4e334b1b",
+        "checkedAt": "2026-09-29T20:24:10.085Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
@@ -166738,29 +166738,6 @@
           "service-management",
           "installer"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "kb2uka/omarchy-plugins",
-        "pluginIds": [
-          "kb2uka.babyface"
-        ],
-        "commit": "3ee5f14a5e919a93d470deee004a20071516fa54",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-10T23:12:44.390Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "remote-build",
-          "service-management",
-          "installer"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-10T23:04:16.299Z",
-        "requestEventId": 30936757677,
-        "requestedAt": "2026-09-10T23:06:30Z",
-        "reviewedAt": "2026-09-10T23:12:44.390Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "kb2uka.babyface": {
@@ -166772,7 +166749,79 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "kb2uka/omarchy-plugins",
+        "pluginIds": [
+          "kb2uka.babyface"
+        ],
+        "commit": "51e08d4135d3dbacd37cafa446388d5a4e334b1b",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T20:24:10.085Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "remote-build",
+          "service-management",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-19T16:05:25.176Z",
+        "requestEventId": 32094636234,
+        "requestedAt": "2026-09-29T16:03:14Z",
+        "reviewedAt": "2026-09-29T20:24:10.085Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "3ee5f14a5e919a93d470deee004a20071516fa54",
+          "validatedAt": "2026-09-10T23:12:44.473Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T20:24:10.085Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "kb2uka/omarchy-plugins",
+            "pluginIds": [
+              "kb2uka.babyface"
+            ],
+            "commit": "3ee5f14a5e919a93d470deee004a20071516fa54",
+            "checkedAt": "2026-09-10T23:12:44.390Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "remote-build",
+              "service-management",
+              "installer"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "kb2uka/omarchy-plugins",
+            "pluginIds": [
+              "kb2uka.babyface"
+            ],
+            "commit": "3ee5f14a5e919a93d470deee004a20071516fa54",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-10T23:12:44.390Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "remote-build",
+              "service-management",
+              "installer"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-10T23:04:16.299Z",
+            "requestEventId": 30936757677,
+            "requestedAt": "2026-09-10T23:06:30Z",
+            "reviewedAt": "2026-09-10T23:12:44.390Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/chupe/omarchy-lid-suspend",
