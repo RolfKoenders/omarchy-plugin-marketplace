@@ -183825,8 +183825,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-16",
       "listedAt": "2026-09-16T01:34:53.051Z",
-      "listingValidatedCommit": "704e8305964e9b6a390c4cd7d20fe10ac71db9ae",
-      "listingValidatedAt": "2026-09-16T01:34:53.051Z",
+      "listingValidatedCommit": "3d47861e9ea2031e8f84a6130122d8707a646152",
+      "listingValidatedAt": "2026-09-29T20:50:14.461Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -183835,8 +183835,8 @@
         "pluginIds": [
           "onelegdave.omadroid"
         ],
-        "commit": "704e8305964e9b6a390c4cd7d20fe10ac71db9ae",
-        "checkedAt": "2026-09-16T01:34:52.974Z",
+        "commit": "3d47861e9ea2031e8f84a6130122d8707a646152",
+        "checkedAt": "2026-09-29T20:50:14.461Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
@@ -183846,30 +183846,6 @@
           "package-manager",
           "service-management"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "onelegdave/omadroid",
-        "pluginIds": [
-          "onelegdave.omadroid"
-        ],
-        "commit": "704e8305964e9b6a390c4cd7d20fe10ac71db9ae",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-16T01:34:52.974Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "installer",
-          "privilege",
-          "package-manager",
-          "service-management"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-13T08:32:03.754Z",
-        "requestEventId": 31214300669,
-        "requestedAt": "2026-09-16T01:33:33Z",
-        "reviewedAt": "2026-09-16T01:34:52.974Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "onelegdave.omadroid": {
@@ -183885,7 +183861,82 @@
             "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
           }
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "onelegdave/omadroid",
+        "pluginIds": [
+          "onelegdave.omadroid"
+        ],
+        "commit": "3d47861e9ea2031e8f84a6130122d8707a646152",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T20:50:14.461Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "installer",
+          "privilege",
+          "package-manager",
+          "service-management"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-16T02:16:44.308Z",
+        "requestEventId": 32095059508,
+        "requestedAt": "2026-09-29T16:09:11Z",
+        "reviewedAt": "2026-09-29T20:50:14.461Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "704e8305964e9b6a390c4cd7d20fe10ac71db9ae",
+          "validatedAt": "2026-09-16T01:34:53.051Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T20:50:14.461Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "onelegdave/omadroid",
+            "pluginIds": [
+              "onelegdave.omadroid"
+            ],
+            "commit": "704e8305964e9b6a390c4cd7d20fe10ac71db9ae",
+            "checkedAt": "2026-09-16T01:34:52.974Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "installer",
+              "privilege",
+              "package-manager",
+              "service-management"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "onelegdave/omadroid",
+            "pluginIds": [
+              "onelegdave.omadroid"
+            ],
+            "commit": "704e8305964e9b6a390c4cd7d20fe10ac71db9ae",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-16T01:34:52.974Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "installer",
+              "privilege",
+              "package-manager",
+              "service-management"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-13T08:32:03.754Z",
+            "requestEventId": 31214300669,
+            "requestedAt": "2026-09-16T01:33:33Z",
+            "reviewedAt": "2026-09-16T01:34:52.974Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/ninepointlabs/omarchy-upcoming",
