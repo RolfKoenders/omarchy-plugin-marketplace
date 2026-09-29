@@ -242072,6 +242072,40 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/MISTERNEGATIVE21/omarchy-undercover",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T04:55:04.169Z",
+      "listingValidatedCommit": "2a55c8b5a0901b1de29e5248440e79e6f333a180",
+      "listingValidatedAt": "2026-09-29T04:55:04.169Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "misternegative21/omarchy-undercover",
+        "pluginIds": [
+          "omarchy-undercover"
+        ],
+        "commit": "2a55c8b5a0901b1de29e5248440e79e6f333a180",
+        "checkedAt": "2026-09-29T04:55:04.061Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "omarchy-undercover": {
+          "category": "Desktop",
+          "tags": [
+            "bar",
+            "hyprland",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
