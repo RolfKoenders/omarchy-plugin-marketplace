@@ -138079,8 +138079,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-05",
       "listedAt": "2026-09-05T22:01:32.397Z",
-      "listingValidatedCommit": "d27f497017126a287e4a65193f8f5710b631f6b9",
-      "listingValidatedAt": "2026-09-05T22:01:32.397Z",
+      "listingValidatedCommit": "27c157f446a774242d692c1ea3d9ef1b5d83f5d5",
+      "listingValidatedAt": "2026-09-29T12:34:02.598Z",
       "listingValidatedBranch": "master",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -138089,8 +138089,8 @@
         "pluginIds": [
           "houz42.plugin-switcher"
         ],
-        "commit": "d27f497017126a287e4a65193f8f5710b631f6b9",
-        "checkedAt": "2026-09-05T22:01:32.330Z",
+        "commit": "27c157f446a774242d692c1ea3d9ef1b5d83f5d5",
+        "checkedAt": "2026-09-29T12:34:02.598Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -138106,7 +138106,29 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "d27f497017126a287e4a65193f8f5710b631f6b9",
+          "validatedAt": "2026-09-05T22:01:32.397Z",
+          "branch": "master",
+          "supersededAt": "2026-09-29T12:34:02.598Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "houz42/omarchy-plugin-switcher",
+            "pluginIds": [
+              "houz42.plugin-switcher"
+            ],
+            "commit": "d27f497017126a287e4a65193f8f5710b631f6b9",
+            "checkedAt": "2026-09-05T22:01:32.330Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/Nepomuk-Software/EnergyImpact",
