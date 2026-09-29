@@ -242604,6 +242604,43 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/ashiskharel/omarchy-devanagari",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T08:14:21.806Z",
+      "listingValidatedCommit": "359e417e9b159119fa0371edfd5c2b862efd19a2",
+      "listingValidatedAt": "2026-09-29T08:14:21.806Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "ashiskharel/omarchy-devanagari",
+        "pluginIds": [
+          "ashis.devanagari"
+        ],
+        "commit": "359e417e9b159119fa0371edfd5c2b862efd19a2",
+        "checkedAt": "2026-09-29T08:14:21.694Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "ashis.devanagari": {
+          "category": "Productivity",
+          "tags": [
+            "ai",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
