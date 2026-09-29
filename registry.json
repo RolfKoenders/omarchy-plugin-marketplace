@@ -242212,6 +242212,39 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/AbdulazizAlwabel/omarchy-hyprforge",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T05:47:31.604Z",
+      "listingValidatedCommit": "fe6beced2ef33cdf1d8d344ef465eadeb62b1399",
+      "listingValidatedAt": "2026-09-29T05:47:31.604Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "abdulazizalwabel/omarchy-hyprforge",
+        "pluginIds": [
+          "aziz.hyprforge"
+        ],
+        "commit": "fe6beced2ef33cdf1d8d344ef465eadeb62b1399",
+        "checkedAt": "2026-09-29T05:47:31.488Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "aziz.hyprforge": {
+          "category": "Appearance",
+          "tags": [
+            "hyprland",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
