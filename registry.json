@@ -236099,8 +236099,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-27",
       "listedAt": "2026-09-27T23:03:14.229Z",
-      "listingValidatedCommit": "af0a1e921e0ba3be2ad1c3526b29a0ad5f02d882",
-      "listingValidatedAt": "2026-09-27T23:03:14.229Z",
+      "listingValidatedCommit": "9655f613bdf9577158112f094e30b50215e17e66",
+      "listingValidatedAt": "2026-09-29T11:49:36.115Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -236109,8 +236109,8 @@
         "pluginIds": [
           "khwan.glass"
         ],
-        "commit": "af0a1e921e0ba3be2ad1c3526b29a0ad5f02d882",
-        "checkedAt": "2026-09-27T23:03:14.133Z",
+        "commit": "9655f613bdf9577158112f094e30b50215e17e66",
+        "checkedAt": "2026-09-29T11:49:36.115Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -236126,7 +236126,29 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "af0a1e921e0ba3be2ad1c3526b29a0ad5f02d882",
+          "validatedAt": "2026-09-27T23:03:14.229Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T11:49:36.115Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "khwan888/khwan.glass",
+            "pluginIds": [
+              "khwan.glass"
+            ],
+            "commit": "af0a1e921e0ba3be2ad1c3526b29a0ad5f02d882",
+            "checkedAt": "2026-09-27T23:03:14.133Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/boyidzham/omyphone",
