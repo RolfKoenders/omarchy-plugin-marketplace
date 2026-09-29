@@ -185777,8 +185777,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-16",
       "listedAt": "2026-09-16T15:59:08.229Z",
-      "listingValidatedCommit": "0bf4bae05af92e7a1fdb370e9d062d17efffa65f",
-      "listingValidatedAt": "2026-09-16T15:59:08.229Z",
+      "listingValidatedCommit": "a8bdb54066a4c350737beb1219fba6f0edaf219c",
+      "listingValidatedAt": "2026-09-29T17:26:37.353Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -185787,8 +185787,8 @@
         "pluginIds": [
           "reidenxerx.tactile"
         ],
-        "commit": "0bf4bae05af92e7a1fdb370e9d062d17efffa65f",
-        "checkedAt": "2026-09-16T15:59:08.139Z",
+        "commit": "a8bdb54066a4c350737beb1219fba6f0edaf219c",
+        "checkedAt": "2026-09-29T17:26:37.353Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
@@ -185796,28 +185796,6 @@
           "privilege",
           "installer"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "reidenxerx/omarchy-tactile",
-        "pluginIds": [
-          "reidenxerx.tactile"
-        ],
-        "commit": "0bf4bae05af92e7a1fdb370e9d062d17efffa65f",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-16T15:59:08.139Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "privilege",
-          "installer"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-13T21:00:19.334Z",
-        "requestEventId": 31258117261,
-        "requestedAt": "2026-09-16T15:54:30Z",
-        "reviewedAt": "2026-09-16T15:59:08.139Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "reidenxerx.tactile": {
@@ -185829,7 +185807,76 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "reidenxerx/omarchy-tactile",
+        "pluginIds": [
+          "reidenxerx.tactile"
+        ],
+        "commit": "a8bdb54066a4c350737beb1219fba6f0edaf219c",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T17:26:37.353Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-22T21:55:03.373Z",
+        "requestEventId": 32092147414,
+        "requestedAt": "2026-09-29T15:28:54Z",
+        "reviewedAt": "2026-09-29T17:26:37.353Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "0bf4bae05af92e7a1fdb370e9d062d17efffa65f",
+          "validatedAt": "2026-09-16T15:59:08.229Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T17:26:37.353Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "reidenxerx/omarchy-tactile",
+            "pluginIds": [
+              "reidenxerx.tactile"
+            ],
+            "commit": "0bf4bae05af92e7a1fdb370e9d062d17efffa65f",
+            "checkedAt": "2026-09-16T15:59:08.139Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "privilege",
+              "installer"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "reidenxerx/omarchy-tactile",
+            "pluginIds": [
+              "reidenxerx.tactile"
+            ],
+            "commit": "0bf4bae05af92e7a1fdb370e9d062d17efffa65f",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-16T15:59:08.139Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "privilege",
+              "installer"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-13T21:00:19.334Z",
+            "requestEventId": 31258117261,
+            "requestedAt": "2026-09-16T15:54:30Z",
+            "reviewedAt": "2026-09-16T15:59:08.139Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/rogersmitha51/OmarchyChime",
