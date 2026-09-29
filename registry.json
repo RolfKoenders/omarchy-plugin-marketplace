@@ -229190,8 +229190,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-26",
       "listedAt": "2026-09-26T07:53:50.647Z",
-      "listingValidatedCommit": "708723bbf650aa1254f42802d994c7689c701e81",
-      "listingValidatedAt": "2026-09-26T07:53:50.647Z",
+      "listingValidatedCommit": "3d8d9efb06f6c65423e3f7e63a8dc6595e039ab1",
+      "listingValidatedAt": "2026-09-29T14:55:48.657Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -229200,35 +229200,14 @@
         "pluginIds": [
           "io.github.samuosorio.power-menu"
         ],
-        "commit": "708723bbf650aa1254f42802d994c7689c701e81",
-        "checkedAt": "2026-09-26T07:53:50.542Z",
+        "commit": "3d8d9efb06f6c65423e3f7e63a8dc6595e039ab1",
+        "checkedAt": "2026-09-29T14:55:48.657Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
         "capabilities": [
           "service-management"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "samuosorio/omarchy-power-menu",
-        "pluginIds": [
-          "io.github.samuosorio.power-menu"
-        ],
-        "commit": "708723bbf650aa1254f42802d994c7689c701e81",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-26T07:53:50.542Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "service-management"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-26T02:31:09.606Z",
-        "requestEventId": 31882881246,
-        "requestedAt": "2026-09-26T07:21:56Z",
-        "reviewedAt": "2026-09-26T07:53:50.542Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "io.github.samuosorio.power-menu": {
@@ -229238,7 +229217,73 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "samuosorio/omarchy-power-menu",
+        "pluginIds": [
+          "io.github.samuosorio.power-menu"
+        ],
+        "commit": "3d8d9efb06f6c65423e3f7e63a8dc6595e039ab1",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T14:55:48.657Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "service-management"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-29T00:23:46.295Z",
+        "requestEventId": 32084805020,
+        "requestedAt": "2026-09-29T13:50:36Z",
+        "reviewedAt": "2026-09-29T14:55:48.657Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "708723bbf650aa1254f42802d994c7689c701e81",
+          "validatedAt": "2026-09-26T07:53:50.647Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T14:55:48.657Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "samuosorio/omarchy-power-menu",
+            "pluginIds": [
+              "io.github.samuosorio.power-menu"
+            ],
+            "commit": "708723bbf650aa1254f42802d994c7689c701e81",
+            "checkedAt": "2026-09-26T07:53:50.542Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "service-management"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "samuosorio/omarchy-power-menu",
+            "pluginIds": [
+              "io.github.samuosorio.power-menu"
+            ],
+            "commit": "708723bbf650aa1254f42802d994c7689c701e81",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-26T07:53:50.542Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "service-management"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-26T02:31:09.606Z",
+            "requestEventId": 31882881246,
+            "requestedAt": "2026-09-26T07:21:56Z",
+            "reviewedAt": "2026-09-26T07:53:50.542Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/flathack/Omarchy-PlexTales",
