@@ -129696,8 +129696,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-04",
       "listedAt": "2026-09-04T16:49:32.036Z",
-      "listingValidatedCommit": "02a5f52d5d341e00428dd9344ae0bb1557844a04",
-      "listingValidatedAt": "2026-09-11T14:10:06.401Z",
+      "listingValidatedCommit": "c2f37fcde12e16bf153557ad2e8dfd100eb4d25f",
+      "listingValidatedAt": "2026-09-29T12:49:26.117Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -129706,8 +129706,8 @@
         "pluginIds": [
           "nugget210.oma-sleeper"
         ],
-        "commit": "02a5f52d5d341e00428dd9344ae0bb1557844a04",
-        "checkedAt": "2026-09-11T14:10:06.401Z",
+        "commit": "c2f37fcde12e16bf153557ad2e8dfd100eb4d25f",
+        "checkedAt": "2026-09-29T12:49:26.117Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -129743,6 +129743,26 @@
             ],
             "commit": "3ff433f648c9220caff9c99804344974fc32689e",
             "checkedAt": "2026-09-04T16:49:31.976Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        },
+        {
+          "commit": "02a5f52d5d341e00428dd9344ae0bb1557844a04",
+          "validatedAt": "2026-09-11T14:10:06.401Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T12:49:26.117Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "nugget210/oma-sleeper",
+            "pluginIds": [
+              "nugget210.oma-sleeper"
+            ],
+            "commit": "02a5f52d5d341e00428dd9344ae0bb1557844a04",
+            "checkedAt": "2026-09-11T14:10:06.401Z",
             "outcome": "passed",
             "enforcementMode": "selective",
             "findings": [],
