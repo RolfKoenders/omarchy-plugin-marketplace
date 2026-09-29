@@ -243419,6 +243419,77 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/itsVoid-TV/Omarchy-Chroma",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T11:40:19.978Z",
+      "listingValidatedCommit": "7b04ed1ce21ade3ac75d7aad483b3d99f0c38d0d",
+      "listingValidatedAt": "2026-09-29T11:40:19.978Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "itsvoid-tv/omarchy-chroma",
+        "pluginIds": [
+          "io.github.itsvoid-tv.command-chroma"
+        ],
+        "commit": "7b04ed1ce21ade3ac75d7aad483b3d99f0c38d0d",
+        "checkedAt": "2026-09-29T11:40:19.871Z",
+        "outcome": "needs-fixes",
+        "enforcementMode": "selective",
+        "findings": [
+          "curl-pipe-shell"
+        ],
+        "capabilities": [
+          "privilege",
+          "remote-build",
+          "package-manager",
+          "service-management",
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "itsvoid-tv/omarchy-chroma",
+        "pluginIds": [
+          "io.github.itsvoid-tv.command-chroma"
+        ],
+        "commit": "7b04ed1ce21ade3ac75d7aad483b3d99f0c38d0d",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T11:40:19.871Z",
+        "baselineOutcome": "needs-fixes",
+        "findings": [
+          "curl-pipe-shell"
+        ],
+        "capabilities": [
+          "privilege",
+          "remote-build",
+          "package-manager",
+          "service-management",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-29T11:31:56.899Z",
+        "requestEventId": 32074901352,
+        "requestedAt": "2026-09-29T11:33:55Z",
+        "reviewedAt": "2026-09-29T11:40:19.871Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "io.github.itsvoid-tv.command-chroma": {
+          "category": "Appearance",
+          "tags": [
+            "media"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
