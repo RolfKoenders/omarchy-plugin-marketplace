@@ -242245,6 +242245,65 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/angusforbes/omarchy-agent-activity-visualization",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T06:08:22.141Z",
+      "listingValidatedCommit": "49f28ca4c96ee597e776e7f5af81fe8ba1576190",
+      "listingValidatedAt": "2026-09-29T06:08:22.141Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "angusforbes/omarchy-agent-activity-visualization",
+        "pluginIds": [
+          "agf.agent-activity"
+        ],
+        "commit": "49f28ca4c96ee597e776e7f5af81fe8ba1576190",
+        "checkedAt": "2026-09-29T06:08:22.033Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "service-management",
+          "privilege"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "angusforbes/omarchy-agent-activity-visualization",
+        "pluginIds": [
+          "agf.agent-activity"
+        ],
+        "commit": "49f28ca4c96ee597e776e7f5af81fe8ba1576190",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T06:08:22.033Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "service-management",
+          "privilege"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-29T06:02:15.208Z",
+        "requestEventId": 32054008334,
+        "requestedAt": "2026-09-29T06:06:11Z",
+        "reviewedAt": "2026-09-29T06:08:22.034Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "agf.agent-activity": {
+          "category": "Developer Tools",
+          "tags": [
+            "ai",
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
