@@ -130932,8 +130932,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-04",
       "listedAt": "2026-09-04T17:17:18.457Z",
-      "listingValidatedCommit": "4d52833412b9f3b21f23caa4285d348117312a71",
-      "listingValidatedAt": "2026-09-04T17:17:18.457Z",
+      "listingValidatedCommit": "bd4d9af60b6cab9898e522b10650ef28de484939",
+      "listingValidatedAt": "2026-09-29T18:07:17.161Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -130942,35 +130942,14 @@
         "pluginIds": [
           "brianboitano.omagoku"
         ],
-        "commit": "4d52833412b9f3b21f23caa4285d348117312a71",
-        "checkedAt": "2026-09-04T17:17:18.396Z",
+        "commit": "bd4d9af60b6cab9898e522b10650ef28de484939",
+        "checkedAt": "2026-09-29T18:07:17.161Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
         "capabilities": [
           "service-management"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "brianboitano/omagoku",
-        "pluginIds": [
-          "brianboitano.omagoku"
-        ],
-        "commit": "4d52833412b9f3b21f23caa4285d348117312a71",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-04T17:17:18.396Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "service-management"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-03T19:25:43.064Z",
-        "requestEventId": 30566744467,
-        "requestedAt": "2026-09-04T16:12:30Z",
-        "reviewedAt": "2026-09-04T17:17:18.396Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "brianboitano.omagoku": {
@@ -130982,7 +130961,73 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "brianboitano/omagoku",
+        "pluginIds": [
+          "brianboitano.omagoku"
+        ],
+        "commit": "bd4d9af60b6cab9898e522b10650ef28de484939",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T18:07:17.161Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "service-management"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-20T12:26:01.456Z",
+        "requestEventId": 32092570748,
+        "requestedAt": "2026-09-29T15:34:35Z",
+        "reviewedAt": "2026-09-29T18:07:17.161Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "4d52833412b9f3b21f23caa4285d348117312a71",
+          "validatedAt": "2026-09-04T17:17:18.457Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T18:07:17.161Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "brianboitano/omagoku",
+            "pluginIds": [
+              "brianboitano.omagoku"
+            ],
+            "commit": "4d52833412b9f3b21f23caa4285d348117312a71",
+            "checkedAt": "2026-09-04T17:17:18.396Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "service-management"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "brianboitano/omagoku",
+            "pluginIds": [
+              "brianboitano.omagoku"
+            ],
+            "commit": "4d52833412b9f3b21f23caa4285d348117312a71",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-04T17:17:18.396Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "service-management"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-03T19:25:43.064Z",
+            "requestEventId": 30566744467,
+            "requestedAt": "2026-09-04T16:12:30Z",
+            "reviewedAt": "2026-09-04T17:17:18.396Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/eaescob/omarchy-mymind-plugin",
