@@ -243297,6 +243297,71 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/houz42/omarchy-global-protect",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T11:15:10.390Z",
+      "listingValidatedCommit": "cac85db11ad1e23dbbf1b08d56e128f3e54360a2",
+      "listingValidatedAt": "2026-09-29T11:15:10.390Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "houz42/omarchy-global-protect",
+        "pluginIds": [
+          "houz42.global-protect"
+        ],
+        "commit": "cac85db11ad1e23dbbf1b08d56e128f3e54360a2",
+        "checkedAt": "2026-09-29T11:15:10.281Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "package-manager",
+          "service-management"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "houz42/omarchy-global-protect",
+        "pluginIds": [
+          "houz42.global-protect"
+        ],
+        "commit": "cac85db11ad1e23dbbf1b08d56e128f3e54360a2",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T11:15:10.281Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "package-manager",
+          "service-management"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-29T11:09:10.017Z",
+        "requestEventId": 32073532855,
+        "requestedAt": "2026-09-29T11:12:58Z",
+        "reviewedAt": "2026-09-29T11:15:10.281Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "houz42.global-protect": {
+          "category": "System",
+          "tags": [
+            "vpn",
+            "security",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
