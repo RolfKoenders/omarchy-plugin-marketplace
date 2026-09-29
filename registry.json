@@ -217596,8 +217596,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-22",
       "listedAt": "2026-09-22T21:14:16.764Z",
-      "listingValidatedCommit": "a09f092838f84d2a9add0de48415fa75d9caaee1",
-      "listingValidatedAt": "2026-09-22T21:14:16.764Z",
+      "listingValidatedCommit": "4c8ed843047de91e448175b8f3bc2f288524d21f",
+      "listingValidatedAt": "2026-09-29T14:00:45.293Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -217606,8 +217606,8 @@
         "pluginIds": [
           "chyld.vista"
         ],
-        "commit": "a09f092838f84d2a9add0de48415fa75d9caaee1",
-        "checkedAt": "2026-09-22T21:14:16.660Z",
+        "commit": "4c8ed843047de91e448175b8f3bc2f288524d21f",
+        "checkedAt": "2026-09-29T14:00:45.293Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -217623,7 +217623,29 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "a09f092838f84d2a9add0de48415fa75d9caaee1",
+          "validatedAt": "2026-09-22T21:14:16.764Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T14:00:45.293Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "chyld/omarchy-vista",
+            "pluginIds": [
+              "chyld.vista"
+            ],
+            "commit": "a09f092838f84d2a9add0de48415fa75d9caaee1",
+            "checkedAt": "2026-09-22T21:14:16.660Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/midnightslicer/omarchy-menu-apps-first",
