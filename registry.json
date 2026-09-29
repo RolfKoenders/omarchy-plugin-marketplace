@@ -243781,8 +243781,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-29",
       "listedAt": "2026-09-29T08:24:34.987Z",
-      "listingValidatedCommit": "53c41662a9c145019972a25bac340d937f326d87",
-      "listingValidatedAt": "2026-09-29T08:24:34.987Z",
+      "listingValidatedCommit": "775ed03874f570f2155b837aa5c2c996e3590892",
+      "listingValidatedAt": "2026-09-29T16:01:59.232Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -243791,35 +243791,14 @@
         "pluginIds": [
           "mrdrbrdr.claude-swap"
         ],
-        "commit": "53c41662a9c145019972a25bac340d937f326d87",
-        "checkedAt": "2026-09-29T08:24:34.874Z",
+        "commit": "775ed03874f570f2155b837aa5c2c996e3590892",
+        "checkedAt": "2026-09-29T16:01:59.232Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
         "capabilities": [
           "service-management"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "mrdrbrdr/omarchy-claude-swap",
-        "pluginIds": [
-          "mrdrbrdr.claude-swap"
-        ],
-        "commit": "53c41662a9c145019972a25bac340d937f326d87",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-29T08:24:34.874Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "service-management"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-29T08:15:42.685Z",
-        "requestEventId": 32062038500,
-        "requestedAt": "2026-09-29T08:19:53Z",
-        "reviewedAt": "2026-09-29T08:24:34.874Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "mrdrbrdr.claude-swap": {
@@ -243835,7 +243814,73 @@
             "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
           }
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "mrdrbrdr/omarchy-claude-swap",
+        "pluginIds": [
+          "mrdrbrdr.claude-swap"
+        ],
+        "commit": "775ed03874f570f2155b837aa5c2c996e3590892",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T16:01:59.232Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "service-management"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-29T13:41:18.317Z",
+        "requestEventId": 32088687872,
+        "requestedAt": "2026-09-29T14:41:49Z",
+        "reviewedAt": "2026-09-29T16:01:59.232Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "53c41662a9c145019972a25bac340d937f326d87",
+          "validatedAt": "2026-09-29T08:24:34.987Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T16:01:59.232Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "mrdrbrdr/omarchy-claude-swap",
+            "pluginIds": [
+              "mrdrbrdr.claude-swap"
+            ],
+            "commit": "53c41662a9c145019972a25bac340d937f326d87",
+            "checkedAt": "2026-09-29T08:24:34.874Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "service-management"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "mrdrbrdr/omarchy-claude-swap",
+            "pluginIds": [
+              "mrdrbrdr.claude-swap"
+            ],
+            "commit": "53c41662a9c145019972a25bac340d937f326d87",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-29T08:24:34.874Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "service-management"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-29T08:15:42.685Z",
+            "requestEventId": 32062038500,
+            "requestedAt": "2026-09-29T08:19:53Z",
+            "reviewedAt": "2026-09-29T08:24:34.874Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/layolayo/omarchy-camarchy-control",
