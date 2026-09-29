@@ -131676,8 +131676,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-04",
       "listedAt": "2026-09-04T18:17:44.655Z",
-      "listingValidatedCommit": "6bae28fbb94f6c87aa8287d28a5397a26d92a366",
-      "listingValidatedAt": "2026-09-04T18:17:44.655Z",
+      "listingValidatedCommit": "6fc0b145e73acbe93bce92c6f477372f760c4f6c",
+      "listingValidatedAt": "2026-09-29T18:58:28.827Z",
       "listingValidatedBranch": "master",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -131686,8 +131686,8 @@
         "pluginIds": [
           "ca.orospakr.homekit"
         ],
-        "commit": "6bae28fbb94f6c87aa8287d28a5397a26d92a366",
-        "checkedAt": "2026-09-04T18:17:44.593Z",
+        "commit": "6fc0b145e73acbe93bce92c6f477372f760c4f6c",
+        "checkedAt": "2026-09-29T18:58:28.827Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
@@ -131697,30 +131697,6 @@
           "privilege",
           "package-manager"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "orospakr/omarchy-homekit",
-        "pluginIds": [
-          "ca.orospakr.homekit"
-        ],
-        "commit": "6bae28fbb94f6c87aa8287d28a5397a26d92a366",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-04T18:17:44.593Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "service-management",
-          "remote-build",
-          "privilege",
-          "package-manager"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-02T19:05:21.116Z",
-        "requestEventId": 30573268070,
-        "requestedAt": "2026-09-04T18:15:34Z",
-        "reviewedAt": "2026-09-04T18:17:44.593Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "ca.orospakr.homekit": {
@@ -131735,7 +131711,82 @@
             "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
           }
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "orospakr/omarchy-homekit",
+        "pluginIds": [
+          "ca.orospakr.homekit"
+        ],
+        "commit": "6fc0b145e73acbe93bce92c6f477372f760c4f6c",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T18:58:28.827Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "service-management",
+          "remote-build",
+          "privilege",
+          "package-manager"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-16T02:04:46.912Z",
+        "requestEventId": 32093251019,
+        "requestedAt": "2026-09-29T15:43:56Z",
+        "reviewedAt": "2026-09-29T18:58:28.827Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "6bae28fbb94f6c87aa8287d28a5397a26d92a366",
+          "validatedAt": "2026-09-04T18:17:44.655Z",
+          "branch": "master",
+          "supersededAt": "2026-09-29T18:58:28.827Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "orospakr/omarchy-homekit",
+            "pluginIds": [
+              "ca.orospakr.homekit"
+            ],
+            "commit": "6bae28fbb94f6c87aa8287d28a5397a26d92a366",
+            "checkedAt": "2026-09-04T18:17:44.593Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "service-management",
+              "remote-build",
+              "privilege",
+              "package-manager"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "orospakr/omarchy-homekit",
+            "pluginIds": [
+              "ca.orospakr.homekit"
+            ],
+            "commit": "6bae28fbb94f6c87aa8287d28a5397a26d92a366",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-04T18:17:44.593Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "service-management",
+              "remote-build",
+              "privilege",
+              "package-manager"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-02T19:05:21.116Z",
+            "requestEventId": 30573268070,
+            "requestedAt": "2026-09-04T18:15:34Z",
+            "reviewedAt": "2026-09-04T18:17:44.593Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/fchtngr/omarchy-background-display",
