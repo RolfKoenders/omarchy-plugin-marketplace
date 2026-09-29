@@ -243971,6 +243971,65 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/abduldotdev/wave3",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T13:23:17.432Z",
+      "listingValidatedCommit": "aa7f37bb52077d91da566adbefecacc02642817b",
+      "listingValidatedAt": "2026-09-29T13:23:17.432Z",
+      "listingValidatedBranch": "master",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "abduldotdev/wave3",
+        "pluginIds": [
+          "abduldotdev.wave3"
+        ],
+        "commit": "aa7f37bb52077d91da566adbefecacc02642817b",
+        "checkedAt": "2026-09-29T13:23:17.314Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "service-management",
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "abduldotdev/wave3",
+        "pluginIds": [
+          "abduldotdev.wave3"
+        ],
+        "commit": "aa7f37bb52077d91da566adbefecacc02642817b",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T13:23:17.314Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "service-management",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-29T12:30:23.749Z",
+        "requestEventId": 32080142719,
+        "requestedAt": "2026-09-29T12:48:37Z",
+        "reviewedAt": "2026-09-29T13:23:17.314Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "abduldotdev.wave3": {
+          "category": "Hardware",
+          "tags": [
+            "bar"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
