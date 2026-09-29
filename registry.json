@@ -128842,8 +128842,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-04",
       "listedAt": "2026-09-04T16:00:46.474Z",
-      "listingValidatedCommit": "f8ec0379603838623ae4fb09ff6d37dad2ae1d50",
-      "listingValidatedAt": "2026-09-04T16:00:46.474Z",
+      "listingValidatedCommit": "8e901554fd1e493cc88ef9899e0e238b86fc22c9",
+      "listingValidatedAt": "2026-09-29T16:39:40.275Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -128852,35 +128852,14 @@
         "pluginIds": [
           "io.github.flathack.omajd-remote"
         ],
-        "commit": "f8ec0379603838623ae4fb09ff6d37dad2ae1d50",
-        "checkedAt": "2026-09-04T16:00:46.415Z",
+        "commit": "8e901554fd1e493cc88ef9899e0e238b86fc22c9",
+        "checkedAt": "2026-09-29T16:39:40.275Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
         "capabilities": [
           "installer"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "flathack/omarchy-omajd-remote",
-        "pluginIds": [
-          "io.github.flathack.omajd-remote"
-        ],
-        "commit": "f8ec0379603838623ae4fb09ff6d37dad2ae1d50",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-04T16:00:46.415Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "installer"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-02T19:43:56.578Z",
-        "requestEventId": 30565657279,
-        "requestedAt": "2026-09-04T15:55:51Z",
-        "reviewedAt": "2026-09-04T16:00:46.415Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "io.github.flathack.omajd-remote": {
@@ -128892,7 +128871,73 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "flathack/omarchy-omajd-remote",
+        "pluginIds": [
+          "io.github.flathack.omajd-remote"
+        ],
+        "commit": "8e901554fd1e493cc88ef9899e0e238b86fc22c9",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T16:39:40.275Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-29T06:07:50.020Z",
+        "requestEventId": 32090564315,
+        "requestedAt": "2026-09-29T15:07:29Z",
+        "reviewedAt": "2026-09-29T16:39:40.275Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "f8ec0379603838623ae4fb09ff6d37dad2ae1d50",
+          "validatedAt": "2026-09-04T16:00:46.474Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T16:39:40.275Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "flathack/omarchy-omajd-remote",
+            "pluginIds": [
+              "io.github.flathack.omajd-remote"
+            ],
+            "commit": "f8ec0379603838623ae4fb09ff6d37dad2ae1d50",
+            "checkedAt": "2026-09-04T16:00:46.415Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "installer"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "flathack/omarchy-omajd-remote",
+            "pluginIds": [
+              "io.github.flathack.omajd-remote"
+            ],
+            "commit": "f8ec0379603838623ae4fb09ff6d37dad2ae1d50",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-04T16:00:46.415Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "installer"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-02T19:43:56.578Z",
+            "requestEventId": 30565657279,
+            "requestedAt": "2026-09-04T15:55:51Z",
+            "reviewedAt": "2026-09-04T16:00:46.415Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/alvaroeds/omarchy-hodl",
