@@ -247813,6 +247813,71 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/yeet-src/omarchy-proctop",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T21:07:52.799Z",
+      "listingValidatedCommit": "810c4bb7765d743e2367c202a821f0b9e91e3121",
+      "listingValidatedAt": "2026-09-29T21:07:52.799Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "yeet-src/omarchy-proctop",
+        "pluginIds": [
+          "cx.yeet.proctop"
+        ],
+        "commit": "810c4bb7765d743e2367c202a821f0b9e91e3121",
+        "checkedAt": "2026-09-29T21:07:52.707Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "privilege",
+          "service-management",
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "yeet-src/omarchy-proctop",
+        "pluginIds": [
+          "cx.yeet.proctop"
+        ],
+        "commit": "810c4bb7765d743e2367c202a821f0b9e91e3121",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T21:07:52.707Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "privilege",
+          "service-management",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-29T14:40:37.826Z",
+        "requestEventId": 32095381196,
+        "requestedAt": "2026-09-29T16:13:48Z",
+        "reviewedAt": "2026-09-29T21:07:52.707Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "cx.yeet.proctop": {
+          "category": "Developer Tools",
+          "tags": [
+            "bar"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
