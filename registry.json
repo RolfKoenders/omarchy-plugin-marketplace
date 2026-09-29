@@ -245053,8 +245053,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-29",
       "listedAt": "2026-09-29T06:37:37.188Z",
-      "listingValidatedCommit": "a5f126d7f0f084d646098f2934eba1c191a4aecf",
-      "listingValidatedAt": "2026-09-29T06:37:37.188Z",
+      "listingValidatedCommit": "5e198380c3798a8b9fd2747cf6b7bde1fdbf562a",
+      "listingValidatedAt": "2026-09-29T19:06:18.391Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -245063,8 +245063,8 @@
         "pluginIds": [
           "blip.steam"
         ],
-        "commit": "a5f126d7f0f084d646098f2934eba1c191a4aecf",
-        "checkedAt": "2026-09-29T06:37:37.073Z",
+        "commit": "5e198380c3798a8b9fd2747cf6b7bde1fdbf562a",
+        "checkedAt": "2026-09-29T19:06:18.391Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -245078,7 +245078,29 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "a5f126d7f0f084d646098f2934eba1c191a4aecf",
+          "validatedAt": "2026-09-29T06:37:37.188Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T19:06:18.391Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "blippyohno/omarchy-steam",
+            "pluginIds": [
+              "blip.steam"
+            ],
+            "commit": "a5f126d7f0f084d646098f2934eba1c191a4aecf",
+            "checkedAt": "2026-09-29T06:37:37.073Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/Arjun010011/omarchy-dynamic-island",
