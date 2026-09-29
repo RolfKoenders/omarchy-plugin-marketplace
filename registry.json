@@ -243090,6 +243090,67 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/Andrewx82/omarchy-googletv",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T09:45:39.681Z",
+      "listingValidatedCommit": "18b057c1e8cf030c80a13dd0af015b8f95800bd8",
+      "listingValidatedAt": "2026-09-29T09:45:39.681Z",
+      "listingValidatedBranch": "master",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "andrewx82/omarchy-googletv",
+        "pluginIds": [
+          "omarchy-googletv"
+        ],
+        "commit": "18b057c1e8cf030c80a13dd0af015b8f95800bd8",
+        "checkedAt": "2026-09-29T09:45:39.575Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "installer",
+          "package-manager"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "andrewx82/omarchy-googletv",
+        "pluginIds": [
+          "omarchy-googletv"
+        ],
+        "commit": "18b057c1e8cf030c80a13dd0af015b8f95800bd8",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T09:45:39.575Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "installer",
+          "package-manager"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-29T09:36:08.969Z",
+        "requestEventId": 32067753297,
+        "requestedAt": "2026-09-29T09:43:17Z",
+        "reviewedAt": "2026-09-29T09:45:39.575Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "omarchy-googletv": {
+          "category": "Widgets",
+          "tags": [
+            "bar"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
