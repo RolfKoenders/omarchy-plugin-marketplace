@@ -242864,6 +242864,67 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/navjottomer/omarchy-proton-authenticator",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T08:49:59.890Z",
+      "listingValidatedCommit": "90ad4d19b4c115d0259e0a072c186972d8d41c47",
+      "listingValidatedAt": "2026-09-29T08:49:59.890Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "navjottomer/omarchy-proton-authenticator",
+        "pluginIds": [
+          "navjottomer.proton-authenticator"
+        ],
+        "commit": "90ad4d19b4c115d0259e0a072c186972d8d41c47",
+        "checkedAt": "2026-09-29T08:49:59.778Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "package-manager"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "navjottomer/omarchy-proton-authenticator",
+        "pluginIds": [
+          "navjottomer.proton-authenticator"
+        ],
+        "commit": "90ad4d19b4c115d0259e0a072c186972d8d41c47",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T08:49:59.778Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "package-manager"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-29T08:41:45.827Z",
+        "requestEventId": 32063940560,
+        "requestedAt": "2026-09-29T08:47:25Z",
+        "reviewedAt": "2026-09-29T08:49:59.778Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "navjottomer.proton-authenticator": {
+          "category": "Productivity",
+          "tags": [
+            "security",
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
