@@ -140705,8 +140705,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-06",
       "listedAt": "2026-09-06T01:21:03.466Z",
-      "listingValidatedCommit": "97244e847432f2a0db52939338bc6e818ca5cac9",
-      "listingValidatedAt": "2026-09-06T01:21:03.466Z",
+      "listingValidatedCommit": "316b66b5bb1cd1dcc5991aea6c69d7d9d925ab6a",
+      "listingValidatedAt": "2026-09-29T16:08:28.506Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -140715,8 +140715,8 @@
         "pluginIds": [
           "oliverox.vercel-deploys"
         ],
-        "commit": "97244e847432f2a0db52939338bc6e818ca5cac9",
-        "checkedAt": "2026-09-06T01:21:03.409Z",
+        "commit": "316b66b5bb1cd1dcc5991aea6c69d7d9d925ab6a",
+        "checkedAt": "2026-09-29T16:08:28.506Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -140731,7 +140731,29 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "97244e847432f2a0db52939338bc6e818ca5cac9",
+          "validatedAt": "2026-09-06T01:21:03.466Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T16:08:28.506Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "oliverox/omarchy-vercel-deploys",
+            "pluginIds": [
+              "oliverox.vercel-deploys"
+            ],
+            "commit": "97244e847432f2a0db52939338bc6e818ca5cac9",
+            "checkedAt": "2026-09-06T01:21:03.409Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/NeroSong/omabark",
