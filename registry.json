@@ -202861,8 +202861,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-21",
       "listedAt": "2026-09-21T04:18:31.396Z",
-      "listingValidatedCommit": "d3322c6bc6c87ef34141b7777e3fa41aa66b4367",
-      "listingValidatedAt": "2026-09-27T12:29:16.226Z",
+      "listingValidatedCommit": "6071eb4274af40848e6fe585d04fbfc9156e945e",
+      "listingValidatedAt": "2026-09-29T12:12:09.838Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -202871,8 +202871,8 @@
         "pluginIds": [
           "crazybadger.split-clock"
         ],
-        "commit": "d3322c6bc6c87ef34141b7777e3fa41aa66b4367",
-        "checkedAt": "2026-09-27T12:29:16.226Z",
+        "commit": "6071eb4274af40848e6fe585d04fbfc9156e945e",
+        "checkedAt": "2026-09-29T12:12:09.838Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -202943,6 +202943,26 @@
             ],
             "commit": "34250461599366c4932c64bb7287c3898accba6a",
             "checkedAt": "2026-09-27T08:22:10.119Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        },
+        {
+          "commit": "d3322c6bc6c87ef34141b7777e3fa41aa66b4367",
+          "validatedAt": "2026-09-27T12:29:16.226Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T12:12:09.838Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "crazybadger/omarchy-split-clock",
+            "pluginIds": [
+              "crazybadger.split-clock"
+            ],
+            "commit": "d3322c6bc6c87ef34141b7777e3fa41aa66b4367",
+            "checkedAt": "2026-09-27T12:29:16.226Z",
             "outcome": "passed",
             "enforcementMode": "selective",
             "findings": [],
