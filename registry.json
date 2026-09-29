@@ -106706,8 +106706,8 @@
       "type": "plugin-source",
       "addedAt": "2026-08-30",
       "listedAt": "2026-08-30T22:35:57.232Z",
-      "listingValidatedCommit": "1ea16ed801614dc1dc3104478c39bf467c8cefda",
-      "listingValidatedAt": "2026-08-30T22:35:57.232Z",
+      "listingValidatedCommit": "ba60930cfe5c4e429395afe45542c334724ac4a6",
+      "listingValidatedAt": "2026-09-29T20:05:17.688Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -106716,8 +106716,8 @@
         "pluginIds": [
           "lucas.omadrop"
         ],
-        "commit": "1ea16ed801614dc1dc3104478c39bf467c8cefda",
-        "checkedAt": "2026-08-30T22:35:57.177Z",
+        "commit": "ba60930cfe5c4e429395afe45542c334724ac4a6",
+        "checkedAt": "2026-09-29T20:05:17.688Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -106733,7 +106733,29 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "1ea16ed801614dc1dc3104478c39bf467c8cefda",
+          "validatedAt": "2026-08-30T22:35:57.232Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T20:05:17.688Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "lucascnunes/omadrop",
+            "pluginIds": [
+              "lucas.omadrop"
+            ],
+            "commit": "1ea16ed801614dc1dc3104478c39bf467c8cefda",
+            "checkedAt": "2026-08-30T22:35:57.177Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/x3me/omarchy-nexthop",
