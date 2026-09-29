@@ -244491,6 +244491,39 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/ExeQue/omarchy-http-uptime",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T14:51:06.391Z",
+      "listingValidatedCommit": "9d30c89e921ca7a3aaf8535e90f141881b9dee2b",
+      "listingValidatedAt": "2026-09-29T14:51:06.391Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "exeque/omarchy-http-uptime",
+        "pluginIds": [
+          "exeque.omarchy-http-uptime"
+        ],
+        "commit": "9d30c89e921ca7a3aaf8535e90f141881b9dee2b",
+        "checkedAt": "2026-09-29T14:51:06.276Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "exeque.omarchy-http-uptime": {
+          "category": "Developer Tools",
+          "tags": [
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
