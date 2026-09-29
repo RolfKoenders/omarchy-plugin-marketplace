@@ -136318,8 +136318,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-04",
       "listedAt": "2026-09-04T22:41:17.573Z",
-      "listingValidatedCommit": "d327eb5a51409dc73cc811316dc7e1f905c2f55e",
-      "listingValidatedAt": "2026-09-04T22:41:17.573Z",
+      "listingValidatedCommit": "43695b7239080a218f76d72d9e2a089082a1e5d3",
+      "listingValidatedAt": "2026-09-29T13:56:40.488Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -136328,8 +136328,8 @@
         "pluginIds": [
           "io.github.hiasinho.poolsuitefm"
         ],
-        "commit": "d327eb5a51409dc73cc811316dc7e1f905c2f55e",
-        "checkedAt": "2026-09-04T22:41:17.503Z",
+        "commit": "43695b7239080a218f76d72d9e2a089082a1e5d3",
+        "checkedAt": "2026-09-29T13:56:40.487Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -136349,7 +136349,29 @@
             "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
           }
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "d327eb5a51409dc73cc811316dc7e1f905c2f55e",
+          "validatedAt": "2026-09-04T22:41:17.573Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T13:56:40.488Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "hiasinho/poolsuitefm",
+            "pluginIds": [
+              "io.github.hiasinho.poolsuitefm"
+            ],
+            "commit": "d327eb5a51409dc73cc811316dc7e1f905c2f55e",
+            "checkedAt": "2026-09-04T22:41:17.503Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/andrewscofield/omarchy-notification-settings",
