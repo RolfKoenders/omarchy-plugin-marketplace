@@ -243362,6 +243362,63 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/vvkycodevv/omarchy-sbb",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T11:22:06.065Z",
+      "listingValidatedCommit": "5b72fd0d5e1066d15b6d75dce311878a3ad30e6b",
+      "listingValidatedAt": "2026-09-29T11:22:06.065Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "vvkycodevv/omarchy-sbb",
+        "pluginIds": [
+          "vvkycodevv.sbb"
+        ],
+        "commit": "5b72fd0d5e1066d15b6d75dce311878a3ad30e6b",
+        "checkedAt": "2026-09-29T11:22:05.978Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "remote-build"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "vvkycodevv/omarchy-sbb",
+        "pluginIds": [
+          "vvkycodevv.sbb"
+        ],
+        "commit": "5b72fd0d5e1066d15b6d75dce311878a3ad30e6b",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T11:22:05.978Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "remote-build"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-29T11:17:10.070Z",
+        "requestEventId": 32073888779,
+        "requestedAt": "2026-09-29T11:18:29Z",
+        "reviewedAt": "2026-09-29T11:22:05.978Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "vvkycodevv.sbb": {
+          "category": "Widgets",
+          "tags": [
+            "bar",
+            "quickshell",
+            "hyprland"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
