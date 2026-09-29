@@ -244030,6 +244030,63 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/Nikolaos-Gkionis/peponi-omarchy",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T13:28:29.770Z",
+      "listingValidatedCommit": "f51dd2986f2fb5099584a1cbeb4445fe52f8c6aa",
+      "listingValidatedAt": "2026-09-29T13:28:29.770Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "nikolaos-gkionis/peponi-omarchy",
+        "pluginIds": [
+          "peponi.one-day"
+        ],
+        "commit": "f51dd2986f2fb5099584a1cbeb4445fe52f8c6aa",
+        "checkedAt": "2026-09-29T13:28:29.656Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "nikolaos-gkionis/peponi-omarchy",
+        "pluginIds": [
+          "peponi.one-day"
+        ],
+        "commit": "f51dd2986f2fb5099584a1cbeb4445fe52f8c6aa",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T13:28:29.656Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-29T12:33:26.105Z",
+        "requestEventId": 32080154656,
+        "requestedAt": "2026-09-29T12:48:47Z",
+        "reviewedAt": "2026-09-29T13:28:29.656Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "peponi.one-day": {
+          "category": "Productivity",
+          "tags": [
+            "bar",
+            "quickshell",
+            "hyprland"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
