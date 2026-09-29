@@ -242925,6 +242925,40 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/navjottomer/omarchy-sysmon",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T08:54:33.332Z",
+      "listingValidatedCommit": "b4af4b201e94a27062687cc5d281461e4e221b90",
+      "listingValidatedAt": "2026-09-29T08:54:33.332Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "navjottomer/omarchy-sysmon",
+        "pluginIds": [
+          "navjottomer.sysmon"
+        ],
+        "commit": "b4af4b201e94a27062687cc5d281461e4e221b90",
+        "checkedAt": "2026-09-29T08:54:33.235Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "navjottomer.sysmon": {
+          "category": "System",
+          "tags": [
+            "system",
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
