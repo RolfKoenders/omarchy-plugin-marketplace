@@ -241426,8 +241426,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-28",
       "listedAt": "2026-09-28T19:21:06.816Z",
-      "listingValidatedCommit": "361b0f158efb75674282a1d9a61803cf33cad20a",
-      "listingValidatedAt": "2026-09-28T19:21:06.816Z",
+      "listingValidatedCommit": "b5c15f4db0f8cc8bd11c64e4cbc5a3fd86298a9f",
+      "listingValidatedAt": "2026-09-29T12:39:03.594Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -241436,8 +241436,8 @@
         "pluginIds": [
           "mindwtr"
         ],
-        "commit": "361b0f158efb75674282a1d9a61803cf33cad20a",
-        "checkedAt": "2026-09-28T19:21:06.706Z",
+        "commit": "b5c15f4db0f8cc8bd11c64e4cbc5a3fd86298a9f",
+        "checkedAt": "2026-09-29T12:39:03.594Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -241456,7 +241456,29 @@
             "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
           }
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "361b0f158efb75674282a1d9a61803cf33cad20a",
+          "validatedAt": "2026-09-28T19:21:06.816Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T12:39:03.594Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "ssalentin/omarchy-mindwtr",
+            "pluginIds": [
+              "mindwtr"
+            ],
+            "commit": "361b0f158efb75674282a1d9a61803cf33cad20a",
+            "checkedAt": "2026-09-28T19:21:06.706Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/ofelcan164/muster-omarchy",
