@@ -238313,8 +238313,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-28",
       "listedAt": "2026-09-28T03:10:40.228Z",
-      "listingValidatedCommit": "693a47fb66a29fe16ce48b8848f43fdedf5b428b",
-      "listingValidatedAt": "2026-09-28T03:10:40.228Z",
+      "listingValidatedCommit": "99107ca323d86880de44681c10f8e2ee85d23827",
+      "listingValidatedAt": "2026-09-29T16:34:48.689Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -238323,8 +238323,8 @@
         "pluginIds": [
           "com.omodachi.host"
         ],
-        "commit": "693a47fb66a29fe16ce48b8848f43fdedf5b428b",
-        "checkedAt": "2026-09-28T03:10:40.148Z",
+        "commit": "99107ca323d86880de44681c10f8e2ee85d23827",
+        "checkedAt": "2026-09-29T16:34:48.689Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
@@ -238334,30 +238334,6 @@
           "installer",
           "package-manager"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "omodachi/omodachi-plugin",
-        "pluginIds": [
-          "com.omodachi.host"
-        ],
-        "commit": "693a47fb66a29fe16ce48b8848f43fdedf5b428b",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-28T03:10:40.148Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "privilege",
-          "service-management",
-          "installer",
-          "package-manager"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-28T02:50:18.557Z",
-        "requestEventId": 31959721289,
-        "requestedAt": "2026-09-28T03:03:53Z",
-        "reviewedAt": "2026-09-28T03:10:40.148Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "com.omodachi.host": {
@@ -238373,7 +238349,82 @@
             "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
           }
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "omodachi/omodachi-plugin",
+        "pluginIds": [
+          "com.omodachi.host"
+        ],
+        "commit": "99107ca323d86880de44681c10f8e2ee85d23827",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T16:34:48.689Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "service-management",
+          "installer",
+          "package-manager"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-29T02:43:44.557Z",
+        "requestEventId": 32090498887,
+        "requestedAt": "2026-09-29T15:06:37Z",
+        "reviewedAt": "2026-09-29T16:34:48.689Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "693a47fb66a29fe16ce48b8848f43fdedf5b428b",
+          "validatedAt": "2026-09-28T03:10:40.228Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T16:34:48.689Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "omodachi/omodachi-plugin",
+            "pluginIds": [
+              "com.omodachi.host"
+            ],
+            "commit": "693a47fb66a29fe16ce48b8848f43fdedf5b428b",
+            "checkedAt": "2026-09-28T03:10:40.148Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "privilege",
+              "service-management",
+              "installer",
+              "package-manager"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "omodachi/omodachi-plugin",
+            "pluginIds": [
+              "com.omodachi.host"
+            ],
+            "commit": "693a47fb66a29fe16ce48b8848f43fdedf5b428b",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-28T03:10:40.148Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "privilege",
+              "service-management",
+              "installer",
+              "package-manager"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-28T02:50:18.557Z",
+            "requestEventId": 31959721289,
+            "requestedAt": "2026-09-28T03:03:53Z",
+            "reviewedAt": "2026-09-28T03:10:40.148Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/pwn27sbx/omarchy-mini-cider",
