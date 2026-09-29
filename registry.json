@@ -235651,8 +235651,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-27",
       "listedAt": "2026-09-27T15:36:36.138Z",
-      "listingValidatedCommit": "8b6c64bc74b938825daed0b2debda41ee05e926c",
-      "listingValidatedAt": "2026-09-27T15:36:36.138Z",
+      "listingValidatedCommit": "2f4d961feb58d3d397fe8f9c4c58ebe48ed641ee",
+      "listingValidatedAt": "2026-09-29T19:42:33.287Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -235661,8 +235661,8 @@
         "pluginIds": [
           "foamy.notification-center"
         ],
-        "commit": "8b6c64bc74b938825daed0b2debda41ee05e926c",
-        "checkedAt": "2026-09-27T15:36:36.032Z",
+        "commit": "2f4d961feb58d3d397fe8f9c4c58ebe48ed641ee",
+        "checkedAt": "2026-09-29T19:42:33.287Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -235677,7 +235677,29 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "8b6c64bc74b938825daed0b2debda41ee05e926c",
+          "validatedAt": "2026-09-27T15:36:36.138Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T19:42:33.287Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "foamrider/foamy-notification-center",
+            "pluginIds": [
+              "foamy.notification-center"
+            ],
+            "commit": "8b6c64bc74b938825daed0b2debda41ee05e926c",
+            "checkedAt": "2026-09-27T15:36:36.032Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/foamrider/foamy-syncthing",
