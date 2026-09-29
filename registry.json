@@ -196803,8 +196803,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-18",
       "listedAt": "2026-09-18T21:05:10.726Z",
-      "listingValidatedCommit": "ee1285c3fce2ccfb10829707dad1bc44c6b1e388",
-      "listingValidatedAt": "2026-09-18T21:05:10.726Z",
+      "listingValidatedCommit": "f3a15cfd38d950324b174ff1370ec76c054ceaf7",
+      "listingValidatedAt": "2026-09-29T17:17:11.785Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -196813,8 +196813,8 @@
         "pluginIds": [
           "funcoder.spotify"
         ],
-        "commit": "ee1285c3fce2ccfb10829707dad1bc44c6b1e388",
-        "checkedAt": "2026-09-18T21:05:10.639Z",
+        "commit": "f3a15cfd38d950324b174ff1370ec76c054ceaf7",
+        "checkedAt": "2026-09-29T17:17:11.785Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
@@ -196824,30 +196824,6 @@
           "service-management",
           "installer"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "funcoder/omarchy-spotify",
-        "pluginIds": [
-          "funcoder.spotify"
-        ],
-        "commit": "ee1285c3fce2ccfb10829707dad1bc44c6b1e388",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-18T21:05:10.639Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "privilege",
-          "package-manager",
-          "service-management",
-          "installer"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-18T09:41:05.810Z",
-        "requestEventId": 31416652391,
-        "requestedAt": "2026-09-18T20:29:36Z",
-        "reviewedAt": "2026-09-18T21:05:10.639Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "funcoder.spotify": {
@@ -196859,7 +196835,82 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "funcoder/omarchy-spotify",
+        "pluginIds": [
+          "funcoder.spotify"
+        ],
+        "commit": "f3a15cfd38d950324b174ff1370ec76c054ceaf7",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T17:17:11.785Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "package-manager",
+          "service-management",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-26T23:05:40.153Z",
+        "requestEventId": 32092014363,
+        "requestedAt": "2026-09-29T15:27:05Z",
+        "reviewedAt": "2026-09-29T17:17:11.785Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "ee1285c3fce2ccfb10829707dad1bc44c6b1e388",
+          "validatedAt": "2026-09-18T21:05:10.726Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T17:17:11.785Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "funcoder/omarchy-spotify",
+            "pluginIds": [
+              "funcoder.spotify"
+            ],
+            "commit": "ee1285c3fce2ccfb10829707dad1bc44c6b1e388",
+            "checkedAt": "2026-09-18T21:05:10.639Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "privilege",
+              "package-manager",
+              "service-management",
+              "installer"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "funcoder/omarchy-spotify",
+            "pluginIds": [
+              "funcoder.spotify"
+            ],
+            "commit": "ee1285c3fce2ccfb10829707dad1bc44c6b1e388",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-18T21:05:10.639Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "privilege",
+              "package-manager",
+              "service-management",
+              "installer"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-18T09:41:05.810Z",
+            "requestEventId": 31416652391,
+            "requestedAt": "2026-09-18T20:29:36Z",
+            "reviewedAt": "2026-09-18T21:05:10.639Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/Sarr77/ScratchPeek",
