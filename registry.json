@@ -224994,8 +224994,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-24",
       "listedAt": "2026-09-24T21:52:55.319Z",
-      "listingValidatedCommit": "8aed58b75f4cf8184abf301c504398a7cd1f9928",
-      "listingValidatedAt": "2026-09-24T21:52:55.319Z",
+      "listingValidatedCommit": "5fdb7512c92762be3b8749ba5813a4f7abbab602",
+      "listingValidatedAt": "2026-09-29T08:10:10.291Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -225004,8 +225004,8 @@
         "pluginIds": [
           "failsafe.dexcom"
         ],
-        "commit": "8aed58b75f4cf8184abf301c504398a7cd1f9928",
-        "checkedAt": "2026-09-24T21:52:55.245Z",
+        "commit": "5fdb7512c92762be3b8749ba5813a4f7abbab602",
+        "checkedAt": "2026-09-29T08:10:10.291Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -225024,7 +225024,29 @@
             "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
           }
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "8aed58b75f4cf8184abf301c504398a7cd1f9928",
+          "validatedAt": "2026-09-24T21:52:55.319Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T08:10:10.291Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "fail-safe/omarchy-dexcom",
+            "pluginIds": [
+              "failsafe.dexcom"
+            ],
+            "commit": "8aed58b75f4cf8184abf301c504398a7cd1f9928",
+            "checkedAt": "2026-09-24T21:52:55.245Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/Duck-Cove-Software/omarchy-plugin-uptimerobot",
