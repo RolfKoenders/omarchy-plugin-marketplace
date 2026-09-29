@@ -47722,8 +47722,8 @@
       "type": "plugin-source",
       "addedAt": "2026-08-22",
       "listedAt": "2026-08-22T17:43:50.535Z",
-      "listingValidatedCommit": "cdc79a80237c9187809641731dc108b890bf9065",
-      "listingValidatedAt": "2026-08-23T22:03:52.701Z",
+      "listingValidatedCommit": "092de7657e79b9eba3752a8663593a53b9321323",
+      "listingValidatedAt": "2026-09-29T17:36:21.202Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -47732,8 +47732,8 @@
         "pluginIds": [
           "io.github.camerontucker.omaquickcalc"
         ],
-        "commit": "cdc79a80237c9187809641731dc108b890bf9065",
-        "checkedAt": "2026-08-23T22:03:52.701Z",
+        "commit": "092de7657e79b9eba3752a8663593a53b9321323",
+        "checkedAt": "2026-09-29T17:36:21.202Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
@@ -47756,28 +47756,6 @@
             "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
           }
         }
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "camerontucker/omaquickcalc",
-        "pluginIds": [
-          "io.github.camerontucker.omaquickcalc"
-        ],
-        "commit": "cdc79a80237c9187809641731dc108b890bf9065",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-08-23T22:03:52.701Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "package-manager",
-          "installer"
-        ],
-        "reviewedBaselineCheckedAt": "2026-08-23T21:13:01.423Z",
-        "requestEventId": 29882290570,
-        "requestedAt": "2026-08-23T21:54:06Z",
-        "reviewedAt": "2026-08-23T22:03:52.701Z",
-        "reviewer": "HANCORE-linux"
       },
       "listingValidationHistory": [
         {
@@ -47824,8 +47802,75 @@
             "reviewedAt": "2026-08-22T17:43:50.506Z",
             "reviewer": "HANCORE-linux"
           }
+        },
+        {
+          "commit": "cdc79a80237c9187809641731dc108b890bf9065",
+          "validatedAt": "2026-08-23T22:03:52.701Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T17:36:21.202Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "camerontucker/omaquickcalc",
+            "pluginIds": [
+              "io.github.camerontucker.omaquickcalc"
+            ],
+            "commit": "cdc79a80237c9187809641731dc108b890bf9065",
+            "checkedAt": "2026-08-23T22:03:52.701Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "package-manager",
+              "installer"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "camerontucker/omaquickcalc",
+            "pluginIds": [
+              "io.github.camerontucker.omaquickcalc"
+            ],
+            "commit": "cdc79a80237c9187809641731dc108b890bf9065",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-08-23T22:03:52.701Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "package-manager",
+              "installer"
+            ],
+            "reviewedBaselineCheckedAt": "2026-08-23T21:13:01.423Z",
+            "requestEventId": 29882290570,
+            "requestedAt": "2026-08-23T21:54:06Z",
+            "reviewedAt": "2026-08-23T22:03:52.701Z",
+            "reviewer": "HANCORE-linux"
+          }
         }
-      ]
+      ],
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "camerontucker/omaquickcalc",
+        "pluginIds": [
+          "io.github.camerontucker.omaquickcalc"
+        ],
+        "commit": "092de7657e79b9eba3752a8663593a53b9321323",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T17:36:21.202Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-22T15:17:20.040Z",
+        "requestEventId": 32092174419,
+        "requestedAt": "2026-09-29T15:29:16Z",
+        "reviewedAt": "2026-09-29T17:36:21.202Z",
+        "reviewer": "HANCORE-linux"
+      }
     },
     {
       "repo": "https://github.com/thecdrz/omarchy-sabarchy",
