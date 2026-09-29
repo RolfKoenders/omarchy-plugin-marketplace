@@ -175393,8 +175393,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-13",
       "listedAt": "2026-09-13T17:35:18.427Z",
-      "listingValidatedCommit": "e0195f7321f8388d16fd4a40f4803eb99c673cdf",
-      "listingValidatedAt": "2026-09-13T17:35:18.427Z",
+      "listingValidatedCommit": "d9296d4cdf7c1db61e32487fee54d50ee73ef829",
+      "listingValidatedAt": "2026-09-29T18:53:58.685Z",
       "listingValidatedBranch": "master",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -175403,35 +175403,14 @@
         "pluginIds": [
           "com.github.marvreichmann.omanina"
         ],
-        "commit": "e0195f7321f8388d16fd4a40f4803eb99c673cdf",
-        "checkedAt": "2026-09-13T17:35:18.353Z",
+        "commit": "d9296d4cdf7c1db61e32487fee54d50ee73ef829",
+        "checkedAt": "2026-09-29T18:53:58.685Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
         "capabilities": [
           "package-manager"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "marvreichmann/omanina",
-        "pluginIds": [
-          "com.github.marvreichmann.omanina"
-        ],
-        "commit": "e0195f7321f8388d16fd4a40f4803eb99c673cdf",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-13T17:35:18.353Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "package-manager"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-12T22:14:11.177Z",
-        "requestEventId": 31059321029,
-        "requestedAt": "2026-09-13T17:34:04Z",
-        "reviewedAt": "2026-09-13T17:35:18.353Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "com.github.marvreichmann.omanina": {
@@ -175442,7 +175421,73 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "marvreichmann/omanina",
+        "pluginIds": [
+          "com.github.marvreichmann.omanina"
+        ],
+        "commit": "d9296d4cdf7c1db61e32487fee54d50ee73ef829",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T18:53:58.685Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "package-manager"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-16T12:29:58.014Z",
+        "requestEventId": 32093236866,
+        "requestedAt": "2026-09-29T15:43:45Z",
+        "reviewedAt": "2026-09-29T18:53:58.685Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "e0195f7321f8388d16fd4a40f4803eb99c673cdf",
+          "validatedAt": "2026-09-13T17:35:18.427Z",
+          "branch": "master",
+          "supersededAt": "2026-09-29T18:53:58.685Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "marvreichmann/omanina",
+            "pluginIds": [
+              "com.github.marvreichmann.omanina"
+            ],
+            "commit": "e0195f7321f8388d16fd4a40f4803eb99c673cdf",
+            "checkedAt": "2026-09-13T17:35:18.353Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "package-manager"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "marvreichmann/omanina",
+            "pluginIds": [
+              "com.github.marvreichmann.omanina"
+            ],
+            "commit": "e0195f7321f8388d16fd4a40f4803eb99c673cdf",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-13T17:35:18.353Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "package-manager"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-12T22:14:11.177Z",
+            "requestEventId": 31059321029,
+            "requestedAt": "2026-09-13T17:34:04Z",
+            "reviewedAt": "2026-09-13T17:35:18.353Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/MBhalkar/omarchy-workspace-rename",
