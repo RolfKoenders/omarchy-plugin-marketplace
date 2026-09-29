@@ -243068,8 +243068,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-29",
       "listedAt": "2026-09-29T06:17:19.946Z",
-      "listingValidatedCommit": "410694ab7b1337886f6f11217b27524433795e35",
-      "listingValidatedAt": "2026-09-29T06:17:19.946Z",
+      "listingValidatedCommit": "4c48ad42627977b3c60e1a977607ce58164ffa61",
+      "listingValidatedAt": "2026-09-29T14:09:59.851Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -243078,8 +243078,8 @@
         "pluginIds": [
           "coding-sparrow.devkit"
         ],
-        "commit": "410694ab7b1337886f6f11217b27524433795e35",
-        "checkedAt": "2026-09-29T06:17:19.833Z",
+        "commit": "4c48ad42627977b3c60e1a977607ce58164ffa61",
+        "checkedAt": "2026-09-29T14:09:59.851Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -243094,7 +243094,29 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "410694ab7b1337886f6f11217b27524433795e35",
+          "validatedAt": "2026-09-29T06:17:19.946Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T14:09:59.851Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "coding-sparrow/omarchy-devkit",
+            "pluginIds": [
+              "coding-sparrow.devkit"
+            ],
+            "commit": "410694ab7b1337886f6f11217b27524433795e35",
+            "checkedAt": "2026-09-29T06:17:19.833Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/ericvrp/omarchy-custom-menu-icon",
