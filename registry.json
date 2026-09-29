@@ -117262,8 +117262,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-01",
       "listedAt": "2026-09-01T01:38:43.326Z",
-      "listingValidatedCommit": "5cd161413355feffe1df0c4acae816e001fa05b3",
-      "listingValidatedAt": "2026-09-01T01:38:43.326Z",
+      "listingValidatedCommit": "539e7631a1a2a2e561a8ed70053675ad99b335b2",
+      "listingValidatedAt": "2026-09-29T17:45:03.921Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -117272,35 +117272,14 @@
         "pluginIds": [
           "jampick.ferries"
         ],
-        "commit": "5cd161413355feffe1df0c4acae816e001fa05b3",
-        "checkedAt": "2026-09-01T01:38:43.273Z",
+        "commit": "539e7631a1a2a2e561a8ed70053675ad99b335b2",
+        "checkedAt": "2026-09-29T17:45:03.921Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
         "capabilities": [
           "remote-build"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "jampick/omarchy-ferries",
-        "pluginIds": [
-          "jampick.ferries"
-        ],
-        "commit": "5cd161413355feffe1df0c4acae816e001fa05b3",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-01T01:38:43.273Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "remote-build"
-        ],
-        "reviewedBaselineCheckedAt": "2026-08-29T05:25:11.270Z",
-        "requestEventId": 30316054324,
-        "requestedAt": "2026-09-01T01:37:55Z",
-        "reviewedAt": "2026-09-01T01:38:43.273Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "jampick.ferries": {
@@ -117315,7 +117294,73 @@
             "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
           }
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "jampick/omarchy-ferries",
+        "pluginIds": [
+          "jampick.ferries"
+        ],
+        "commit": "539e7631a1a2a2e561a8ed70053675ad99b335b2",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T17:45:03.921Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "remote-build"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-26T06:55:22.259Z",
+        "requestEventId": 32092202152,
+        "requestedAt": "2026-09-29T15:29:39Z",
+        "reviewedAt": "2026-09-29T17:45:03.921Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "5cd161413355feffe1df0c4acae816e001fa05b3",
+          "validatedAt": "2026-09-01T01:38:43.326Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T17:45:03.921Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "jampick/omarchy-ferries",
+            "pluginIds": [
+              "jampick.ferries"
+            ],
+            "commit": "5cd161413355feffe1df0c4acae816e001fa05b3",
+            "checkedAt": "2026-09-01T01:38:43.273Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "remote-build"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "jampick/omarchy-ferries",
+            "pluginIds": [
+              "jampick.ferries"
+            ],
+            "commit": "5cd161413355feffe1df0c4acae816e001fa05b3",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-01T01:38:43.273Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "remote-build"
+            ],
+            "reviewedBaselineCheckedAt": "2026-08-29T05:25:11.270Z",
+            "requestEventId": 30316054324,
+            "requestedAt": "2026-09-01T01:37:55Z",
+            "reviewedAt": "2026-09-01T01:38:43.273Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/buceylabs/omarchy-orderup",
