@@ -179274,8 +179274,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-15",
       "listedAt": "2026-09-15T17:58:41.262Z",
-      "listingValidatedCommit": "b11c7c6cdad7367df37372d66854ba203c121495",
-      "listingValidatedAt": "2026-09-15T17:58:41.262Z",
+      "listingValidatedCommit": "83fcc7f66f76636f1d37c6253928c1bd04d0d580",
+      "listingValidatedAt": "2026-09-29T20:37:08.412Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -179284,8 +179284,8 @@
         "pluginIds": [
           "io.github.astorrer.konnectarchy"
         ],
-        "commit": "b11c7c6cdad7367df37372d66854ba203c121495",
-        "checkedAt": "2026-09-15T17:58:41.171Z",
+        "commit": "83fcc7f66f76636f1d37c6253928c1bd04d0d580",
+        "checkedAt": "2026-09-29T20:37:08.412Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
@@ -179293,28 +179293,6 @@
           "installer",
           "privilege"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "astorrer/konnectarchy",
-        "pluginIds": [
-          "io.github.astorrer.konnectarchy"
-        ],
-        "commit": "b11c7c6cdad7367df37372d66854ba203c121495",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-15T17:58:41.171Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "installer",
-          "privilege"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-14T04:35:03.768Z",
-        "requestEventId": 31193273791,
-        "requestedAt": "2026-09-15T17:57:21Z",
-        "reviewedAt": "2026-09-15T17:58:41.171Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "io.github.astorrer.konnectarchy": {
@@ -179326,7 +179304,76 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "astorrer/konnectarchy",
+        "pluginIds": [
+          "io.github.astorrer.konnectarchy"
+        ],
+        "commit": "83fcc7f66f76636f1d37c6253928c1bd04d0d580",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T20:37:08.412Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "installer",
+          "privilege"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-23T04:25:32.324Z",
+        "requestEventId": 32094777537,
+        "requestedAt": "2026-09-29T16:05:15Z",
+        "reviewedAt": "2026-09-29T20:37:08.412Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "b11c7c6cdad7367df37372d66854ba203c121495",
+          "validatedAt": "2026-09-15T17:58:41.262Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T20:37:08.412Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "astorrer/konnectarchy",
+            "pluginIds": [
+              "io.github.astorrer.konnectarchy"
+            ],
+            "commit": "b11c7c6cdad7367df37372d66854ba203c121495",
+            "checkedAt": "2026-09-15T17:58:41.171Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "installer",
+              "privilege"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "astorrer/konnectarchy",
+            "pluginIds": [
+              "io.github.astorrer.konnectarchy"
+            ],
+            "commit": "b11c7c6cdad7367df37372d66854ba203c121495",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-15T17:58:41.171Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "installer",
+              "privilege"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-14T04:35:03.768Z",
+            "requestEventId": 31193273791,
+            "requestedAt": "2026-09-15T17:57:21Z",
+            "reviewedAt": "2026-09-15T17:58:41.171Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/seanpk/omarchy-dock-workspaces",
