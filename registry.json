@@ -242457,6 +242457,39 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/sadraalikhah/omarchy-emoji-keep",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T07:34:06.398Z",
+      "listingValidatedCommit": "ee38636c17f6dbc7860d5610f3df1c0d7ff5e05c",
+      "listingValidatedAt": "2026-09-29T07:34:06.398Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "sadraalikhah/omarchy-emoji-keep",
+        "pluginIds": [
+          "io.github.sadraalikhah.emoji-keep"
+        ],
+        "commit": "ee38636c17f6dbc7860d5610f3df1c0d7ff5e05c",
+        "checkedAt": "2026-09-29T07:34:06.278Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "io.github.sadraalikhah.emoji-keep": {
+          "category": "Productivity",
+          "tags": [
+            "quickshell",
+            "launcher"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
