@@ -242804,6 +242804,66 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/keithrowell/omarchy-plugin-omacodesnap",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T08:43:20.849Z",
+      "listingValidatedCommit": "902928a5b99af70514302c20fc49374ca92f6098",
+      "listingValidatedAt": "2026-09-29T08:43:20.849Z",
+      "listingValidatedBranch": "master",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "keithrowell/omarchy-plugin-omacodesnap",
+        "pluginIds": [
+          "com.keithrowell.omacodesnap"
+        ],
+        "commit": "902928a5b99af70514302c20fc49374ca92f6098",
+        "checkedAt": "2026-09-29T08:43:20.745Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "keithrowell/omarchy-plugin-omacodesnap",
+        "pluginIds": [
+          "com.keithrowell.omacodesnap"
+        ],
+        "commit": "902928a5b99af70514302c20fc49374ca92f6098",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T08:43:20.745Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-29T08:35:00.450Z",
+        "requestEventId": 32063244775,
+        "requestedAt": "2026-09-29T08:37:33Z",
+        "reviewedAt": "2026-09-29T08:43:20.745Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "com.keithrowell.omacodesnap": {
+          "category": "Developer Tools",
+          "tags": [
+            "hyprland",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
