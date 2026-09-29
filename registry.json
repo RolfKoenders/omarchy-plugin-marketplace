@@ -247910,6 +247910,40 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/ramackersjp/AgentTalk",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T21:17:44.658Z",
+      "listingValidatedCommit": "31ad3ab76e5a46d8fd312645e6aa3ab848a66726",
+      "listingValidatedAt": "2026-09-29T21:17:44.658Z",
+      "listingValidatedBranch": "trunk",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "ramackersjp/agenttalk",
+        "pluginIds": [
+          "io.github.ramackersjp.agenttalk"
+        ],
+        "commit": "31ad3ab76e5a46d8fd312645e6aa3ab848a66726",
+        "checkedAt": "2026-09-29T21:17:44.516Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "io.github.ramackersjp.agenttalk": {
+          "category": "Developer Tools",
+          "tags": [
+            "ai",
+            "bar",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
