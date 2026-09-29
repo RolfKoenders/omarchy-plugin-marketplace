@@ -236083,8 +236083,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-27",
       "listedAt": "2026-09-27T16:03:09.913Z",
-      "listingValidatedCommit": "9773dfda61961f59a191db8df3e04fb7304feb23",
-      "listingValidatedAt": "2026-09-27T16:03:09.913Z",
+      "listingValidatedCommit": "a9df6e11569575c0267db298532e23ecac8d91a9",
+      "listingValidatedAt": "2026-09-29T19:47:12.341Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -236093,8 +236093,8 @@
         "pluginIds": [
           "blacksheep.nextdns"
         ],
-        "commit": "9773dfda61961f59a191db8df3e04fb7304feb23",
-        "checkedAt": "2026-09-27T16:03:09.812Z",
+        "commit": "a9df6e11569575c0267db298532e23ecac8d91a9",
+        "checkedAt": "2026-09-29T19:47:12.341Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
@@ -236105,31 +236105,6 @@
           "service-management",
           "installer"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "jonspinks/omarchy-nextdns",
-        "pluginIds": [
-          "blacksheep.nextdns"
-        ],
-        "commit": "9773dfda61961f59a191db8df3e04fb7304feb23",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-27T16:03:09.812Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "privilege",
-          "package-manager",
-          "sudoers-modification",
-          "service-management",
-          "installer"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-27T14:30:13.126Z",
-        "requestEventId": 31936014185,
-        "requestedAt": "2026-09-27T15:19:06Z",
-        "reviewedAt": "2026-09-27T16:03:09.812Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "blacksheep.nextdns": {
@@ -236145,7 +236120,85 @@
             "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
           }
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "jonspinks/omarchy-nextdns",
+        "pluginIds": [
+          "blacksheep.nextdns"
+        ],
+        "commit": "a9df6e11569575c0267db298532e23ecac8d91a9",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T19:47:12.341Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "package-manager",
+          "sudoers-modification",
+          "service-management",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T14:19:31.573Z",
+        "requestEventId": 32094221896,
+        "requestedAt": "2026-09-29T15:57:19Z",
+        "reviewedAt": "2026-09-29T19:47:12.341Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "9773dfda61961f59a191db8df3e04fb7304feb23",
+          "validatedAt": "2026-09-27T16:03:09.913Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T19:47:12.341Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "jonspinks/omarchy-nextdns",
+            "pluginIds": [
+              "blacksheep.nextdns"
+            ],
+            "commit": "9773dfda61961f59a191db8df3e04fb7304feb23",
+            "checkedAt": "2026-09-27T16:03:09.812Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "privilege",
+              "package-manager",
+              "sudoers-modification",
+              "service-management",
+              "installer"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "jonspinks/omarchy-nextdns",
+            "pluginIds": [
+              "blacksheep.nextdns"
+            ],
+            "commit": "9773dfda61961f59a191db8df3e04fb7304feb23",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-27T16:03:09.812Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "privilege",
+              "package-manager",
+              "sudoers-modification",
+              "service-management",
+              "installer"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-27T14:30:13.126Z",
+            "requestEventId": 31936014185,
+            "requestedAt": "2026-09-27T15:19:06Z",
+            "reviewedAt": "2026-09-27T16:03:09.812Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/foamrider/foamy-clock",
