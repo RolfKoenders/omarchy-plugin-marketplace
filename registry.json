@@ -164705,8 +164705,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-10",
       "listedAt": "2026-09-10T19:07:24.638Z",
-      "listingValidatedCommit": "c8ad1ef033dea84d4e7eeddbbbcbe3c93fe3aea6",
-      "listingValidatedAt": "2026-09-10T19:07:24.638Z",
+      "listingValidatedCommit": "db20514f8df605fa9edf5cdce5228c4222b33348",
+      "listingValidatedAt": "2026-09-29T14:20:34.297Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -164715,8 +164715,8 @@
         "pluginIds": [
           "bibek.menu"
         ],
-        "commit": "c8ad1ef033dea84d4e7eeddbbbcbe3c93fe3aea6",
-        "checkedAt": "2026-09-10T19:07:24.571Z",
+        "commit": "db20514f8df605fa9edf5cdce5228c4222b33348",
+        "checkedAt": "2026-09-29T14:20:34.297Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -164730,7 +164730,29 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "c8ad1ef033dea84d4e7eeddbbbcbe3c93fe3aea6",
+          "validatedAt": "2026-09-10T19:07:24.638Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T14:20:34.297Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "bibekbhusal0/omarchy-better-menu",
+            "pluginIds": [
+              "bibek.menu"
+            ],
+            "commit": "c8ad1ef033dea84d4e7eeddbbbcbe3c93fe3aea6",
+            "checkedAt": "2026-09-10T19:07:24.571Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/wisangdg/omarchy-magnify-dock",
