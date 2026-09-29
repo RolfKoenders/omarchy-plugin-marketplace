@@ -233474,8 +233474,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-27",
       "listedAt": "2026-09-27T12:16:29.228Z",
-      "listingValidatedCommit": "3f564588769242a4d17798d95e3d28d91891d25b",
-      "listingValidatedAt": "2026-09-27T12:16:29.228Z",
+      "listingValidatedCommit": "f6082179873442285042d66ea53bffb045f2abdc",
+      "listingValidatedAt": "2026-09-29T18:12:07.859Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -233484,8 +233484,8 @@
         "pluginIds": [
           "io.github.alxwolfenstein97.omahud"
         ],
-        "commit": "3f564588769242a4d17798d95e3d28d91891d25b",
-        "checkedAt": "2026-09-27T12:16:29.122Z",
+        "commit": "f6082179873442285042d66ea53bffb045f2abdc",
+        "checkedAt": "2026-09-29T18:12:07.859Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
@@ -233494,29 +233494,6 @@
           "installer",
           "privilege"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "alxwolfenstein97/omahud",
-        "pluginIds": [
-          "io.github.alxwolfenstein97.omahud"
-        ],
-        "commit": "3f564588769242a4d17798d95e3d28d91891d25b",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-27T12:16:29.122Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "package-manager",
-          "installer",
-          "privilege"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-27T10:57:11.114Z",
-        "requestEventId": 31929231408,
-        "requestedAt": "2026-09-27T11:48:18Z",
-        "reviewedAt": "2026-09-27T12:16:29.122Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "io.github.alxwolfenstein97.omahud": {
@@ -233531,7 +233508,79 @@
             "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
           }
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "alxwolfenstein97/omahud",
+        "pluginIds": [
+          "io.github.alxwolfenstein97.omahud"
+        ],
+        "commit": "f6082179873442285042d66ea53bffb045f2abdc",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T18:12:07.859Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "package-manager",
+          "installer",
+          "privilege"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T06:35:23.652Z",
+        "requestEventId": 32092658664,
+        "requestedAt": "2026-09-29T15:35:46Z",
+        "reviewedAt": "2026-09-29T18:12:07.859Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "3f564588769242a4d17798d95e3d28d91891d25b",
+          "validatedAt": "2026-09-27T12:16:29.228Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T18:12:07.859Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "alxwolfenstein97/omahud",
+            "pluginIds": [
+              "io.github.alxwolfenstein97.omahud"
+            ],
+            "commit": "3f564588769242a4d17798d95e3d28d91891d25b",
+            "checkedAt": "2026-09-27T12:16:29.122Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "package-manager",
+              "installer",
+              "privilege"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "alxwolfenstein97/omahud",
+            "pluginIds": [
+              "io.github.alxwolfenstein97.omahud"
+            ],
+            "commit": "3f564588769242a4d17798d95e3d28d91891d25b",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-27T12:16:29.122Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "package-manager",
+              "installer",
+              "privilege"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-27T10:57:11.114Z",
+            "requestEventId": 31929231408,
+            "requestedAt": "2026-09-27T11:48:18Z",
+            "reviewedAt": "2026-09-27T12:16:29.122Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/rblalock/omarchy-replay",
