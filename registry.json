@@ -216558,8 +216558,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-22",
       "listedAt": "2026-09-22T14:08:41.715Z",
-      "listingValidatedCommit": "e0877eb230018315873ac8080ce500b9d84bd44f",
-      "listingValidatedAt": "2026-09-22T14:08:41.715Z",
+      "listingValidatedCommit": "5ad37af7264eee98d391af1af47dd04722fb8562",
+      "listingValidatedAt": "2026-09-29T20:15:23.168Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -216568,35 +216568,14 @@
         "pluginIds": [
           "dev.cstav.omarchy.plugin.hyprbattles"
         ],
-        "commit": "e0877eb230018315873ac8080ce500b9d84bd44f",
-        "checkedAt": "2026-09-22T14:08:41.609Z",
+        "commit": "5ad37af7264eee98d391af1af47dd04722fb8562",
+        "checkedAt": "2026-09-29T20:15:23.168Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
         "capabilities": [
           "privilege"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "stavwasplayz/hyprbattles",
-        "pluginIds": [
-          "dev.cstav.omarchy.plugin.hyprbattles"
-        ],
-        "commit": "e0877eb230018315873ac8080ce500b9d84bd44f",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-22T14:08:41.609Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "privilege"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-22T13:35:43.391Z",
-        "requestEventId": 31604605621,
-        "requestedAt": "2026-09-22T13:52:07Z",
-        "reviewedAt": "2026-09-22T14:08:41.609Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "dev.cstav.omarchy.plugin.hyprbattles": {
@@ -216608,7 +216587,73 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "stavwasplayz/hyprbattles",
+        "pluginIds": [
+          "dev.cstav.omarchy.plugin.hyprbattles"
+        ],
+        "commit": "5ad37af7264eee98d391af1af47dd04722fb8562",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T20:15:23.168Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-22T21:24:45.552Z",
+        "requestEventId": 32094541091,
+        "requestedAt": "2026-09-29T16:01:53Z",
+        "reviewedAt": "2026-09-29T20:15:23.168Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "e0877eb230018315873ac8080ce500b9d84bd44f",
+          "validatedAt": "2026-09-22T14:08:41.715Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T20:15:23.168Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "stavwasplayz/hyprbattles",
+            "pluginIds": [
+              "dev.cstav.omarchy.plugin.hyprbattles"
+            ],
+            "commit": "e0877eb230018315873ac8080ce500b9d84bd44f",
+            "checkedAt": "2026-09-22T14:08:41.609Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "privilege"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "stavwasplayz/hyprbattles",
+            "pluginIds": [
+              "dev.cstav.omarchy.plugin.hyprbattles"
+            ],
+            "commit": "e0877eb230018315873ac8080ce500b9d84bd44f",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-22T14:08:41.609Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "privilege"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-22T13:35:43.391Z",
+            "requestEventId": 31604605621,
+            "requestedAt": "2026-09-22T13:52:07Z",
+            "reviewedAt": "2026-09-22T14:08:41.609Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/dreed47/tempest-weather",
