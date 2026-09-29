@@ -102570,8 +102570,8 @@
       "type": "plugin-source",
       "addedAt": "2026-08-30",
       "listedAt": "2026-08-30T09:11:05.866Z",
-      "listingValidatedCommit": "6b25e7448ffb83f4a531ffec2f7d1dbf940cfcb4",
-      "listingValidatedAt": "2026-09-11T15:15:48.146Z",
+      "listingValidatedCommit": "729d400cdb0772388b1ffdb38cf77795293da546",
+      "listingValidatedAt": "2026-09-29T20:20:02.479Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -102580,8 +102580,8 @@
         "pluginIds": [
           "io.github.14brussell.wallpaper-engine"
         ],
-        "commit": "6b25e7448ffb83f4a531ffec2f7d1dbf940cfcb4",
-        "checkedAt": "2026-09-11T15:15:48.146Z",
+        "commit": "729d400cdb0772388b1ffdb38cf77795293da546",
+        "checkedAt": "2026-09-29T20:20:02.479Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
@@ -102739,6 +102739,53 @@
             "reviewedAt": "2026-09-03T23:21:40.118Z",
             "reviewer": "HANCORE-linux"
           }
+        },
+        {
+          "commit": "6b25e7448ffb83f4a531ffec2f7d1dbf940cfcb4",
+          "validatedAt": "2026-09-11T15:15:48.146Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T20:20:02.479Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "14brussell/wallpaper-engine-omarchy",
+            "pluginIds": [
+              "io.github.14brussell.wallpaper-engine"
+            ],
+            "commit": "6b25e7448ffb83f4a531ffec2f7d1dbf940cfcb4",
+            "checkedAt": "2026-09-11T15:15:48.146Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "package-manager",
+              "service-management",
+              "installer"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "14brussell/wallpaper-engine-omarchy",
+            "pluginIds": [
+              "io.github.14brussell.wallpaper-engine"
+            ],
+            "commit": "6b25e7448ffb83f4a531ffec2f7d1dbf940cfcb4",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-11T15:15:48.146Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "package-manager",
+              "service-management",
+              "installer"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-10T21:33:52.434Z",
+            "requestEventId": 30975775434,
+            "requestedAt": "2026-09-11T13:48:23Z",
+            "reviewedAt": "2026-09-11T15:15:48.146Z",
+            "reviewer": "HANCORE-linux"
+          }
         }
       ],
       "maintainerVerificationReview": {
@@ -102747,10 +102794,10 @@
         "pluginIds": [
           "io.github.14brussell.wallpaper-engine"
         ],
-        "commit": "6b25e7448ffb83f4a531ffec2f7d1dbf940cfcb4",
+        "commit": "729d400cdb0772388b1ffdb38cf77795293da546",
         "baselineVersion": "3",
         "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-11T15:15:48.146Z",
+        "baselineCheckedAt": "2026-09-29T20:20:02.479Z",
         "baselineOutcome": "review-required",
         "findings": [],
         "capabilities": [
@@ -102758,10 +102805,10 @@
           "service-management",
           "installer"
         ],
-        "reviewedBaselineCheckedAt": "2026-09-10T21:33:52.434Z",
-        "requestEventId": 30975775434,
-        "requestedAt": "2026-09-11T13:48:23Z",
-        "reviewedAt": "2026-09-11T15:15:48.146Z",
+        "reviewedBaselineCheckedAt": "2026-09-21T02:07:57.631Z",
+        "requestEventId": 32094596457,
+        "requestedAt": "2026-09-29T16:02:40Z",
+        "reviewedAt": "2026-09-29T20:20:02.479Z",
         "reviewer": "HANCORE-linux"
       }
     },
