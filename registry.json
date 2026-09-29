@@ -179670,8 +179670,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-15",
       "listedAt": "2026-09-15T18:11:35.464Z",
-      "listingValidatedCommit": "952a041d75aee6908220d154ff90f96fee3065e6",
-      "listingValidatedAt": "2026-09-15T18:11:35.464Z",
+      "listingValidatedCommit": "f34fd97d18aa90ddc49f8ce1ab3d09207a331b41",
+      "listingValidatedAt": "2026-09-29T20:54:41.056Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -179680,35 +179680,14 @@
         "pluginIds": [
           "io.github.glasschan.appimage"
         ],
-        "commit": "952a041d75aee6908220d154ff90f96fee3065e6",
-        "checkedAt": "2026-09-15T18:11:35.371Z",
+        "commit": "f34fd97d18aa90ddc49f8ce1ab3d09207a331b41",
+        "checkedAt": "2026-09-29T20:54:41.056Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
         "capabilities": [
           "package-manager"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "glasschan/appimage-for-omarchy",
-        "pluginIds": [
-          "io.github.glasschan.appimage"
-        ],
-        "commit": "952a041d75aee6908220d154ff90f96fee3065e6",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-15T18:11:35.371Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "package-manager"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-15T16:28:40.044Z",
-        "requestEventId": 31193683916,
-        "requestedAt": "2026-09-15T18:04:33Z",
-        "reviewedAt": "2026-09-15T18:11:35.371Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "io.github.glasschan.appimage": {
@@ -179724,7 +179703,73 @@
             "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
           }
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "glasschan/appimage-for-omarchy",
+        "pluginIds": [
+          "io.github.glasschan.appimage"
+        ],
+        "commit": "f34fd97d18aa90ddc49f8ce1ab3d09207a331b41",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T20:54:41.056Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "package-manager"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-17T17:33:39.985Z",
+        "requestEventId": 32095169912,
+        "requestedAt": "2026-09-29T16:10:46Z",
+        "reviewedAt": "2026-09-29T20:54:41.056Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "952a041d75aee6908220d154ff90f96fee3065e6",
+          "validatedAt": "2026-09-15T18:11:35.464Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T20:54:41.056Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "glasschan/appimage-for-omarchy",
+            "pluginIds": [
+              "io.github.glasschan.appimage"
+            ],
+            "commit": "952a041d75aee6908220d154ff90f96fee3065e6",
+            "checkedAt": "2026-09-15T18:11:35.371Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "package-manager"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "glasschan/appimage-for-omarchy",
+            "pluginIds": [
+              "io.github.glasschan.appimage"
+            ],
+            "commit": "952a041d75aee6908220d154ff90f96fee3065e6",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-15T18:11:35.371Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "package-manager"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-15T16:28:40.044Z",
+            "requestEventId": 31193683916,
+            "requestedAt": "2026-09-15T18:04:33Z",
+            "reviewedAt": "2026-09-15T18:11:35.371Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/maile-it-solutions/omarchy-pomodoro",
