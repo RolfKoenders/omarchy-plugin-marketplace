@@ -203921,8 +203921,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-21",
       "listedAt": "2026-09-21T05:27:29.331Z",
-      "listingValidatedCommit": "8cb5ae0b057daa191827fd397ec27306c8aa3a22",
-      "listingValidatedAt": "2026-09-21T05:27:29.331Z",
+      "listingValidatedCommit": "4e4126174b39c17f3deaacdf7dd72bdf12947b55",
+      "listingValidatedAt": "2026-09-29T12:25:25.462Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -203931,8 +203931,8 @@
         "pluginIds": [
           "ai-usage.notch"
         ],
-        "commit": "8cb5ae0b057daa191827fd397ec27306c8aa3a22",
-        "checkedAt": "2026-09-21T05:27:29.237Z",
+        "commit": "4e4126174b39c17f3deaacdf7dd72bdf12947b55",
+        "checkedAt": "2026-09-29T12:25:25.462Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -203947,7 +203947,29 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "8cb5ae0b057daa191827fd397ec27306c8aa3a22",
+          "validatedAt": "2026-09-21T05:27:29.331Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T12:25:25.462Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "bappoz/omarchy-ai-usage",
+            "pluginIds": [
+              "ai-usage.notch"
+            ],
+            "commit": "8cb5ae0b057daa191827fd397ec27306c8aa3a22",
+            "checkedAt": "2026-09-21T05:27:29.237Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/dawestheperson/omarchy-predator-widget",
