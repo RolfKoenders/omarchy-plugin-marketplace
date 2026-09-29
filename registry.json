@@ -245097,6 +245097,73 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/pb3975/omarchy-face-auth",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T16:14:11.400Z",
+      "listingValidatedCommit": "dbd8a97b2ba5ebbf5a7aab3f57d5659b11d9d09f",
+      "listingValidatedAt": "2026-09-29T16:14:11.400Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "pb3975/omarchy-face-auth",
+        "pluginIds": [
+          "io.github.pb3975.face-auth"
+        ],
+        "commit": "dbd8a97b2ba5ebbf5a7aab3f57d5659b11d9d09f",
+        "checkedAt": "2026-09-29T16:14:11.330Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "installer",
+          "service-management",
+          "package-manager"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "pb3975/omarchy-face-auth",
+        "pluginIds": [
+          "io.github.pb3975.face-auth"
+        ],
+        "commit": "dbd8a97b2ba5ebbf5a7aab3f57d5659b11d9d09f",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T16:14:11.330Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "installer",
+          "service-management",
+          "package-manager"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-29T13:22:44.082Z",
+        "requestEventId": 32089188391,
+        "requestedAt": "2026-09-29T14:48:29Z",
+        "reviewedAt": "2026-09-29T16:14:11.330Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "io.github.pb3975.face-auth": {
+          "category": "System",
+          "tags": [
+            "security",
+            "system",
+            "quickshell"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
