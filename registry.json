@@ -214791,8 +214791,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-22",
       "listedAt": "2026-09-22T12:22:09.211Z",
-      "listingValidatedCommit": "a2014510db21571140f973a905c9470934b50e25",
-      "listingValidatedAt": "2026-09-22T12:22:09.211Z",
+      "listingValidatedCommit": "2c55438dbca179a71666dcc2ec7b78912c972df1",
+      "listingValidatedAt": "2026-09-29T18:31:15.768Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -214801,8 +214801,8 @@
         "pluginIds": [
           "io.github.dragosol.omapager-pro"
         ],
-        "commit": "a2014510db21571140f973a905c9470934b50e25",
-        "checkedAt": "2026-09-22T12:22:09.119Z",
+        "commit": "2c55438dbca179a71666dcc2ec7b78912c972df1",
+        "checkedAt": "2026-09-29T18:31:15.768Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
@@ -214810,28 +214810,6 @@
           "remote-build",
           "privilege"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "dragosol/omarchy-omapager-pro",
-        "pluginIds": [
-          "io.github.dragosol.omapager-pro"
-        ],
-        "commit": "a2014510db21571140f973a905c9470934b50e25",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-22T12:22:09.119Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "remote-build",
-          "privilege"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-22T11:13:30.999Z",
-        "requestEventId": 31597201125,
-        "requestedAt": "2026-09-22T12:00:23Z",
-        "reviewedAt": "2026-09-22T12:22:09.119Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "io.github.dragosol.omapager-pro": {
@@ -214842,7 +214820,76 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "dragosol/omarchy-omapager-pro",
+        "pluginIds": [
+          "io.github.dragosol.omapager-pro"
+        ],
+        "commit": "2c55438dbca179a71666dcc2ec7b78912c972df1",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T18:31:15.768Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "remote-build",
+          "privilege"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T17:01:40.218Z",
+        "requestEventId": 32092697283,
+        "requestedAt": "2026-09-29T15:36:19Z",
+        "reviewedAt": "2026-09-29T18:31:15.768Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "a2014510db21571140f973a905c9470934b50e25",
+          "validatedAt": "2026-09-22T12:22:09.211Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T18:31:15.768Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "dragosol/omarchy-omapager-pro",
+            "pluginIds": [
+              "io.github.dragosol.omapager-pro"
+            ],
+            "commit": "a2014510db21571140f973a905c9470934b50e25",
+            "checkedAt": "2026-09-22T12:22:09.119Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "remote-build",
+              "privilege"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "dragosol/omarchy-omapager-pro",
+            "pluginIds": [
+              "io.github.dragosol.omapager-pro"
+            ],
+            "commit": "a2014510db21571140f973a905c9470934b50e25",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-22T12:22:09.119Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "remote-build",
+              "privilege"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-22T11:13:30.999Z",
+            "requestEventId": 31597201125,
+            "requestedAt": "2026-09-22T12:00:23Z",
+            "reviewedAt": "2026-09-22T12:22:09.119Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/iKozzz/omarchy-converter-plugin",
