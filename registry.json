@@ -229211,8 +229211,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-26",
       "listedAt": "2026-09-26T05:55:32.184Z",
-      "listingValidatedCommit": "4d0d7e53ad8f4c3a129f7d31fc0ccbe80068beec",
-      "listingValidatedAt": "2026-09-26T05:55:32.184Z",
+      "listingValidatedCommit": "6bdd8366432e3a7d8a02e3c7b0e1db7ea127cfdc",
+      "listingValidatedAt": "2026-09-29T19:19:38.157Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -229221,8 +229221,8 @@
         "pluginIds": [
           "burmjohn.omadocked"
         ],
-        "commit": "4d0d7e53ad8f4c3a129f7d31fc0ccbe80068beec",
-        "checkedAt": "2026-09-26T05:55:32.095Z",
+        "commit": "6bdd8366432e3a7d8a02e3c7b0e1db7ea127cfdc",
+        "checkedAt": "2026-09-29T19:19:38.157Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -229242,7 +229242,29 @@
             "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
           }
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "4d0d7e53ad8f4c3a129f7d31fc0ccbe80068beec",
+          "validatedAt": "2026-09-26T05:55:32.184Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T19:19:38.157Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "burmjohn/omadocked",
+            "pluginIds": [
+              "burmjohn.omadocked"
+            ],
+            "commit": "4d0d7e53ad8f4c3a129f7d31fc0ccbe80068beec",
+            "checkedAt": "2026-09-26T05:55:32.095Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/SirAllap/omarchy-solfa",
