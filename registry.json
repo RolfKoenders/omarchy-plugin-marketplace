@@ -213411,8 +213411,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-22",
       "listedAt": "2026-09-22T09:47:02.404Z",
-      "listingValidatedCommit": "776398a1c984ca86474dbf7a2f2dbeabfa9b92be",
-      "listingValidatedAt": "2026-09-22T09:47:02.404Z",
+      "listingValidatedCommit": "b9908f826540fdfd07f19aee500f1173f96cf7ab",
+      "listingValidatedAt": "2026-09-29T19:14:33.676Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -213421,8 +213421,8 @@
         "pluginIds": [
           "io.github.zeus-deus.voxtype"
         ],
-        "commit": "776398a1c984ca86474dbf7a2f2dbeabfa9b92be",
-        "checkedAt": "2026-09-22T09:47:02.309Z",
+        "commit": "b9908f826540fdfd07f19aee500f1173f96cf7ab",
+        "checkedAt": "2026-09-29T19:14:33.675Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
@@ -213430,28 +213430,6 @@
           "privilege",
           "service-management"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "zeus-deus/voxtype-omarchy-plugin",
-        "pluginIds": [
-          "io.github.zeus-deus.voxtype"
-        ],
-        "commit": "776398a1c984ca86474dbf7a2f2dbeabfa9b92be",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-22T09:47:02.309Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "privilege",
-          "service-management"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-22T08:46:58.531Z",
-        "requestEventId": 31588544560,
-        "requestedAt": "2026-09-22T09:25:19Z",
-        "reviewedAt": "2026-09-22T09:47:02.309Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "io.github.zeus-deus.voxtype": {
@@ -213463,7 +213441,76 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "zeus-deus/voxtype-omarchy-plugin",
+        "pluginIds": [
+          "io.github.zeus-deus.voxtype"
+        ],
+        "commit": "b9908f826540fdfd07f19aee500f1173f96cf7ab",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T19:14:33.675Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "service-management"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-23T13:06:39.339Z",
+        "requestEventId": 32093618363,
+        "requestedAt": "2026-09-29T15:48:59Z",
+        "reviewedAt": "2026-09-29T19:14:33.676Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "776398a1c984ca86474dbf7a2f2dbeabfa9b92be",
+          "validatedAt": "2026-09-22T09:47:02.404Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T19:14:33.676Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "zeus-deus/voxtype-omarchy-plugin",
+            "pluginIds": [
+              "io.github.zeus-deus.voxtype"
+            ],
+            "commit": "776398a1c984ca86474dbf7a2f2dbeabfa9b92be",
+            "checkedAt": "2026-09-22T09:47:02.309Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "privilege",
+              "service-management"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "zeus-deus/voxtype-omarchy-plugin",
+            "pluginIds": [
+              "io.github.zeus-deus.voxtype"
+            ],
+            "commit": "776398a1c984ca86474dbf7a2f2dbeabfa9b92be",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-22T09:47:02.309Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "privilege",
+              "service-management"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-22T08:46:58.531Z",
+            "requestEventId": 31588544560,
+            "requestedAt": "2026-09-22T09:25:19Z",
+            "reviewedAt": "2026-09-22T09:47:02.309Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/xtrimsystems/omarchy-fillet",
