@@ -208299,8 +208299,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-22",
       "listedAt": "2026-09-22T00:06:46.177Z",
-      "listingValidatedCommit": "5a4539c182015e1e812d5c3fcc32f60868185093",
-      "listingValidatedAt": "2026-09-22T00:06:46.177Z",
+      "listingValidatedCommit": "dd636c4fe586636bb470cd5f7ff7e5a9ebe50f9b",
+      "listingValidatedAt": "2026-09-29T15:07:24.937Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -208309,8 +208309,8 @@
         "pluginIds": [
           "io.github.heroesofcode.omacento"
         ],
-        "commit": "5a4539c182015e1e812d5c3fcc32f60868185093",
-        "checkedAt": "2026-09-22T00:06:46.118Z",
+        "commit": "dd636c4fe586636bb470cd5f7ff7e5a9ebe50f9b",
+        "checkedAt": "2026-09-29T15:07:24.937Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
@@ -208319,29 +208319,6 @@
           "package-manager",
           "privilege"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "heroesofcode/omacento",
-        "pluginIds": [
-          "io.github.heroesofcode.omacento"
-        ],
-        "commit": "5a4539c182015e1e812d5c3fcc32f60868185093",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-22T00:06:46.118Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "service-management",
-          "package-manager",
-          "privilege"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-21T22:41:15.467Z",
-        "requestEventId": 31566332994,
-        "requestedAt": "2026-09-21T23:51:45Z",
-        "reviewedAt": "2026-09-22T00:06:46.118Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "io.github.heroesofcode.omacento": {
@@ -208353,7 +208330,79 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "heroesofcode/omacento",
+        "pluginIds": [
+          "io.github.heroesofcode.omacento"
+        ],
+        "commit": "dd636c4fe586636bb470cd5f7ff7e5a9ebe50f9b",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T15:07:24.937Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "service-management",
+          "package-manager",
+          "privilege"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-23T04:04:15.898Z",
+        "requestEventId": 32085489757,
+        "requestedAt": "2026-09-29T13:59:26Z",
+        "reviewedAt": "2026-09-29T15:07:24.937Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "5a4539c182015e1e812d5c3fcc32f60868185093",
+          "validatedAt": "2026-09-22T00:06:46.177Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T15:07:24.937Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "heroesofcode/omacento",
+            "pluginIds": [
+              "io.github.heroesofcode.omacento"
+            ],
+            "commit": "5a4539c182015e1e812d5c3fcc32f60868185093",
+            "checkedAt": "2026-09-22T00:06:46.118Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "service-management",
+              "package-manager",
+              "privilege"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "heroesofcode/omacento",
+            "pluginIds": [
+              "io.github.heroesofcode.omacento"
+            ],
+            "commit": "5a4539c182015e1e812d5c3fcc32f60868185093",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-22T00:06:46.118Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "service-management",
+              "package-manager",
+              "privilege"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-21T22:41:15.467Z",
+            "requestEventId": 31566332994,
+            "requestedAt": "2026-09-21T23:51:45Z",
+            "reviewedAt": "2026-09-22T00:06:46.118Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/TomFaulkner/omarchy-tuts-tomb",
