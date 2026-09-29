@@ -242402,6 +242402,61 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/Arjun010011/omarchy-dynamic-island",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T06:51:03.761Z",
+      "listingValidatedCommit": "9d6e3f4e072a77b7b11086934b785b6d7f2518f7",
+      "listingValidatedAt": "2026-09-29T06:51:03.761Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "arjun010011/omarchy-dynamic-island",
+        "pluginIds": [
+          "omarchy-dynamic-island"
+        ],
+        "commit": "9d6e3f4e072a77b7b11086934b785b6d7f2518f7",
+        "checkedAt": "2026-09-29T06:51:03.653Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "arjun010011/omarchy-dynamic-island",
+        "pluginIds": [
+          "omarchy-dynamic-island"
+        ],
+        "commit": "9d6e3f4e072a77b7b11086934b785b6d7f2518f7",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T06:51:03.653Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-29T06:47:20.818Z",
+        "requestEventId": 32056332179,
+        "requestedAt": "2026-09-29T06:48:49Z",
+        "reviewedAt": "2026-09-29T06:51:03.653Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "omarchy-dynamic-island": {
+          "category": "Appearance",
+          "tags": [
+            "bar"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
