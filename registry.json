@@ -247878,6 +247878,38 @@
           }
         }
       }
+    },
+    {
+      "repo": "https://github.com/offskip-dave/omarchy-jpop-radio",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T21:13:27.902Z",
+      "listingValidatedCommit": "3fa8d67c224113ad51d724e7a9352667128476c6",
+      "listingValidatedAt": "2026-09-29T21:13:27.902Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "offskip-dave/omarchy-jpop-radio",
+        "pluginIds": [
+          "ofs.jradio"
+        ],
+        "commit": "3fa8d67c224113ad51d724e7a9352667128476c6",
+        "checkedAt": "2026-09-29T21:13:27.789Z",
+        "outcome": "passed",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": []
+      },
+      "plugins": {
+        "ofs.jradio": {
+          "category": "Widgets",
+          "tags": [
+            "media"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
