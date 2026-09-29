@@ -229975,8 +229975,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-26",
       "listedAt": "2026-09-26T06:51:33.822Z",
-      "listingValidatedCommit": "07ba3e9eb8527a84da317dd988f1db6e1f4226ee",
-      "listingValidatedAt": "2026-09-26T06:51:33.822Z",
+      "listingValidatedCommit": "2a3a9fcbfcecd4a83d653405d01a1b17dfbec09c",
+      "listingValidatedAt": "2026-09-29T19:56:14.266Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -229985,8 +229985,8 @@
         "pluginIds": [
           "blacksheep.rclone"
         ],
-        "commit": "07ba3e9eb8527a84da317dd988f1db6e1f4226ee",
-        "checkedAt": "2026-09-26T06:51:33.712Z",
+        "commit": "2a3a9fcbfcecd4a83d653405d01a1b17dfbec09c",
+        "checkedAt": "2026-09-29T19:56:14.266Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
@@ -229994,28 +229994,6 @@
           "service-management",
           "privilege"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "jonspinks/omarchy-rclone",
-        "pluginIds": [
-          "blacksheep.rclone"
-        ],
-        "commit": "07ba3e9eb8527a84da317dd988f1db6e1f4226ee",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-26T06:51:33.712Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "service-management",
-          "privilege"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-25T16:52:21.732Z",
-        "requestEventId": 31881699923,
-        "requestedAt": "2026-09-26T06:32:53Z",
-        "reviewedAt": "2026-09-26T06:51:33.712Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "blacksheep.rclone": {
@@ -230030,7 +230008,76 @@
             "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
           }
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "jonspinks/omarchy-rclone",
+        "pluginIds": [
+          "blacksheep.rclone"
+        ],
+        "commit": "2a3a9fcbfcecd4a83d653405d01a1b17dfbec09c",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T19:56:14.266Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "service-management",
+          "privilege"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T14:19:23.632Z",
+        "requestEventId": 32094247677,
+        "requestedAt": "2026-09-29T15:57:41Z",
+        "reviewedAt": "2026-09-29T19:56:14.266Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "07ba3e9eb8527a84da317dd988f1db6e1f4226ee",
+          "validatedAt": "2026-09-26T06:51:33.822Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T19:56:14.266Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "jonspinks/omarchy-rclone",
+            "pluginIds": [
+              "blacksheep.rclone"
+            ],
+            "commit": "07ba3e9eb8527a84da317dd988f1db6e1f4226ee",
+            "checkedAt": "2026-09-26T06:51:33.712Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "service-management",
+              "privilege"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "jonspinks/omarchy-rclone",
+            "pluginIds": [
+              "blacksheep.rclone"
+            ],
+            "commit": "07ba3e9eb8527a84da317dd988f1db6e1f4226ee",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-26T06:51:33.712Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "service-management",
+              "privilege"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-25T16:52:21.732Z",
+            "requestEventId": 31881699923,
+            "requestedAt": "2026-09-26T06:32:53Z",
+            "reviewedAt": "2026-09-26T06:51:33.712Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/brightwalker25/omarchy-system",
