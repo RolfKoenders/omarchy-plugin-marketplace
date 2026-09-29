@@ -243025,6 +243025,71 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/Dandiccf/omarchy-x1-touch",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T09:39:21.546Z",
+      "listingValidatedCommit": "0f3219c0774b100290a2195bf6200c2e364a5488",
+      "listingValidatedAt": "2026-09-29T09:39:21.546Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "dandiccf/omarchy-x1-touch",
+        "pluginIds": [
+          "io.github.dandiccf.x1-touch"
+        ],
+        "commit": "0f3219c0774b100290a2195bf6200c2e364a5488",
+        "checkedAt": "2026-09-29T09:39:21.429Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "package-manager",
+          "installer"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "dandiccf/omarchy-x1-touch",
+        "pluginIds": [
+          "io.github.dandiccf.x1-touch"
+        ],
+        "commit": "0f3219c0774b100290a2195bf6200c2e364a5488",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T09:39:21.429Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "package-manager",
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-29T09:24:56.152Z",
+        "requestEventId": 32066978387,
+        "requestedAt": "2026-09-29T09:31:39Z",
+        "reviewedAt": "2026-09-29T09:39:21.429Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "io.github.dandiccf.x1-touch": {
+          "category": "Hardware",
+          "tags": [
+            "bar",
+            "quickshell",
+            "security"
+          ],
+          "manifestPath": "manifest.json",
+          "installation": {
+            "mode": "manual",
+            "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
+          }
+        }
+      }
     }
   ],
   "builtInSources": [
