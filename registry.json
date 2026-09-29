@@ -246896,6 +246896,64 @@
           "manifestPath": "manifest.json"
         }
       }
+    },
+    {
+      "repo": "https://github.com/0x1ocean/omarchy-voxtype-osd",
+      "type": "plugin-source",
+      "addedAt": "2026-09-29",
+      "listedAt": "2026-09-29T19:33:27.254Z",
+      "listingValidatedCommit": "7afd58e28bd8a34627fb33ef4362e1daf3da5dad",
+      "listingValidatedAt": "2026-09-29T19:33:27.254Z",
+      "listingValidatedBranch": "main",
+      "automatedSecurityBaseline": {
+        "schemaVersion": 1,
+        "version": "3",
+        "repository": "0x1ocean/omarchy-voxtype-osd",
+        "pluginIds": [
+          "io.github.0x1ocean.voxtype-osd"
+        ],
+        "commit": "7afd58e28bd8a34627fb33ef4362e1daf3da5dad",
+        "checkedAt": "2026-09-29T19:33:27.129Z",
+        "outcome": "review-required",
+        "enforcementMode": "selective",
+        "findings": [],
+        "capabilities": [
+          "service-management",
+          "remote-build"
+        ]
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "0x1ocean/omarchy-voxtype-osd",
+        "pluginIds": [
+          "io.github.0x1ocean.voxtype-osd"
+        ],
+        "commit": "7afd58e28bd8a34627fb33ef4362e1daf3da5dad",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T19:33:27.129Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "service-management",
+          "remote-build"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-29T15:45:07.134Z",
+        "requestEventId": 32093901303,
+        "requestedAt": "2026-09-29T15:52:54Z",
+        "reviewedAt": "2026-09-29T19:33:27.129Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "plugins": {
+        "io.github.0x1ocean.voxtype-osd": {
+          "category": "Productivity",
+          "tags": [
+            "quickshell",
+            "hyprland"
+          ],
+          "manifestPath": "manifest.json"
+        }
+      }
     }
   ],
   "builtInSources": [
