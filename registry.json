@@ -227080,8 +227080,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-25",
       "listedAt": "2026-09-25T18:13:50.289Z",
-      "listingValidatedCommit": "6586e622b1c92caa355f4e0c57faa8e4a4e9f318",
-      "listingValidatedAt": "2026-09-25T18:13:50.289Z",
+      "listingValidatedCommit": "877f90f042b30ee3ca30a8a1960e41b94d0ea0e5",
+      "listingValidatedAt": "2026-09-29T15:00:42.728Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -227090,8 +227090,8 @@
         "pluginIds": [
           "azeroht.idler"
         ],
-        "commit": "6586e622b1c92caa355f4e0c57faa8e4a4e9f318",
-        "checkedAt": "2026-09-25T18:13:50.187Z",
+        "commit": "877f90f042b30ee3ca30a8a1960e41b94d0ea0e5",
+        "checkedAt": "2026-09-29T15:00:42.728Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
@@ -227100,29 +227100,6 @@
           "package-manager",
           "remote-build"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "azeroht/idler",
-        "pluginIds": [
-          "azeroht.idler"
-        ],
-        "commit": "6586e622b1c92caa355f4e0c57faa8e4a4e9f318",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-25T18:13:50.187Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "privilege",
-          "package-manager",
-          "remote-build"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-25T17:35:20.022Z",
-        "requestEventId": 31854341770,
-        "requestedAt": "2026-09-25T17:46:57Z",
-        "reviewedAt": "2026-09-25T18:13:50.187Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "azeroht.idler": {
@@ -227133,7 +227110,79 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "azeroht/idler",
+        "pluginIds": [
+          "azeroht.idler"
+        ],
+        "commit": "877f90f042b30ee3ca30a8a1960e41b94d0ea0e5",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T15:00:42.728Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "package-manager",
+          "remote-build"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T17:57:28.638Z",
+        "requestEventId": 32084884158,
+        "requestedAt": "2026-09-29T13:51:37Z",
+        "reviewedAt": "2026-09-29T15:00:42.728Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "6586e622b1c92caa355f4e0c57faa8e4a4e9f318",
+          "validatedAt": "2026-09-25T18:13:50.289Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T15:00:42.728Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "azeroht/idler",
+            "pluginIds": [
+              "azeroht.idler"
+            ],
+            "commit": "6586e622b1c92caa355f4e0c57faa8e4a4e9f318",
+            "checkedAt": "2026-09-25T18:13:50.187Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "privilege",
+              "package-manager",
+              "remote-build"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "azeroht/idler",
+            "pluginIds": [
+              "azeroht.idler"
+            ],
+            "commit": "6586e622b1c92caa355f4e0c57faa8e4a4e9f318",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-25T18:13:50.187Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "privilege",
+              "package-manager",
+              "remote-build"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-25T17:35:20.022Z",
+            "requestEventId": 31854341770,
+            "requestedAt": "2026-09-25T17:46:57Z",
+            "reviewedAt": "2026-09-25T18:13:50.187Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/grunkan/runalyzer",
