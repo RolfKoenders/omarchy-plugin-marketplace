@@ -241967,8 +241967,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-28",
       "listedAt": "2026-09-28T22:17:11.355Z",
-      "listingValidatedCommit": "64c7eba318bce553ec79c4543b17f4e7b39ec435",
-      "listingValidatedAt": "2026-09-28T22:17:11.355Z",
+      "listingValidatedCommit": "666fd39e045bdaddb8708c60379d6bd7a363b84e",
+      "listingValidatedAt": "2026-09-29T13:18:39.535Z",
       "listingValidatedBranch": "master",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -241977,8 +241977,8 @@
         "pluginIds": [
           "io.github.phil-bowens.symbols"
         ],
-        "commit": "64c7eba318bce553ec79c4543b17f4e7b39ec435",
-        "checkedAt": "2026-09-28T22:17:11.243Z",
+        "commit": "666fd39e045bdaddb8708c60379d6bd7a363b84e",
+        "checkedAt": "2026-09-29T13:18:39.535Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -241993,7 +241993,29 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "64c7eba318bce553ec79c4543b17f4e7b39ec435",
+          "validatedAt": "2026-09-28T22:17:11.355Z",
+          "branch": "master",
+          "supersededAt": "2026-09-29T13:18:39.535Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "phil-bowens/omarchy-symbols",
+            "pluginIds": [
+              "io.github.phil-bowens.symbols"
+            ],
+            "commit": "64c7eba318bce553ec79c4543b17f4e7b39ec435",
+            "checkedAt": "2026-09-28T22:17:11.243Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/stevederico/omarchy-gym",
