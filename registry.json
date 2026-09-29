@@ -235113,8 +235113,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-27",
       "listedAt": "2026-09-27T18:46:24.176Z",
-      "listingValidatedCommit": "425df175625d3cecbc35fd676b30c987c9c48b76",
-      "listingValidatedAt": "2026-09-27T18:46:24.176Z",
+      "listingValidatedCommit": "df214232a9b2e979ab81310ef20cefe44e588ab4",
+      "listingValidatedAt": "2026-09-29T12:03:17.795Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -235123,8 +235123,8 @@
         "pluginIds": [
           "anavarre.miniflux"
         ],
-        "commit": "425df175625d3cecbc35fd676b30c987c9c48b76",
-        "checkedAt": "2026-09-27T18:46:24.089Z",
+        "commit": "df214232a9b2e979ab81310ef20cefe44e588ab4",
+        "checkedAt": "2026-09-29T12:03:17.795Z",
         "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
@@ -235138,7 +235138,29 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "425df175625d3cecbc35fd676b30c987c9c48b76",
+          "validatedAt": "2026-09-27T18:46:24.176Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T12:03:17.795Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "anavarre/omarchy-miniflux",
+            "pluginIds": [
+              "anavarre.miniflux"
+            ],
+            "commit": "425df175625d3cecbc35fd676b30c987c9c48b76",
+            "checkedAt": "2026-09-27T18:46:24.089Z",
+            "outcome": "passed",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": []
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/stash-11/Dock",
