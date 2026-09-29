@@ -59045,8 +59045,8 @@
       "type": "plugin-source",
       "addedAt": "2026-08-23",
       "listedAt": "2026-08-23T17:59:11.601Z",
-      "listingValidatedCommit": "97878fa394faf8c249d398245aac15eec1be7c2d",
-      "listingValidatedAt": "2026-08-23T17:59:11.601Z",
+      "listingValidatedCommit": "23ee0cfb80b962e7e4537833b2a71ed8207e1400",
+      "listingValidatedAt": "2026-09-29T20:41:24.385Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -59055,35 +59055,14 @@
         "pluginIds": [
           "ai.bkblab.displaywright"
         ],
-        "commit": "97878fa394faf8c249d398245aac15eec1be7c2d",
-        "checkedAt": "2026-08-23T17:59:11.576Z",
+        "commit": "23ee0cfb80b962e7e4537833b2a71ed8207e1400",
+        "checkedAt": "2026-09-29T20:41:24.385Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
         "capabilities": [
           "installer"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "blackkingbarorg/displaywright-shell-plugin",
-        "pluginIds": [
-          "ai.bkblab.displaywright"
-        ],
-        "commit": "97878fa394faf8c249d398245aac15eec1be7c2d",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-08-23T17:59:11.576Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "installer"
-        ],
-        "reviewedBaselineCheckedAt": "2026-08-23T17:22:50.825Z",
-        "requestEventId": 29877421256,
-        "requestedAt": "2026-08-23T17:46:20Z",
-        "reviewedAt": "2026-08-23T17:59:11.576Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "ai.bkblab.displaywright": {
@@ -59095,7 +59074,73 @@
           ],
           "manifestPath": "manifest.json"
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "blackkingbarorg/displaywright-shell-plugin",
+        "pluginIds": [
+          "ai.bkblab.displaywright"
+        ],
+        "commit": "23ee0cfb80b962e7e4537833b2a71ed8207e1400",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T20:41:24.385Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "installer"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-18T01:22:53.473Z",
+        "requestEventId": 32094945722,
+        "requestedAt": "2026-09-29T16:07:35Z",
+        "reviewedAt": "2026-09-29T20:41:24.385Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "97878fa394faf8c249d398245aac15eec1be7c2d",
+          "validatedAt": "2026-08-23T17:59:11.601Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T20:41:24.385Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "blackkingbarorg/displaywright-shell-plugin",
+            "pluginIds": [
+              "ai.bkblab.displaywright"
+            ],
+            "commit": "97878fa394faf8c249d398245aac15eec1be7c2d",
+            "checkedAt": "2026-08-23T17:59:11.576Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "installer"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "blackkingbarorg/displaywright-shell-plugin",
+            "pluginIds": [
+              "ai.bkblab.displaywright"
+            ],
+            "commit": "97878fa394faf8c249d398245aac15eec1be7c2d",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-08-23T17:59:11.576Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "installer"
+            ],
+            "reviewedBaselineCheckedAt": "2026-08-23T17:22:50.825Z",
+            "requestEventId": 29877421256,
+            "requestedAt": "2026-08-23T17:46:20Z",
+            "reviewedAt": "2026-08-23T17:59:11.576Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/Palccod/Omas",
