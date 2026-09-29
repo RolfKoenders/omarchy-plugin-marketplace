@@ -236014,8 +236014,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-27",
       "listedAt": "2026-09-27T15:59:06.068Z",
-      "listingValidatedCommit": "a127f7f478ec5df259f02ab7d8222e32cc708d16",
-      "listingValidatedAt": "2026-09-27T15:59:06.068Z",
+      "listingValidatedCommit": "1d1c269f5bed743b26d6ba82998baec510cf2c0d",
+      "listingValidatedAt": "2026-09-29T19:52:01.320Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -236024,8 +236024,8 @@
         "pluginIds": [
           "blacksheep.wireguard"
         ],
-        "commit": "a127f7f478ec5df259f02ab7d8222e32cc708d16",
-        "checkedAt": "2026-09-27T15:59:05.946Z",
+        "commit": "1d1c269f5bed743b26d6ba82998baec510cf2c0d",
+        "checkedAt": "2026-09-29T19:52:01.320Z",
         "outcome": "review-required",
         "enforcementMode": "selective",
         "findings": [],
@@ -236036,31 +236036,6 @@
           "installer",
           "package-manager"
         ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "jonspinks/omarchy-wireguard",
-        "pluginIds": [
-          "blacksheep.wireguard"
-        ],
-        "commit": "a127f7f478ec5df259f02ab7d8222e32cc708d16",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-27T15:59:05.946Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "privilege",
-          "service-management",
-          "sudoers-modification",
-          "installer",
-          "package-manager"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-27T14:30:10.515Z",
-        "requestEventId": 31936000655,
-        "requestedAt": "2026-09-27T15:18:42Z",
-        "reviewedAt": "2026-09-27T15:59:05.946Z",
-        "reviewer": "HANCORE-linux"
       },
       "plugins": {
         "blacksheep.wireguard": {
@@ -236076,7 +236051,85 @@
             "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
           }
         }
-      }
+      },
+      "maintainerVerificationReview": {
+        "schemaVersion": 1,
+        "repository": "jonspinks/omarchy-wireguard",
+        "pluginIds": [
+          "blacksheep.wireguard"
+        ],
+        "commit": "1d1c269f5bed743b26d6ba82998baec510cf2c0d",
+        "baselineVersion": "3",
+        "enforcementMode": "selective",
+        "baselineCheckedAt": "2026-09-29T19:52:01.320Z",
+        "baselineOutcome": "review-required",
+        "findings": [],
+        "capabilities": [
+          "privilege",
+          "service-management",
+          "sudoers-modification",
+          "installer",
+          "package-manager"
+        ],
+        "reviewedBaselineCheckedAt": "2026-09-28T14:19:31.737Z",
+        "requestEventId": 32094234720,
+        "requestedAt": "2026-09-29T15:57:30Z",
+        "reviewedAt": "2026-09-29T19:52:01.320Z",
+        "reviewer": "HANCORE-linux"
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "a127f7f478ec5df259f02ab7d8222e32cc708d16",
+          "validatedAt": "2026-09-27T15:59:06.068Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T19:52:01.320Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "jonspinks/omarchy-wireguard",
+            "pluginIds": [
+              "blacksheep.wireguard"
+            ],
+            "commit": "a127f7f478ec5df259f02ab7d8222e32cc708d16",
+            "checkedAt": "2026-09-27T15:59:05.946Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "privilege",
+              "service-management",
+              "sudoers-modification",
+              "installer",
+              "package-manager"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "jonspinks/omarchy-wireguard",
+            "pluginIds": [
+              "blacksheep.wireguard"
+            ],
+            "commit": "a127f7f478ec5df259f02ab7d8222e32cc708d16",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-27T15:59:05.946Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "privilege",
+              "service-management",
+              "sudoers-modification",
+              "installer",
+              "package-manager"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-27T14:30:10.515Z",
+            "requestEventId": 31936000655,
+            "requestedAt": "2026-09-27T15:18:42Z",
+            "reviewedAt": "2026-09-27T15:59:05.946Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/jonspinks/omarchy-nextdns",
