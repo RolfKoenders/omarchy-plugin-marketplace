@@ -240877,8 +240877,8 @@
       "type": "plugin-source",
       "addedAt": "2026-09-28",
       "listedAt": "2026-09-28T18:36:24.525Z",
-      "listingValidatedCommit": "0e0ad5ac35c2ec9080dda45ab48259e0eb11ee13",
-      "listingValidatedAt": "2026-09-28T18:36:24.525Z",
+      "listingValidatedCommit": "12d523c3a2aa90ee2cdfc1fae4f83057fb31a885",
+      "listingValidatedAt": "2026-09-29T09:33:03.500Z",
       "listingValidatedBranch": "main",
       "automatedSecurityBaseline": {
         "schemaVersion": 1,
@@ -240887,35 +240887,12 @@
         "pluginIds": [
           "omarchy-spotify-player"
         ],
-        "commit": "0e0ad5ac35c2ec9080dda45ab48259e0eb11ee13",
-        "checkedAt": "2026-09-28T18:36:24.396Z",
-        "outcome": "review-required",
+        "commit": "12d523c3a2aa90ee2cdfc1fae4f83057fb31a885",
+        "checkedAt": "2026-09-29T09:33:03.500Z",
+        "outcome": "passed",
         "enforcementMode": "selective",
         "findings": [],
-        "capabilities": [
-          "remote-build"
-        ]
-      },
-      "maintainerVerificationReview": {
-        "schemaVersion": 1,
-        "repository": "radheshpai87/omarchy-spotify-player",
-        "pluginIds": [
-          "omarchy-spotify-player"
-        ],
-        "commit": "0e0ad5ac35c2ec9080dda45ab48259e0eb11ee13",
-        "baselineVersion": "3",
-        "enforcementMode": "selective",
-        "baselineCheckedAt": "2026-09-28T18:36:24.396Z",
-        "baselineOutcome": "review-required",
-        "findings": [],
-        "capabilities": [
-          "remote-build"
-        ],
-        "reviewedBaselineCheckedAt": "2026-09-28T18:16:39.345Z",
-        "requestEventId": 32017546431,
-        "requestedAt": "2026-09-28T18:19:20Z",
-        "reviewedAt": "2026-09-28T18:36:24.396Z",
-        "reviewer": "HANCORE-linux"
+        "capabilities": []
       },
       "plugins": {
         "omarchy-spotify-player": {
@@ -240929,7 +240906,52 @@
             "note": "This plugin requires additional setup before it can be enabled. Follow the upstream installation instructions."
           }
         }
-      }
+      },
+      "listingValidationHistory": [
+        {
+          "commit": "0e0ad5ac35c2ec9080dda45ab48259e0eb11ee13",
+          "validatedAt": "2026-09-28T18:36:24.525Z",
+          "branch": "main",
+          "supersededAt": "2026-09-29T09:33:03.500Z",
+          "automatedSecurityBaseline": {
+            "schemaVersion": 1,
+            "version": "3",
+            "repository": "radheshpai87/omarchy-spotify-player",
+            "pluginIds": [
+              "omarchy-spotify-player"
+            ],
+            "commit": "0e0ad5ac35c2ec9080dda45ab48259e0eb11ee13",
+            "checkedAt": "2026-09-28T18:36:24.396Z",
+            "outcome": "review-required",
+            "enforcementMode": "selective",
+            "findings": [],
+            "capabilities": [
+              "remote-build"
+            ]
+          },
+          "maintainerVerificationReview": {
+            "schemaVersion": 1,
+            "repository": "radheshpai87/omarchy-spotify-player",
+            "pluginIds": [
+              "omarchy-spotify-player"
+            ],
+            "commit": "0e0ad5ac35c2ec9080dda45ab48259e0eb11ee13",
+            "baselineVersion": "3",
+            "enforcementMode": "selective",
+            "baselineCheckedAt": "2026-09-28T18:36:24.396Z",
+            "baselineOutcome": "review-required",
+            "findings": [],
+            "capabilities": [
+              "remote-build"
+            ],
+            "reviewedBaselineCheckedAt": "2026-09-28T18:16:39.345Z",
+            "requestEventId": 32017546431,
+            "requestedAt": "2026-09-28T18:19:20Z",
+            "reviewedAt": "2026-09-28T18:36:24.396Z",
+            "reviewer": "HANCORE-linux"
+          }
+        }
+      ]
     },
     {
       "repo": "https://github.com/scoop/omarchy-plugin-shepherd",
