@@ -22,6 +22,9 @@
     "ucmz851.omatorrent",
     "wallpapermanager",
     "wallpaperomarchymanager",
+    "warexpor.bar",
+    "warexpor.idle",
+    "warexpor.monitor",
     "wizwam.ytmusic"
   ],
   "repositoryMigrations": [
@@ -176057,40 +176060,6 @@
       }
     },
     {
-      "repo": "https://github.com/Warexpor/omarchy-43pr-idle-plugin",
-      "type": "plugin-source",
-      "addedAt": "2026-09-13",
-      "listedAt": "2026-09-13T17:50:47.189Z",
-      "listingValidatedCommit": "56cdc81b6e489e2725cb83ed6055a250a0c67987",
-      "listingValidatedAt": "2026-09-13T17:50:47.189Z",
-      "listingValidatedBranch": "master",
-      "automatedSecurityBaseline": {
-        "schemaVersion": 1,
-        "version": "3",
-        "repository": "warexpor/omarchy-43pr-idle-plugin",
-        "pluginIds": [
-          "warexpor.idle"
-        ],
-        "commit": "56cdc81b6e489e2725cb83ed6055a250a0c67987",
-        "checkedAt": "2026-09-13T17:50:47.111Z",
-        "outcome": "passed",
-        "enforcementMode": "selective",
-        "findings": [],
-        "capabilities": []
-      },
-      "plugins": {
-        "warexpor.idle": {
-          "category": "System",
-          "tags": [
-            "power-management",
-            "quickshell",
-            "hyprland"
-          ],
-          "manifestPath": "manifest.json"
-        }
-      }
-    },
-    {
       "repo": "https://github.com/Atheon/omarchy-magic-keyboard",
       "type": "plugin-source",
       "addedAt": "2026-09-13",
@@ -176233,40 +176202,6 @@
           }
         }
       ]
-    },
-    {
-      "repo": "https://github.com/Warexpor/omarchy-43pr-monitor-plugin",
-      "type": "plugin-source",
-      "addedAt": "2026-09-13",
-      "listedAt": "2026-09-13T18:10:44.101Z",
-      "listingValidatedCommit": "e172e5c62e6b06c459b390b9c0e90cf1940a48e2",
-      "listingValidatedAt": "2026-09-13T18:10:44.101Z",
-      "listingValidatedBranch": "master",
-      "automatedSecurityBaseline": {
-        "schemaVersion": 1,
-        "version": "3",
-        "repository": "warexpor/omarchy-43pr-monitor-plugin",
-        "pluginIds": [
-          "warexpor.monitor"
-        ],
-        "commit": "e172e5c62e6b06c459b390b9c0e90cf1940a48e2",
-        "checkedAt": "2026-09-13T18:10:44.014Z",
-        "outcome": "passed",
-        "enforcementMode": "selective",
-        "findings": [],
-        "capabilities": []
-      },
-      "plugins": {
-        "warexpor.monitor": {
-          "category": "Hardware",
-          "tags": [
-            "bar",
-            "system",
-            "quickshell"
-          ],
-          "manifestPath": "manifest.json"
-        }
-      }
     },
     {
       "repo": "https://github.com/r4y-br/omarchy-quran-motivation",
@@ -176901,39 +176836,6 @@
           }
         }
       ]
-    },
-    {
-      "repo": "https://github.com/Warexpor/omarchy-43pr-adaptive-bar-plugin",
-      "type": "plugin-source",
-      "addedAt": "2026-09-14",
-      "listedAt": "2026-09-14T07:08:13.020Z",
-      "listingValidatedCommit": "f91e054dbff4448bd98e8a2978d6bc1506a8a963",
-      "listingValidatedAt": "2026-09-14T07:08:13.020Z",
-      "listingValidatedBranch": "master",
-      "automatedSecurityBaseline": {
-        "schemaVersion": 1,
-        "version": "3",
-        "repository": "warexpor/omarchy-43pr-adaptive-bar-plugin",
-        "pluginIds": [
-          "warexpor.bar"
-        ],
-        "commit": "f91e054dbff4448bd98e8a2978d6bc1506a8a963",
-        "checkedAt": "2026-09-14T07:08:12.962Z",
-        "outcome": "passed",
-        "enforcementMode": "selective",
-        "findings": [],
-        "capabilities": []
-      },
-      "plugins": {
-        "warexpor.bar": {
-          "category": "Appearance",
-          "tags": [
-            "bar",
-            "quickshell"
-          ],
-          "manifestPath": "manifest.json"
-        }
-      }
     },
     {
       "repo": "https://github.com/jramiresbrito/omarchy-bar-zoom",
