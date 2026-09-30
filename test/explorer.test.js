@@ -16,6 +16,8 @@ import {
   inclusiveDayCount,
   inclusiveRangeStart,
 } from "../site/assets/js/growth-range.js";
+import { accentColor, contrastRatio, legibleColor } from "../site/assets/js/shared.js";
+import { siteThemes } from "../site/assets/js/themes.js";
 
 const catalog = JSON.parse(fs.readFileSync(new URL("../site/catalog.json", import.meta.url), "utf8"));
 const explorer = JSON.parse(fs.readFileSync(new URL("../site/explorer-data.json", import.meta.url), "utf8"));
@@ -35,18 +37,22 @@ function workflowJobSource(workflow, name, nextName = "") {
   return end > start ? workflow.slice(start, end) : workflow.slice(start);
 }
 
-function createExplorerBuilderFixture(growth) {
+function createExplorerBuilderFixture(growth, plugins = [], {
+  generatedAt = "2026-08-28T10:00:00.000Z",
+  committedAt = "2026-08-28T09:00:00Z",
+} = {}) {
   const directory = fs.mkdtempSync(path.join(os.tmpdir(), "explorer-builder-history-"));
   fs.mkdirSync(path.join(directory, "scripts"));
-  fs.mkdirSync(path.join(directory, "site"));
+  fs.mkdirSync(path.join(directory, "site", "assets", "js"), { recursive: true });
   fs.copyFileSync(new URL("../scripts/build-explorer-data.mjs", import.meta.url), path.join(directory, "scripts", "build-explorer-data.mjs"));
   fs.copyFileSync(new URL("../scripts/explorer-growth-history.mjs", import.meta.url), path.join(directory, "scripts", "explorer-growth-history.mjs"));
+  fs.copyFileSync(new URL("../site/assets/js/taxonomy.js", import.meta.url), path.join(directory, "site", "assets", "js", "taxonomy.js"));
   fs.writeFileSync(path.join(directory, "site", "catalog.json"), JSON.stringify({
-    generatedAt: "2026-08-28T10:00:00.000Z",
-    plugins: [],
+    generatedAt,
+    plugins,
   }));
   fs.writeFileSync(path.join(directory, "site", "explorer-data.json"), JSON.stringify({
-    generatedAt: "2026-08-28T10:00:00.000Z",
+    generatedAt,
     growthMeta: { method: "git-catalog-snapshots" },
     growth,
   }));
@@ -60,8 +66,8 @@ function createExplorerBuilderFixture(growth) {
     cwd: directory,
     env: {
       ...process.env,
-      GIT_AUTHOR_DATE: "2026-08-28T09:00:00Z",
-      GIT_COMMITTER_DATE: "2026-08-28T09:00:00Z",
+      GIT_AUTHOR_DATE: committedAt,
+      GIT_COMMITTER_DATE: committedAt,
     },
   });
   return directory;
@@ -79,7 +85,17 @@ test("explorer data covers the current community catalog", () => {
   assert.ok(explorer.nodes.every((node) => node.previewThumbnail === pluginsById.get(node.id)?.previewThumbnail));
   assert.ok(explorer.nodes.every((node) => node.previewThumbnailWidth === pluginsById.get(node.id)?.previewThumbnailWidth));
   assert.ok(explorer.nodes.every((node) => node.previewThumbnailHeight === pluginsById.get(node.id)?.previewThumbnailHeight));
-  assert.equal(explorer.clusters.length, 15);
+  const nodeCountByCluster = new Map();
+  for (const node of explorer.nodes) {
+    nodeCountByCluster.set(node.cluster, (nodeCountByCluster.get(node.cluster) || 0) + 1);
+  }
+  const publishedClusterIds = explorer.clusters.map((cluster) => cluster.id);
+  assert.equal(new Set(publishedClusterIds).size, publishedClusterIds.length);
+  assert.deepEqual(new Set(publishedClusterIds), new Set(nodeCountByCluster.keys()));
+  for (const cluster of explorer.clusters) {
+    assert.ok(cluster.count > 0);
+    assert.equal(cluster.count, nodeCountByCluster.get(cluster.id));
+  }
   assert.ok(explorer.edges.length > explorer.nodes.length);
   assert.equal(explorer.method, "Local TF-IDF similarity");
 });
@@ -89,6 +105,7 @@ test("growth series uses daily end-of-day catalog history snapshots", () => {
   assert.equal(explorer.growthMeta.method, "git-catalog-snapshots");
   assert.equal(explorer.growthMeta.historical, true);
   assert.equal(explorer.growthMeta.timezone, "UTC");
+  assert.match(explorer.growthMeta.detail, /Earlier UTC days use the final committed catalog state\. The latest UTC day is provisional until a successful later-day build finalizes it\./);
   for (let index = 1; index < explorer.growth.length; index++) {
     const previous = explorer.growth[index - 1];
     const current = explorer.growth[index];
@@ -124,7 +141,7 @@ test("Explorer growth rejects shallow Git history", () => {
   }
 });
 
-test("Explorer growth only changes the current day or appends valid later days", () => {
+test("Explorer growth only changes its previously provisional day or appends valid later days", () => {
   const previous = {
     generatedAt: "2026-08-28T10:00:00.000Z",
     growthMeta: { method: "git-catalog-snapshots" },
@@ -180,6 +197,253 @@ test("Explorer growth only changes the current day or appends valid later days",
   );
 });
 
+test("Explorer finalizes only the last previous point across one or more UTC days", () => {
+  const previous = {
+    generatedAt: "2026-09-04T23:59:21.243Z",
+    growthMeta: { method: "git-catalog-snapshots" },
+    growth: [
+      { date: "2026-09-03", total: 2159, added: 2159 },
+      { date: "2026-09-04", total: 2369, added: 210 },
+    ],
+  };
+  for (const total of [2368, 2369, 2370]) {
+    const finalized = { date: "2026-09-04", total, added: total - 2159 };
+    const next = [previous.growth[0], finalized, { date: "2026-09-05", total: 2371, added: 2371 - total }];
+    assert.doesNotThrow(() => assertGrowthContinuity(previous, next, "2026-09-05T00:01:00.000Z"));
+    // The corrected predecessor, not the old provisional total, determines added.
+    assert.throws(() => assertGrowthContinuity(previous, [
+      previous.growth[0], { ...finalized, added: finalized.added + 1 }, next[2],
+    ], "2026-09-05T00:01:00.000Z"), /not a contiguous daily series/);
+    assert.throws(() => assertGrowthContinuity(previous, [
+      previous.growth[0], finalized, { ...next[2], added: next[2].added + 1 },
+    ], "2026-09-05T00:01:00.000Z"), /not a contiguous daily series/);
+    const gap = [...next, { date: "2026-09-06", total: 2371, added: 0 }, { date: "2026-09-07", total: 2372, added: 1 }];
+    assert.doesNotThrow(() => assertGrowthContinuity(previous, gap, "2026-09-07T01:00:00.000Z"));
+    const committedNext = { ...previous, growth: next, generatedAt: "2026-09-05T00:01:00.000Z" };
+    const secondRollover = [previous.growth[0], finalized, { date: "2026-09-05", total: 2370, added: 2370 - total }, { date: "2026-09-06", total: 2373, added: 3 }];
+    assert.doesNotThrow(() => assertGrowthContinuity(committedNext, secondRollover, "2026-09-06T01:00:00.000Z"));
+    // Yesterday's finalized value cannot become mutable again on a later rollover.
+    assert.throws(() => assertGrowthContinuity(committedNext, [
+      previous.growth[0], { ...finalized, total: total + 1, added: finalized.added + 1 },
+      { ...secondRollover[2], added: secondRollover[2].added - 1 }, secondRollover[3],
+    ], "2026-09-06T01:00:00.000Z"), /changed or removed a completed UTC day/);
+  }
+});
+
+function fixturePlugins(count) {
+  return Array.from({ length: count }, (_, index) => ({
+    id: `fixture.plugin-${index}`, name: `Fixture ${index}`, sourceType: "community",
+    description: "Inert test metadata", category: "Other", tags: [],
+  }));
+}
+
+function writeFixtureCatalog(directory, generatedAt, count) {
+  fs.writeFileSync(path.join(directory, "site", "catalog.json"), JSON.stringify({ generatedAt, plugins: fixturePlugins(count) }));
+}
+
+function buildFixtureExplorer(directory, success = true) {
+  const output = path.join(directory, "site", "explorer-data.json");
+  const before = fs.readFileSync(output);
+  const result = spawnSync(process.execPath, ["scripts/build-explorer-data.mjs"], {
+    cwd: directory, encoding: "utf8", timeout: 30_000,
+    env: { ...process.env, MARKETPLACE_EXPLORER_CATALOG_PATH: path.join(directory, "site", "catalog.json"), MARKETPLACE_EXPLORER_OUTPUT_PATH: output },
+  });
+  if (success) assert.equal(result.status, 0, result.stderr);
+  else {
+    assert.notEqual(result.status, 0);
+    assert.equal(result.error, undefined);
+    assert.deepEqual(fs.readFileSync(output), before, "Rejected builds must leave output bytes unchanged");
+    return result;
+  }
+  return JSON.parse(fs.readFileSync(output, "utf8"));
+}
+
+function commitFixtureSnapshot(directory, committedAt, authoredAt = committedAt) {
+  execFileSync("git", ["add", "site"], { cwd: directory });
+  execFileSync("git", ["-c", "user.name=Explorer Test", "-c", "user.email=explorer-test@example.invalid", "commit", "--quiet", "-m", "Record inert catalog snapshot"], {
+    cwd: directory, env: { ...process.env, GIT_AUTHOR_DATE: authoredAt, GIT_COMMITTER_DATE: committedAt },
+  });
+}
+
+test("Explorer builder reproduces the 2369-to-2368 midnight incident using committer UTC time", () => {
+  const directory = createExplorerBuilderFixture([{ date: "2026-09-03", total: 2159, added: 2159 }], fixturePlugins(2159), {
+    generatedAt: "2026-09-03T12:00:00.000Z", committedAt: "2026-09-03T12:01:00Z",
+  });
+  try {
+    writeFixtureCatalog(directory, "2026-09-04T23:57:06.641Z", 2368);
+    buildFixtureExplorer(directory);
+    commitFixtureSnapshot(directory, "2026-09-04T23:58:06Z");
+    writeFixtureCatalog(directory, "2026-09-04T23:59:21.243Z", 2369);
+    const provisional = buildFixtureExplorer(directory);
+    assert.deepEqual(provisional.growth.at(-1), { date: "2026-09-04", total: 2369, added: 210 });
+    commitFixtureSnapshot(directory, "2026-09-05T00:00:19Z", "2026-09-04T23:59:21Z");
+    // A standalone/no-op rebuild must not advance the logical day just because
+    // this catalog was committed on a later UTC day than its generatedAt.
+    const noOp = buildFixtureExplorer(directory);
+    assert.deepEqual(noOp, provisional);
+    writeFixtureCatalog(directory, "2026-09-05T00:01:00.000Z", 2369);
+    const next = buildFixtureExplorer(directory);
+    assert.deepEqual(next.growth, [
+      { date: "2026-09-03", total: 2159, added: 2159 },
+      { date: "2026-09-04", total: 2368, added: 209 },
+      { date: "2026-09-05", total: 2369, added: 1 },
+    ]);
+    assert.equal(next.nodes.length, 2369);
+    assert.match(next.growthMeta.detail, /latest UTC day is provisional/);
+  } finally {
+    fs.rmSync(directory, { recursive: true, force: true });
+  }
+});
+
+test("Explorer builder finalizes at exact midnight, across offsets, gaps and successive rollovers", () => {
+  for (const midnight of ["2026-09-05T00:00:00Z", "2026-09-05T02:00:00+02:00", "2026-09-04T20:00:00-04:00"]) {
+    const directory = createExplorerBuilderFixture([{ date: "2026-09-03", total: 2, added: 2 }], fixturePlugins(2), {
+      generatedAt: "2026-09-03T12:00:00.000Z", committedAt: "2026-09-03T12:01:00Z",
+    });
+    try {
+      writeFixtureCatalog(directory, "2026-09-04T20:00:00.000Z", 3);
+      buildFixtureExplorer(directory);
+      commitFixtureSnapshot(directory, "2026-09-04T20:01:00Z");
+      writeFixtureCatalog(directory, "2026-09-04T23:59:21.243Z", 4);
+      buildFixtureExplorer(directory);
+      commitFixtureSnapshot(directory, midnight, "2026-09-04T23:59:21Z");
+      writeFixtureCatalog(directory, "2026-09-05T12:00:00.000Z", 5);
+      const next = buildFixtureExplorer(directory);
+      assert.deepEqual(next.growth.slice(-2), [{ date: "2026-09-04", total: 3, added: 1 }, { date: "2026-09-05", total: 5, added: 2 }]);
+      // The next day's open value is itself committed over another UTC boundary.
+      commitFixtureSnapshot(directory, "2026-09-06T00:00:00Z");
+      writeFixtureCatalog(directory, "2026-09-06T12:00:00.000Z", 6);
+      const second = buildFixtureExplorer(directory);
+      assert.deepEqual(second.growth.slice(-3), [{ date: "2026-09-04", total: 3, added: 1 }, { date: "2026-09-05", total: 4, added: 1 }, { date: "2026-09-06", total: 6, added: 2 }]);
+      assert.deepEqual(second.growth.slice(0, -2), next.growth.slice(0, -1));
+      commitFixtureSnapshot(directory, "2026-09-06T12:01:00Z");
+      writeFixtureCatalog(directory, "2026-09-09T12:00:00.000Z", 7);
+      const gap = buildFixtureExplorer(directory);
+      assert.deepEqual(gap.growth.slice(-4), [
+        { date: "2026-09-06", total: 6, added: 2 }, { date: "2026-09-07", total: 6, added: 0 },
+        { date: "2026-09-08", total: 6, added: 0 }, { date: "2026-09-09", total: 7, added: 1 },
+      ]);
+    } finally {
+      fs.rmSync(directory, { recursive: true, force: true });
+    }
+  }
+});
+
+test("Explorer builder rejects older history changes without replacing output", () => {
+  const directory = createExplorerBuilderFixture([
+    { date: "2026-09-03", total: 2, added: 2 },
+  ], fixturePlugins(2), { generatedAt: "2026-09-03T12:00:00.000Z", committedAt: "2026-09-03T12:01:00Z" });
+  try {
+    writeFixtureCatalog(directory, "2026-09-04T12:00:00.000Z", 3);
+    const valid = buildFixtureExplorer(directory);
+    // Preserve contiguity and arithmetic while corrupting an older finalized point.
+    const corrupt = { ...valid, growth: [{ date: "2026-09-03", total: 1, added: 1 }, { date: "2026-09-04", total: 3, added: 2 }] };
+    fs.writeFileSync(path.join(directory, "site", "explorer-data.json"), JSON.stringify(corrupt));
+    commitFixtureSnapshot(directory, "2026-09-04T12:01:00Z");
+    writeFixtureCatalog(directory, "2026-09-05T12:00:00.000Z", 4);
+    assert.match(buildFixtureExplorer(directory, false).stderr, /changed or removed a completed UTC day/);
+  } finally {
+    fs.rmSync(directory, { recursive: true, force: true });
+  }
+});
+
+test("Kids taxonomy activates its graph community without publishing empty clusters", () => {
+  const directory = createExplorerBuilderFixture(
+    [{ date: "2026-08-28", total: 7, added: 7 }],
+    [
+      {
+        id: "example.kids-category",
+        name: "Category Example",
+        author: "Example",
+        description: "Activities.",
+        category: "Kids",
+        tags: ["games"],
+        sourceType: "community",
+      },
+      {
+        id: "example.kids-tag",
+        name: "Tag Example",
+        author: "Example",
+        description: "Activities.",
+        category: "Developer Tools",
+        tags: ["kids"],
+        sourceType: "community",
+      },
+      {
+        id: "example.education-tag",
+        name: "Education Tag Example",
+        author: "Example",
+        description: "Activities.",
+        category: "Productivity",
+        tags: ["education"],
+        sourceType: "community",
+      },
+      {
+        id: "example.system-monitor",
+        name: "System Monitor",
+        author: "Example",
+        description: "System resource monitor.",
+        category: "System",
+        tags: ["system"],
+        sourceType: "community",
+      },
+      {
+        id: "example.description-neighbor",
+        name: "Reference Notes",
+        author: "Example",
+        description: "Kids education reference without curated taxonomy.",
+        category: "Productivity",
+        tags: ["quickshell"],
+        sourceType: "community",
+      },
+      {
+        id: "example.case-neighbor",
+        name: "Case Neighbor",
+        author: "Example",
+        description: "Activities.",
+        category: "Productivity",
+        tags: ["Kids", "EDUCATION"],
+        sourceType: "community",
+      },
+      {
+        id: "example.category-case-neighbor",
+        name: "Category Case Neighbor",
+        author: "Example",
+        description: "Activities.",
+        category: "kids",
+        tags: ["quickshell"],
+        sourceType: "community",
+      },
+    ],
+  );
+  try {
+    const result = spawnSync(process.execPath, ["scripts/build-explorer-data.mjs"], {
+      cwd: directory,
+      encoding: "utf8",
+    });
+    assert.equal(result.status, 0, result.stderr);
+    const output = JSON.parse(fs.readFileSync(path.join(directory, "site", "explorer-data.json"), "utf8"));
+    assert.deepEqual(
+      output.clusters.map(({ id, label, count }) => ({ id, label, count })),
+      [
+        { id: "kids", label: "Kids & Education", count: 3 },
+        { id: "productivity", label: "Productivity", count: 2 },
+        { id: "system", label: "System & Monitoring", count: 1 },
+        { id: "other", label: "Other", count: 1 },
+      ],
+    );
+    for (const id of ["example.kids-category", "example.kids-tag", "example.education-tag"]) {
+      assert.equal(output.nodes.find((node) => node.id === id)?.cluster, "kids");
+    }
+    for (const id of ["example.description-neighbor", "example.case-neighbor", "example.category-case-neighbor"]) {
+      assert.notEqual(output.nodes.find((node) => node.id === id)?.cluster, "kids");
+    }
+    assert.ok(output.clusters.every((cluster) => cluster.count > 0));
+  } finally {
+    fs.rmSync(directory, { recursive: true, force: true });
+  }
+});
+
 test("Explorer builder fails closed for shallow and truncated repositories", () => {
   const complete = createExplorerBuilderFixture([
     { date: "2026-08-28", total: 0, added: 0 },
@@ -197,12 +461,14 @@ test("Explorer builder fails closed for shallow and truncated repositories", () 
 
     const head = execFileSync("git", ["rev-parse", "HEAD"], { cwd: complete, encoding: "utf8" }).trim();
     fs.writeFileSync(path.join(complete, ".git", "shallow"), `${head}\n`);
+    const beforeShallow = fs.readFileSync(path.join(complete, "site", "explorer-data.json"));
     const shallowResult = spawnSync(process.execPath, ["scripts/build-explorer-data.mjs"], {
       cwd: complete,
       encoding: "utf8",
     });
     assert.notEqual(shallowResult.status, 0);
     assert.match(shallowResult.stderr, /complete Git history \(shallow repository detected\)/);
+    assert.deepEqual(fs.readFileSync(path.join(complete, "site", "explorer-data.json")), beforeShallow);
 
     const previousOutput = fs.readFileSync(path.join(truncated, "site", "explorer-data.json"), "utf8");
     const truncatedResult = spawnSync(process.execPath, ["scripts/build-explorer-data.mjs"], {
@@ -237,6 +503,10 @@ test("growth view preserves the source graphic's presentation hierarchy", () => 
   assert.match(script, /growthDelta\.querySelector\("strong"\)\.textContent = `\$\{change > 0 \? "\+" : ""\}\$\{number\.format\(change\)\}`[\s\S]*plugin\$\{absoluteChange === 1 \? "" : "s"\} \$\{trendWord\} over the selected period/);
   assert.match(page, /class="growth-plot-meta"[\s\S]*Plugin Count[\s\S]*class="growth-plot-frame"[\s\S]*viewBox="0 0 1728 620"/);
   assert.match(page, /id="growth-chart"[^>]+aria-label="Community plugin growth"[^>]+aria-describedby="growth-chart-description"/);
+  assert.doesNotMatch(page, /growth-finality-copy|provisional/);
+  assert.doesNotMatch(script, /growth-finality-copy|provisional until a successful later-day build/);
+  assert.match(script, /querySelector\("#growth-chart-description"\)\.textContent = `Active community plugin listings changed from/);
+  assert.doesNotMatch(script, /finalityDescription/);
   assert.doesNotMatch(page, /<title id="growth-chart-title">/);
   assert.doesNotMatch(script, /\.title\s*=\s*growthMeta\.detail/);
   assert.match(page, /class="explore-freshness"[\s\S]*Data updated[\s\S]*id="explorer-updated"[\s\S]*Daily refresh start[\s\S]*id="explorer-refresh-time"/);
@@ -254,7 +524,9 @@ test("explore UI follows marketplace geometry, readable type, and complete theme
   assert.doesNotMatch(styles, /box-shadow:\s*inset 0 -3px var\(--accent\)/);
   assert.match(styles, /\.date-range label\.is-open\s*\{\s*border-color:\s*var\(--accent\);\s*box-shadow:\s*none;/);
   assert.match(styles, /\.date-input-shell svg[\s\S]*stroke:\s*var\(--muted\)/);
-  assert.match(styles, /\[data-theme="light"\] \.growth-poster[\s\S]*--growth-bg:\s*#f8f8f6[\s\S]*--growth-accent:\s*#c6371c/);
+  assert.match(styles, /\.growth-poster\s*\{\s*--growth-bg:\s*var\(--bg\);[\s\S]*--growth-accent:\s*var\(--accent\);\s*--growth-accent-contrast:\s*var\(--accent-contrast\);/);
+  assert.match(script, /\.growth-poster"\)\.classList\.toggle\("is-light", themeById\(document\.documentElement\.dataset\.theme\)\.light\)/);
+  assert.doesNotMatch(styles, /#[0-9a-f]{3,6}\b|data-theme=/i);
   assert.match(styles, /\[data-chart-line\]\s*\{\s*stroke:\s*var\(--growth-accent\)/);
   assert.match(styles, /\.growth-summary > div\s*\{[^}]*padding:\s*0 16px[^}]*grid-template-rows:\s*49% 51%[^}]*gap:\s*0/);
   assert.match(styles, /\.growth-total > strong[\s\S]*grid-template-columns:\s*minmax\(60px, 1fr\) 18px minmax\(60px, 1fr\)/);
@@ -280,10 +552,81 @@ test("explore UI follows marketplace geometry, readable type, and complete theme
   assert.doesNotMatch(script, /navigator\.geolocation/);
 });
 
+test("graph colors follow the active site theme and stay legible", () => {
+  const accents = ["lime", "violet", "amber", "cyan", "coral", "blue", "mint", "rose"].map(accentColor);
+  for (const theme of siteThemes) {
+    for (const cluster of explorer.clusters) {
+      assert.ok(contrastRatio(legibleColor(cluster.color, theme.bg), theme.bg) >= 3, `${cluster.label} on ${theme.id}`);
+    }
+    for (const accent of accents) {
+      assert.ok(contrastRatio(legibleColor(accent, theme.bg, 4.5), theme.bg) >= 4.5, `${accent} text on ${theme.id}`);
+    }
+  }
+  assert.equal(legibleColor("#b7ef51", "#000000"), "#b7ef51");
+  assert.equal(legibleColor("var(--accent)", "#ffffff"), "var(--accent)");
+  assert.match(script, /const \{ light: lightTheme, background: labelHaloColor, heading: headingColor, text: labelColor \} = graphPalette/);
+  assert.doesNotMatch(script, /dataset\.theme === "light"|"#(?:f8f8f6|efeff0|c5c5c8|19191b)"/);
+  assert.match(script, /new MutationObserver\(\(\) => \{\s*applyGraphTheme\(\);/);
+  assert.match(script, /const detailAccent = graphColor\(accentColor\(node\.accent\), "panel", 4\.5\)/);
+  assert.match(script, /canvas\.addEventListener\("pointercancel", \(event\) => endPointer\(event, \{ select: false \}\)\)/);
+  assert.match(script, /selectNode\(explorer\.nodes\[\[\.\.\.matches\]\[0\]\], true\);\s*document\.querySelector\("#visible-nodes"\)/);
+  assert.match(script, /element\("i", "neighbor-publisher", `@\$\{candidatePublisher\}`\)/);
+});
+
+test("growth projection extends the chart to year end at the Quattro pace", () => {
+  assert.match(page, /<span id="growth-projection-title" class="growth-control-title">Projection<\/span>\s*<div class="growth-presets growth-projection-years" role="group" aria-labelledby="growth-projection-title">/);
+  assert.equal((page.match(/data-projection-year=/g) || []).length, 1);
+  assert.match(page, /data-projection-year="2026" aria-pressed="false" aria-label="Project to 31 Dec 2026 at the pace since the Quattro release">2026<\/button>/);
+  assert.match(script, /document\.querySelector\("\.growth-projection-row"\)\.hidden = projectionButtons\.every\(\(button\) => button\.hidden\);/);
+  assert.match(page, /<g data-release-marker><\/g>\s*<g data-chart-projection><\/g>/);
+  assert.match(page, /id="growth-legend-projection" hidden><i class="legend-projection"><\/i>Projection at Quattro pace/);
+  assert.match(script, /growthProjectionYear = growthProjectionYear === year \? null : year;/);
+  assert.match(script, /button\.hidden = `\$\{button\.dataset\.projectionYear\}-12-31` <= latestDate;/);
+  assert.match(script, /quattroPaceProjection\(`\$\{growthProjectionYear\}-12-31`\)/);
+  assert.match(script, /function quattroPaceProjection\(endDate\)[\s\S]*const completedIndex = Math\.max\(0, series\.length - 2\);[\s\S]*point\.date === explorer\.release\.date[\s\S]*for \(let end = releaseIndex \+ 7; end <= completedIndex; end \+= 7\)/);
+  assert.match(script, /const point = projected\s*\? \{ date: addUtcDays\(from, index\), total: projection\.valueAt\(addUtcDays\(from, index\)\) \}/);
+  assert.match(page, /id="growth-legend-band" hidden><i class="legend-band"><\/i>Slowest–fastest week/);
+  assert.match(script, /if \(!projection\) labels\.append\(endValueGroup\);/);
+  assert.match(script, /const pointBadge = \(pointX, pointY, title, meta, \{ attributes = \{\}, fixed = null \} = \{\}\) => \{[\s\S]*class: "release-label-box", x: badgeX[\s\S]*class: "release-label-meta", x: badgeX \+ 16, y: badgeY \+ 48 \}, meta/);
+  assert.match(script, /growthGuideModel\.projectionValue = pointBadge\(endX, endY, `≈ \$\{number\.format\(projection\.total\)\} PLUGINS`, yearEndMeta\(projection\.endDate\)/);
+  assert.doesNotMatch(styles, /chart-projection-box|chart-projection-label/);
+  assert.match(script, /fixed: \(width, height\) => \(\{ x: endX \+ 20 - width, y: Math\.max\(8, y\(projection\.highAt\(projection\.endDate\)\) - height - 12\) \}\)/);
+  assert.match(script, /pointBadge\(x\(points\.length - 1\), y\(end\.total\), `\$\{number\.format\(end\.total\)\} PLUGINS`, `\$\{todayDate\} · TODAY`\);/);
+  assert.match(script, /for \(let year = Number\(end\.date\.slice\(0, 4\)\); `\$\{year\}-12-31` < projection\.endDate; year \+= 1\)[\s\S]*yearEnds\.reverse\(\)\.forEach[\s\S]*pointBadge\(/);
+  assert.match(script, /const placeable = \(box, pointer\) => !occupied\.some\(\(other\) => boxesOverlap\(box, other\) \|\| pointerCrosses\(pointer, other\)\)\s*&& !pointers\.some\(\(other\) => pointerCrosses\(other, box\)\);/);
+  assert.match(script, /button\.disabled = to !== latestDate;/);
+  assert.match(script, /const projected = index > points\.length - 1;\s*if \(projected && !projection\) \{\s*hideGuide\(\);/);
+  assert.match(styles, /\.chart-projection-line \{ stroke: var\(--growth-accent\);[^}]*stroke-dasharray: 1 12;/);
+
+  const series = explorer.growth;
+  const completedIndex = series.length - 2;
+  const completed = series[completedIndex];
+  const releaseIndex = series.findIndex((point) => point.date === explorer.release.date);
+  const days = (from, to) => Math.round((Date.parse(`${to}T00:00:00Z`) - Date.parse(`${from}T00:00:00Z`)) / 86400000);
+  const perDay = (completed.total - series[releaseIndex].total) / days(series[releaseIndex].date, completed.date);
+  const weekly = [];
+  for (let end = releaseIndex + 7; end <= completedIndex; end += 7) {
+    assert.equal(days(series[end - 7].date, series[end].date), 7);
+    weekly.push((series[end].total - series[end - 7].total) / 7);
+  }
+  assert.ok(weekly.length > 0 && perDay > 0);
+  assert.match(script, /const slowest = Math\.min\(perDay, \.\.\.weeklyPaces\);\s*const fastest = Math\.max\(perDay, \.\.\.weeklyPaces\);/);
+  const at = (pace, date) => completed.total + pace * days(completed.date, date);
+  assert.ok(at(Math.min(perDay, ...weekly), "2026-12-31") <= at(perDay, "2026-12-31"));
+  assert.ok(at(perDay, "2026-12-31") <= at(Math.max(perDay, ...weekly), "2026-12-31"));
+  assert.equal(at(perDay, completed.date), completed.total);
+});
+
 test("all semantic communities remain available in a compact labeled rail", () => {
   assert.match(page, /id="graph-match-count"[\s\S]*id="graph-analysis"[^>]+aria-label="Plugin landscape community filters"[\s\S]*id="community-list"/);
   assert.doesNotMatch(page, /id="landscape-title"|id="community-toggle"|id="anchor-list"/);
-  assert.match(script, /const leadingClusters = \[\.\.\.explorer\.clusters\][\s\S]*button\.setAttribute\("aria-label", `\$\{cluster\.label\}[\s\S]*community-name/);
+  assert.match(script, /const leadingClusters = \[\.\.\.explorer\.clusters\][\s\S]*communityFilters\.map\(\(cluster\) =>[\s\S]*community-name/);
+  assert.match(script, /import \{ matchesBarTaxonomy, matchesVpnTaxonomy \} from "\.\/taxonomy\.js\?v=20260930-01"/);
+  assert.match(script, /id: "taxonomy:vpn",\s*label: "VPN",[\s\S]*anchor: "security",\s*matches: matchesVpnTaxonomy,/);
+  assert.match(script, /id: "taxonomy:bar",\s*label: "Bar",[\s\S]*anchor: "appearance",\s*matches: matchesBarTaxonomy,/);
+  assert.match(script, /const taxonomyFilter = taxonomyCommunityFilters\.find\(\(filter\) => filter\.id === activeCluster\);\s*return taxonomyFilter \? taxonomyFilter\.matches\(node\) : node\.cluster === activeCluster/);
+  assert.match(script, /taxonomyCommunityFilters\.forEach\(\(\{ id, label, color, anchor, matches \}\) => \{\s*const count = explorer\.nodes\.filter\(matches\)\.length;\s*if \(!count\) return;[\s\S]*cluster\.id === anchor\)[\s\S]*anchorIndex \+ 1/);
+  assert.match(script, /button\.dataset\.filterKind = cluster\.taxonomy \? "taxonomy" : "community"[\s\S]*\$\{cluster\.label\} filter: \$\{number\.format\(cluster\.count\)\} matching plugins/);
   assert.match(styles, /\.graph-analysis\s*\{[\s\S]*bottom:\s*0[\s\S]*width:\s*102px/);
   assert.match(page, /id="community-scroll-fade"[^>]+aria-hidden="true"/);
   assert.doesNotMatch(page, /community-scroll-hint|>↓</);
@@ -305,6 +648,7 @@ test("all semantic communities remain available in a compact labeled rail", () =
   assert.match(script, /document\.querySelector\("#graph-method"\)\.setAttribute\("aria-label", explorer\.method/);
   assert.match(script, /createExplorerSearchMatcher\(query\)/);
   assert.match(script, /graphReset\.addEventListener[\s\S]*allCommunities\.setAttribute\("aria-pressed", "true"\)[\s\S]*button\.setAttribute\("aria-pressed", "false"\)/);
+  assert.match(script, /button\.addEventListener\("click", \(\) => \{\s*if \(!matchesActiveCommunity\(candidate\)\) setActiveCluster\(null\);\s*selectNode\(candidate, true\);/);
   assert.match(styles, /\.detail-actions \.button\s*\{\s*justify-content:\s*center;\s*\}/);
   assert.doesNotMatch(styles, /\.explore-tabs button, \.explore-toolbar button\s*\{\s*transition:\s*none/);
 });
@@ -354,6 +698,12 @@ test("graph search uses catalog matching semantics", () => {
   assert.equal(matchesExplorerSearch("Expose\u0301", unicodeNode), true);
   assert.equal(matchesExplorerSearch("&", unicodeNode), true);
   assert.equal(matchesExplorerSearch("/", unicodeNode), false);
+  const securityGameNode = { id: "io.github.example.arcade", name: "Arcade Guard", repo: "https://github.com/example/arcade", description: "A guarded arcade.", tags: ["security", "games"] };
+  const securityNode = { id: "io.github.example.vault", name: "Vault", repo: "https://github.com/example/vault", description: "Secrets.", tags: ["security"] };
+  assert.equal(matchesExplorerSearch("tag:security tag:games", securityGameNode), true);
+  assert.equal(matchesExplorerSearch("tag:security tag:games", securityNode), false);
+  assert.equal(matchesExplorerSearch("git", securityNode), false);
+  assert.equal(matchesExplorerSearch("", securityNode), false);
   assert.equal(matchesExplorerSearch("text:bar", publisherNode), true);
   assert.equal(matchesExplorerSearch("kind:bar-widget", publisherNode), true);
   assert.equal(matchesExplorerSearch("kind:menu-bar-widget", unicodeNode), true);
@@ -449,8 +799,9 @@ test("custom growth calendar follows the site theme and supports keyboard date n
 
 test("growth hover scrubs exact daily totals and dates inside the plot", () => {
   assert.match(page, /data-chart-hover-guide[\s\S]*class="chart-hover-line"[\s\S]*class="chart-hover-point"[\s\S]*class="chart-hover-box"[\s\S]*class="chart-hover-value"[\s\S]*class="chart-hover-date"/);
-  assert.match(script, /function setupGrowthGuide[\s\S]*pointerX < chart\.left[\s\S]*pointerY < chart\.top[\s\S]*Math\.round\(ratio \* \(points\.length - 1\)\)/);
-  assert.match(script, /guideValue\.textContent = `\$\{number\.format\(point\.total\)\} plugins`[\s\S]*guideDate\.textContent = posterDate\.format/);
+  assert.match(script, /function setupGrowthGuide[\s\S]*pointerX < chart\.left[\s\S]*pointerY < chart\.top[\s\S]*Math\.round\(ratio \* lastSlot\)/);
+  assert.match(script, /const lastSlot = points\.length - 1 \+ \(projection \? projection\.days : 0\);/);
+  assert.match(script, /guideValue\.textContent = projected[\s\S]*`\$\{number\.format\(point\.total\)\} plugins`[\s\S]*guideDate\.textContent = projected[\s\S]*: posterDate\.format/);
   assert.match(script, /boxX = pointX \+ boxWidth \+ 16 > chart\.right[\s\S]*boxY = Math\.max\(chart\.top \+ 8/);
   assert.match(script, /data-chart-end-value[\s\S]*lineOverlapsEndValue[\s\S]*badgeOverlapsEndValue[\s\S]*classList\.toggle\("is-obscured"/);
   assert.match(styles, /\.chart-end-value\.is-obscured\s*\{\s*visibility:\s*hidden/);

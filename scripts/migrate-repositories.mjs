@@ -84,21 +84,47 @@ function normalizedPlan(value) {
   return Object.freeze({ ...value, migrations: Object.freeze(migrations) });
 }
 
+function normalizeListingHistoryBaselines(history, repository, allowedRepositories, pluginIds) {
+  return history.map((entry) => {
+    const historical = entry.automatedSecurityBaseline;
+    if (!historical || historical.schemaVersion !== undefined) return entry;
+    const normalized = parseStoredSecurityBaselineRecord(historical, {
+      expectedRepository: repository,
+      allowedRepositories,
+      allowLegacyRepositoryFallback: true,
+      expectedCommit: entry.commit,
+      pluginIds,
+    });
+    if (normalized) return { ...entry, automatedSecurityBaseline: normalized };
+    return historical.version === "2" && !historical.repository
+      ? {
+          ...entry,
+          automatedSecurityBaseline: { ...historical, repository },
+        }
+      : entry;
+  });
+}
+
 function normalizeActiveBaseline(source, repository, pluginIds) {
   if (source.type !== "plugin-source") return source;
   const allowedRepositories = repositoryEvidenceKeys(source);
   const migrated = source.repositoryIdentity !== undefined;
-  const baseline = parseStoredSecurityBaselineRecord(source.automatedSecurityBaseline, {
-    expectedRepository: repository,
-    allowedRepositories,
-    allowLegacyRepositoryFallback: !migrated,
-    expectedCommit: source.listingValidatedCommit,
-    pluginIds,
-  });
-  if (!baseline) throw new Error(`${source.repo}: active security baseline is invalid`);
+  const hasBaseline = Object.hasOwn(source, "automatedSecurityBaseline");
+  const baseline = hasBaseline
+    ? parseStoredSecurityBaselineRecord(source.automatedSecurityBaseline, {
+        expectedRepository: repository,
+        allowedRepositories,
+        allowLegacyRepositoryFallback: !migrated,
+        expectedCommit: source.listingValidatedCommit,
+        pluginIds,
+      })
+    : null;
+  if (hasBaseline && !baseline) {
+    throw new Error(`${source.repo}: active security baseline is invalid`);
+  }
   if (
     Object.hasOwn(source, "maintainerVerificationReview")
-    && !parseMaintainerVerificationReview(source.maintainerVerificationReview, baseline)
+    && (!baseline || !parseMaintainerVerificationReview(source.maintainerVerificationReview, baseline))
   ) throw new Error(`${source.repo}: maintainer review is invalid`);
   if (
     Object.hasOwn(source, "maintainerVerificationRevocation")
@@ -117,8 +143,9 @@ function normalizeActiveBaseline(source, repository, pluginIds) {
       pluginIds,
     })
   ) throw new Error(`${source.repo}: maintainer review history is invalid`);
+  const hasListingHistory = Object.hasOwn(source, "listingValidationHistory");
   if (
-    Object.hasOwn(source, "listingValidationHistory")
+    hasListingHistory
     && !parseListingValidationHistory(source.listingValidationHistory, {
       expectedRepository: repository,
       allowedRepositories,
@@ -126,9 +153,22 @@ function normalizeActiveBaseline(source, repository, pluginIds) {
       pluginIds,
     })
   ) throw new Error(`${source.repo}: listing validation history is invalid`);
-  return source.automatedSecurityBaseline.schemaVersion === undefined
-    ? { ...source, automatedSecurityBaseline: baseline }
-    : source;
+  return {
+    ...source,
+    ...(hasBaseline && source.automatedSecurityBaseline.schemaVersion === undefined
+      ? { automatedSecurityBaseline: baseline }
+      : {}),
+    ...(hasListingHistory
+      ? {
+          listingValidationHistory: normalizeListingHistoryBaselines(
+            source.listingValidationHistory,
+            repository,
+            allowedRepositories,
+            pluginIds,
+          ),
+        }
+      : {}),
+  };
 }
 
 function migrateSource(source, migration) {
@@ -210,6 +250,10 @@ export function applyRepositoryMigrationPlan(registry, catalog, planValue) {
       migration.pluginIds.includes(plugin.id)
     ));
     const oldUrl = `https://github.com/${migration.fromRepository}`;
+    const warningCount = (catalog.warnings || []).filter((warning) => (
+      warning === `${oldUrl}: repository-unreachable`
+    )).length;
+    const repeatedIdentityTransfer = parseRepositoryIdentity(source.repositoryIdentity) !== null;
     if (
       previous.length !== migration.pluginIds.length
       || previous.some((plugin) => plugin.repo.toLowerCase() !== oldUrl.toLowerCase())
@@ -217,9 +261,7 @@ export function applyRepositoryMigrationPlan(registry, catalog, planValue) {
         String(plugin.upstreamValidatedCommit || "").toLowerCase()
           !== migration.previousValidatedCommit
       ))
-      || (catalog.warnings || []).filter((warning) => (
-        warning === `${oldUrl}: repository-unreachable`
-      )).length !== 1
+      || (warningCount !== 1 && !(repeatedIdentityTransfer && warningCount === 0))
     ) throw new Error("Repository migration catalog evidence is ambiguous");
     replacements.set(source, migrateSource(source, migration));
   }

@@ -21,6 +21,7 @@ import {
   validateRegistryRepositoryMigrations,
 } from "../scripts/repository-identity.mjs";
 import { sourceVerification } from "../scripts/verification-status.mjs";
+import { planPluginDelisting } from "../scripts/delist-plugins.mjs";
 
 const oldRepository = "Example/old-plugin";
 const newRepository = "Example/new-plugin";
@@ -165,40 +166,93 @@ function graphqlRepository(overrides = {}) {
   };
 }
 
-test("current registry and catalog contain the six exact repository migrations", async () => {
+test("current registry and catalog contain complete active or retired repository migration chains", async () => {
   const registry = JSON.parse(await readFile(new URL("../registry.json", import.meta.url), "utf8"));
   const catalog = JSON.parse(await readFile(new URL("../site/catalog.json", import.meta.url), "utf8"));
   const migrations = validateRegistryRepositoryMigrations(registry);
-  assert.equal(migrations.length, 6);
-  assert.deepEqual(migrations.map((entry) => entry.pluginIds[0]), [
-    "lacuna.shell-suite",
-    "ilyazar.btop",
-    "multi-monitor.workspaces",
-    "io.github.ilyazar.syncthing",
-    "edbron.monitor-arrange",
-    "io.github.rezwoan.performance",
-  ]);
-  assert.equal(registry.sources.filter((entry) => entry.repositoryIdentity).length, 6);
-  for (const migration of migrations) {
-    const source = registry.sources.find((entry) => (
-      githubRepositoryKey(entry.repo) === migration.toRepository.toLowerCase()
+  assert.equal(migrations.length, registry.repositoryMigrations.length);
+  const identifiedSources = registry.sources.filter((entry) => entry.repositoryIdentity);
+  const retired = new Set(registry.retiredPluginIds);
+  const activeMigrations = migrations.filter((entry) => !entry.pluginIds.every((id) => retired.has(id)));
+  const migratedIdentities = new Set(activeMigrations.map((entry) => `${entry.nodeId}:${entry.databaseId}`));
+  assert.equal(identifiedSources.length, migratedIdentities.size);
+  assert.ok(catalog.plugins.every((plugin) => !retired.has(plugin.id)));
+  for (const source of identifiedSources) {
+    const identity = parseRepositoryIdentity(source.repositoryIdentity);
+    const pluginIds = sourceRepositoryIds(source);
+    const chain = migrations.filter((migration) => (
+      migration.nodeId === identity.nodeId
+      && migration.databaseId === identity.databaseId
     ));
-    assert.ok(source);
-    assert.deepEqual(sourceRepositoryIds(source), migration.pluginIds);
-    const plugins = catalog.plugins.filter((plugin) => migration.pluginIds.includes(plugin.id));
-    assert.equal(plugins.length, migration.pluginIds.length);
+    assert.equal(chain.length, identity.previousRepositories.length);
+    assert.ok(chain.every((migration) => (
+      JSON.stringify(migration.pluginIds) === JSON.stringify(pluginIds)
+    )));
+    const plugins = catalog.plugins.filter((plugin) => pluginIds.includes(plugin.id));
+    assert.equal(plugins.length, pluginIds.length);
     assert.ok(plugins.every((plugin) => plugin.repo.toLowerCase() === source.repo.toLowerCase()));
     assert.ok(plugins.every((plugin) => plugin.upstreamCheckStatus === "passed"));
-    assert.equal(
-      catalog.warnings.includes(`https://github.com/${migration.fromRepository}: repository-unreachable`),
-      false,
-    );
+    for (const previousRepository of identity.previousRepositories) {
+      assert.equal(
+        catalog.warnings.includes(`https://github.com/${previousRepository}: repository-unreachable`),
+        false,
+      );
+    }
   }
+  assert.deepEqual(
+    identifiedSources.find((source) => (
+      source.repo === "https://github.com/omarchy-QOL/omarchy-btop-activity"
+    )).repositoryIdentity.previousRepositories,
+    ["ilyaZar/btop-quattro-plugin", "ilyaZar/omarchy-btop-activity"],
+  );
+  assert.deepEqual(
+    identifiedSources.find((source) => (
+      source.repo === "https://github.com/omarchy-QOL/syncshell"
+    )).repositoryIdentity.previousRepositories,
+    ["ilyaZar/omarchy-syncthing", "ilyaZar/syncshell"],
+  );
 });
 
 function sourceRepositoryIds(value) {
   return value.type === "suite" ? [value.catalog.id] : Object.keys(value.plugins).sort();
 }
+
+test("delisting a migrated repository preserves valid immutable migration history", () => {
+  const registry = migratedRegistry();
+  const catalog = previousCatalog();
+  catalog.plugins = [{ ...catalog.plugins[0], repo: newUrl, sourceType: "community" }];
+  catalog.warnings = [];
+  const result = planPluginDelisting(registry, catalog, [pluginId], {
+    generatedAt: "2026-08-30T10:00:00.000Z",
+  });
+  assert.deepEqual(result.nextRegistry.repositoryMigrations, registry.repositoryMigrations);
+  assert.deepEqual(result.nextRegistry.retiredPluginIds, [pluginId]);
+  assert.deepEqual(validateRegistryRepositoryMigrations(result.nextRegistry), [migration()]);
+});
+
+test("retired migration chains still reject missing retirement, active reuse, and inconsistent history", () => {
+  const retired = migratedRegistry({ sources: [], retiredPluginIds: [pluginId] });
+  assert.throws(() => validateRegistryRepositoryMigrations({ ...retired, retiredPluginIds: [] }));
+  assert.throws(() => validateRegistryRepositoryMigrations({ ...retired, sources: [source()] }));
+  assert.throws(() => validateRegistryRepositoryMigrations({
+    ...retired, sources: [source({ repo: "https://github.com/Other/reuse" })],
+  }));
+  const second = migration({ fromRepository: newRepository, toRepository: "Example/final-plugin" });
+  assert.equal(validateRegistryRepositoryMigrations({
+    ...retired, repositoryMigrations: [migration(), second],
+  }).length, 2);
+  assert.throws(() => validateRegistryRepositoryMigrations({
+    ...retired,
+    retiredPluginIds: [pluginId, "example.extra"],
+    repositoryMigrations: [migration(), { ...second, pluginIds: ["example.extra"] }],
+  }));
+  assert.throws(() => validateRegistryRepositoryMigrations({
+    ...retired, repositoryMigrations: [migration({ pluginIds: [pluginId, "example.extra"] })],
+  }));
+  assert.throws(() => validateRegistryRepositoryMigrations({
+    ...retired, repositoryMigrations: [migration(), { ...second, toRepository: oldRepository }],
+  }));
+});
 
 test("source repository identities require global append-only migration evidence", () => {
   const registry = migratedRegistry();
@@ -250,6 +304,91 @@ test("legacy baselines are explicitly bound to the old repository before migrati
   assert.deepEqual(sourceVerification(silentlyRebound), { status: "unverified" });
 });
 
+test("baseline-less legacy sources migrate without inventing trust evidence", () => {
+  const legacy = source();
+  delete legacy.automatedSecurityBaseline;
+  const before = sourceVerification(legacy);
+  const result = applyRepositoryMigrationPlan({
+    retiredPluginIds: [],
+    sources: [legacy],
+    builtInSources: [],
+    placeholders: [],
+  }, previousCatalog(), plan());
+  const migrated = result.registry.sources[0];
+  assert.deepEqual(before, { status: "unverified" });
+  assert.deepEqual(sourceVerification(migrated), before);
+  assert.equal(Object.hasOwn(migrated, "automatedSecurityBaseline"), false);
+  assert.equal(Object.hasOwn(migrated, "maintainerVerificationReview"), false);
+
+  for (const invalid of [
+    source({ automatedSecurityBaseline: null }),
+    (() => {
+      const value = source({ maintainerVerificationReview: {} });
+      delete value.automatedSecurityBaseline;
+      return value;
+    })(),
+  ]) {
+    assert.throws(
+      () => applyRepositoryMigrationPlan({
+        retiredPluginIds: [],
+        sources: [invalid],
+        builtInSources: [],
+        placeholders: [],
+      }, previousCatalog(), plan()),
+      /active security baseline is invalid|maintainer review is invalid/,
+    );
+  }
+});
+
+test("legacy listing history is bound to its historical repository before migration", () => {
+  const historicalCommit = "0".repeat(40);
+  const currentLegacy = baseline({
+    commit: historicalCommit,
+    checkedAt: "2026-08-20T10:00:00.000Z",
+  });
+  delete currentLegacy.schemaVersion;
+  delete currentLegacy.repository;
+  delete currentLegacy.pluginIds;
+  const reviewOnlyLegacy = {
+    version: "2",
+    commit: historicalCommit,
+    checkedAt: "2026-08-20T10:00:00.000Z",
+    outcome: "passed",
+    enforcementMode: "review-only",
+    findings: [],
+    capabilities: [],
+  };
+  for (const historicalBaseline of [currentLegacy, reviewOnlyLegacy]) {
+    const listed = source({
+      listingValidationHistory: [{
+        commit: historicalCommit,
+        validatedAt: "2026-08-20T10:00:00.000Z",
+        branch: "main",
+        supersededAt: checkedAt,
+        automatedSecurityBaseline: historicalBaseline,
+      }],
+    });
+    const before = sourceVerification(listed);
+    const result = applyRepositoryMigrationPlan({
+      retiredPluginIds: [],
+      sources: [listed],
+      builtInSources: [],
+      placeholders: [],
+    }, previousCatalog(), plan());
+    const normalized = result.registry.sources[0].listingValidationHistory[0]
+      .automatedSecurityBaseline;
+    assert.equal(normalized.repository, oldRepository.toLowerCase());
+    if (historicalBaseline.version === "3") {
+      assert.equal(normalized.schemaVersion, 1);
+      assert.deepEqual(normalized.pluginIds, [pluginId]);
+    } else {
+      assert.equal(normalized.schemaVersion, undefined);
+      assert.equal(normalized.pluginIds, undefined);
+    }
+    assert.deepEqual(sourceVerification(result.registry.sources[0]), before);
+  }
+});
+
 test("a migrated source remains valid after a regular verified plugin update", () => {
   const sourceValue = migratedSource();
   const promotedCommit = "5".repeat(40);
@@ -271,7 +410,7 @@ test("a migrated source remains valid after a regular verified plugin update", (
   assert.equal(nextSource.listingValidationHistory.at(-1).automatedSecurityBaseline.repository, oldRepository.toLowerCase());
 });
 
-test("the migration writer applies a second rename as an append-only chain", () => {
+test("the migration writer applies a second rename without an impossible warning", () => {
   const first = applyRepositoryMigrationPlan({
     retiredPluginIds: [],
     sources: [source()],
@@ -284,7 +423,7 @@ test("the migration writer applies a second rename as an append-only chain", () 
     repo: newUrl,
     upstreamValidatedCommit: headCommit,
   };
-  middleCatalog.warnings[0] = `${newUrl}: repository-unreachable`;
+  middleCatalog.warnings = ["https://github.com/Other/repository: manifest-invalid"];
   const finalRepository = "Example/final-plugin";
   const nextHead = "5".repeat(40);
   const secondMigration = migration({
@@ -307,6 +446,9 @@ test("the migration writer applies a second rename as an append-only chain", () 
   ]);
   assert.equal(second.registry.sources[0].automatedSecurityBaseline.repository, oldRepository.toLowerCase());
   assert.equal(validateRegistryRepositoryMigrations(second.registry).length, 2);
+  const sourcePlan = catalogSourcePlan(second.registry, "", [newRepository]);
+  const state = assertRepositoryMigrationPreviousState(sourcePlan, middleCatalog);
+  assert.equal(state.get(finalRepository.toLowerCase()).migration.nodeId, "R_kgDOExample");
 });
 
 test("repository migration history supports append-only chains and rejects cycles or branches", () => {
@@ -437,15 +579,20 @@ test("repository migration planning rejects ambiguous identity, catalog, and evi
   );
   const duplicatedWarning = previousCatalog();
   duplicatedWarning.warnings.push(`${oldUrl}: repository-unreachable`);
-  assert.throws(
-    () => applyRepositoryMigrationPlan({
-      retiredPluginIds: [],
-      sources: [source()],
-      builtInSources: [],
-      placeholders: [],
-    }, duplicatedWarning, plan()),
-    /catalog evidence is ambiguous/,
-  );
+  for (const catalog of [
+    { ...previousCatalog(), warnings: [] },
+    duplicatedWarning,
+  ]) {
+    assert.throws(
+      () => applyRepositoryMigrationPlan({
+        retiredPluginIds: [],
+        sources: [source()],
+        builtInSources: [],
+        placeholders: [],
+      }, catalog, plan()),
+      /catalog evidence is ambiguous/,
+    );
+  }
   assert.throws(
     () => validateRegistryRepositoryMigrations(migratedRegistry({
       sources: [migratedSource({

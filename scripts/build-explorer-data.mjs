@@ -7,6 +7,7 @@ import {
   assertGrowthContinuity,
   readCommittedExplorerData,
 } from "./explorer-growth-history.mjs";
+import { matchesKidsTaxonomy } from "../site/assets/js/taxonomy.js";
 
 const catalogUrl = process.env.MARKETPLACE_EXPLORER_CATALOG_PATH
   ? resolve(process.env.MARKETPLACE_EXPLORER_CATALOG_PATH)
@@ -23,6 +24,7 @@ assertCompleteGitHistory(projectRoot);
 const clusterDefinitions = [
   ["ai", "AI & Automation", "#a78bfa", [" ai ", "llm", "gpt", "claude", "ollama", "agent", "assistant", "openai", "automation"]],
   ["games", "Games", "#f4bd62", ["game", "chess", "snake", "minesweeper", "solitaire", "quake", "doom", "arcade", "steam", "gaming"]],
+  ["kids", "Kids & Education", "#ff9fcf", []],
   ["network", "Network & VPN", "#68d6e8", ["vpn", "wireguard", "network", "wifi", "tailscale", "openvpn", "proxy", "firewall", "ssh", "connectivity"]],
   ["media", "Media & Audio", "#e896ba", ["music", "audio", "media", "spotify", "youtube", "radio", "podcast", "volume", "mpris", "album", "sound"]],
   ["productivity", "Productivity", "#b7ef51", ["todo", "task", "calendar", "agenda", "timer", "pomodoro", "notes", "mail", "gmail", "clipboard", "productivity", "reminder"]],
@@ -54,9 +56,12 @@ function tokens(plugin) {
 }
 
 function assignCluster(plugin) {
+  const sourceTags = plugin.tags || [];
+  if (matchesKidsTaxonomy(plugin)) return "kids";
+  const normalizedTags = sourceTags.map((tag) => String(tag).toLowerCase());
   const text = normalizedText(plugin);
   const name = ` ${plugin.name.toLowerCase()} `;
-  const tags = ` ${(plugin.tags || []).join(" ").toLowerCase()} `;
+  const tags = ` ${normalizedTags.join(" ")} `;
   let best = clusterDefinitions.at(-1);
   let bestScore = 0;
   for (const cluster of clusterDefinitions.slice(0, -1)) {
@@ -149,7 +154,7 @@ const influence = plugins.map((plugin, index) => weightedDegree[index] * 4 + Mat
 
 const world = { width: 3400, height: 2300 };
 const targetByCluster = {
-  ai: [1120, 840], games: [760, 1280], network: [1260, 1710], media: [2220, 770],
+  ai: [1120, 840], games: [760, 1280], kids: [700, 650], network: [1260, 1710], media: [2220, 770],
   productivity: [1750, 650], system: [1740, 1210], hardware: [2260, 1430], files: [1950, 1700],
   communication: [2260, 490], appearance: [2600, 1090], developer: [1160, 1390], home: [2580, 1660],
   security: [1570, 1840], navigation: [1370, 1030], other: [1760, 880],
@@ -240,7 +245,7 @@ const clusters = clusterDefinitions.map((definition) => {
   center.x /= members.length || 1;
   center.y /= members.length || 1;
   return { id: definition.id, label: definition.label, color: definition.color, count: members.length, center };
-});
+}).filter((cluster) => cluster.count > 0);
 
 const nodes = plugins.map((plugin, index) => ({
   index,
@@ -306,16 +311,20 @@ function historicalCatalogGrowth() {
   }).sort((first, second) => Date.parse(first.timestamp) - Date.parse(second.timestamp));
   for (const entry of commits) latestCommitByDay.set(entry.date, entry);
 
-  const snapshots = [...latestCommitByDay.values()].map(({ commit, date }) => {
-    const snapshot = JSON.parse(execFileSync("git", ["show", `${commit}:site/catalog.json`], {
-      cwd: projectRoot,
-      encoding: "utf8",
-      maxBuffer: 64 * 1024 * 1024,
-    }));
-    return { date, total: communityCount(snapshot) };
-  });
-
+  // generatedAt is the logical horizon, even on standalone/no-op rebuilds.
+  // A cross-midnight commit must not create a day beyond that catalog's day.
+  // Later snapshots become eligible when a later-day catalog is supplied.
   const currentDate = String(catalog.generatedAt).slice(0, 10);
+  const snapshots = [...latestCommitByDay.values()]
+    .filter(({ date }) => date <= currentDate)
+    .map(({ commit, date }) => {
+      const snapshot = JSON.parse(execFileSync("git", ["show", `${commit}:site/catalog.json`], {
+        cwd: projectRoot,
+        encoding: "utf8",
+        maxBuffer: 64 * 1024 * 1024,
+      }));
+      return { date, total: communityCount(snapshot) };
+    });
   const current = { date: currentDate, total: communityCount(catalog) };
   const currentIndex = snapshots.findIndex((snapshot) => snapshot.date === currentDate);
   if (currentIndex >= 0) snapshots[currentIndex] = current;
@@ -326,7 +335,7 @@ function historicalCatalogGrowth() {
     meta: {
       method: "git-catalog-snapshots",
       label: "End-of-day Git catalog snapshots",
-      detail: "Active community listings from the final catalog state committed on each UTC day.",
+      detail: "Earlier UTC days use the final committed catalog state. The latest UTC day is provisional until a successful later-day build finalizes it.",
       timezone: "UTC",
       historical: true,
     },

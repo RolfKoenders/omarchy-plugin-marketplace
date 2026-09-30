@@ -15,14 +15,13 @@ import {
   pluginHeartButton,
   pluginVerificationDetailState,
   pluginVersionLabel,
-  publisherLogin,
   setupControlTooltips,
   setupSectionNavigation,
   setupThemeToggle,
   showToast,
   updateEngagementSummary,
   updatePluginHeart
-} from "./shared.js?v=20260830-02";
+} from "./shared.js?v=20260930-01";
 import {
   engagementApiBaseUrl,
   hasPluginHeart,
@@ -30,7 +29,8 @@ import {
   recordPluginCopy,
   recordPluginHeart,
   recordPluginView,
-} from "./engagement.js?v=20260830-02";
+} from "./engagement.js?v=20260930-01";
+import { repositoryPublisher } from "./search.js?v=20260930-01";
 
 function safeGitHubWebUrl(value) {
   try {
@@ -49,9 +49,9 @@ function safeGitHubWebUrl(value) {
 }
 
 function authorLink(plugin) {
-  const login = publisherLogin(plugin);
+  const login = repositoryPublisher(plugin.repo);
   if (!login || plugin.builtIn) return escapeHtml(plugin.author);
-  return `<a href="index.html?author=${encodeURIComponent(login)}" aria-label="Show all plugins by @${escapeHtml(login)}">${escapeHtml(plugin.author)}</a>`;
+  return `<a href="index.html?${new URLSearchParams({ author: login })}" aria-label="Show all plugins by @${escapeHtml(login)}">${escapeHtml(plugin.author)}</a>`;
 }
 
 function marketplaceInstallAvailable(plugin) {
